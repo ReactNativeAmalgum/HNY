@@ -1,12 +1,11 @@
 .section-whychoose-cont {
   display: flex;
   width: 100vw;
-  /* background-color: brown; */
 }
+
 .whychoose2-row {
   display: flex;
   flex-direction: row;
-  /* background-color: pink; */
 }
 
 .whychoose2-col {
@@ -14,7 +13,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* margin-bottom: 30px; */
 }
 
 .whychose-card-cont {
@@ -23,16 +21,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  /* background-color: aqua; */
   position: relative;
 }
+
 .card-alingment {
   width: auto;
   height: 100%;
   display: flex;
-  /* justify-content: flex-end; */
-  /* align-items: flex-end; */
-  /* background-color: aqua; */
   position: relative;
 }
 
@@ -43,13 +38,14 @@
   display: flex;
   justify-content: end;
   position: relative;
-  /* background-color: blue !important; */
 }
+
 .card img {
   width: 100% !important;
   height: 100% !important;
   border-radius: 30px !important;
 }
+
 .card2 {
   width: 280px;
   height: 280px;
@@ -57,25 +53,24 @@
   margin-top: 200px;
   margin-right: 50%;
   border-radius: 30px;
-  /* border-radius: 30px; */
   background-color: green;
 }
+
 .card2 img {
   width: 100% !important;
   height: 100% !important;
   border-radius: 30px !important;
 }
+
 .year-card {
   width: 200px;
   height: 100px;
   padding-right: 30px;
   position: absolute;
-  /* margin-top: 20px; */
   margin-right: 65%;
   margin-bottom: 50%;
-  /* border-radius: 30px; */
-  /* background-color: orange; */
 }
+
 .started-txt {
   color: var(--pbmit-xinterio-global-color);
   margin: 0 0 5px 10px;
@@ -84,6 +79,7 @@
   font-size: 28px;
   line-height: 24px;
 }
+
 .year-txt {
   color: var(--pbmit-xinterio-global-color);
   font-family: Space Grotesk, sans-serif;
@@ -93,4 +89,118 @@
   letter-spacing: 10px;
   text-transform: none;
   font-style: normal;
+}
+
+/* Responsive Styles */
+@media (max-width: 1300px) {
+  .card {
+    width: 350px;
+    height: 350px !important;
+  }
+
+  .card2 {
+    width: 220px;
+    height: 220px;
+    margin-top: 150px;
+  }
+
+  .year-card {
+    width: 160px;
+    height: 80px;
+  }
+
+  .started-txt {
+    font-size: 24px;
+    line-height: 22px;
+  }
+
+  .year-txt {
+    font-size: 60px;
+    line-height: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .whychoose2-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .special-col {
+    width: 100% !important;
+    display: flex;
+  }
+  .card {
+    /* width: 300px;
+    height: 300px !important; */
+    width: fit-content !important;
+    height: fit-content;
+  }
+
+  .card2 {
+    /* width: 180px;
+    height: 180px; */
+    margin-top: 120px;
+    margin-right: 0;
+    right: 40%;
+    transform: translateX(-50%);
+  }
+
+  .year-card {
+    /* width: 140px;
+    height: 70px; */
+    margin-right: 0;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+
+  .started-txt {
+    font-size: 20px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .year-txt {
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+  }
+  .pbmit-tabs {
+    flex-direction: column;
+  }
+  .pbmit-tab-content-wrapper {
+    padding: 0 !important;
+    margin: 10px;
+  }
+}
+.pbmit-tab-content-title,
+.pbmit-tab-link {
+  width: 100% !important;
+}
+
+@media (max-width: 480px) {
+  .card {
+    width: 240px;
+    height: 240px !important;
+  }
+
+  .card2 {
+    width: 150px;
+    height: 150px;
+    margin-top: 100px;
+  }
+
+  .year-card {
+    width: 120px;
+    height: 60px;
+  }
+
+  .started-txt {
+    font-size: 18px;
+    line-height: 16px;
+  }
+
+  .year-txt {
+    font-size: 40px;
+    line-height: 50px;
+  }
 }

@@ -11,7 +11,7 @@ export default function WhyChoos2() {
       <div className={" container"}>
         <div className="row">
           <div className="whychoose2-row">
-            <div className="col-6">
+            <div className="special-col col-6">
               <div className="whychoose2-col">
                 <div
                   className="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-197babe pbmit-bg-color-over-image pbmit-bgimage-no pbmit-bgcolor-yes"
@@ -113,7 +113,7 @@ export default function WhyChoos2() {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="special-col-2 col-6">
               <div className="card-alingment">
                 <div className="whychose-card-cont">
                   <div className="card">

@@ -55,9 +55,26 @@ function Gallery2() {
                 modules={[FreeMode, Autoplay]}
                 className="mySwiper"
                 speed={1000}
-                autoplay={{
-                  delay: 1000,
-                  disableOnInteraction: true,
+                // autoplay={{
+                //   delay: 1000,
+                //   disableOnInteraction: true,
+                // }}
+                breakpoints={{
+                  320:{
+                    slidesPerView:1
+                  },
+                  425:{
+                    slidesPerView:1
+                  },
+                  // For screens larger than or equal to 768px
+                  768: {
+                    slidesPerView: 2, // Show 2 slides per view
+                  },
+                  // For screens larger than or equal to 1024px
+                  1024: {
+                    slidesPerView: 3, // Show 3 slides per view
+                  },
+                  // You can add more breakpoints if needed
                 }}
               >
                 <SwiperSlide className="slider-img-cont">

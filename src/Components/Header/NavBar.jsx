@@ -244,11 +244,11 @@ export default function NavBar() {
                                       id="menu-item-5701"
                                       className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5701"
                                     >
-                                      <a herf={p.slug}>
+                                      <Link to= {`/designplanning/${p.id}`} >
                                         <span className="pbmit-span-wrapper">
                                           {p.title}
                                         </span>
-                                      </a>
+                                      </Link>
                                     </li>
                                   );
                                 })}

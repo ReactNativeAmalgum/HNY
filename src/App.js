@@ -30,7 +30,7 @@ function App() {
         <Route path="/whychoose2" element={<WhyChoos2 />} />
         <Route path="/review" element={<Review />} />
         {/* <Route path='/exp' element={<Experiment />} /> */}
-        {/* <Route path='/designplanning' element={<Design_planning />} /> */}
+        <Route path='/designplanning/:id' element={<Design_planning />} />
         {ServiceData.map((p, i) => (
           <Route key={i} exact path={p.slug} element={<Design_planning />} />
         ))}

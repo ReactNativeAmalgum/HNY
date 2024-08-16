@@ -58,11 +58,28 @@ export default function Review() {
                     </h2>
                   </div>
                   <div className="review-swiper-cont">
-                  {/* {reviewData.map((r, i) =>( */}
+                    {/* {reviewData.map((r, i) =>( */}
                     <Swiper
                       slidesPerView={3}
                       spaceBetween={30}
                       freeMode={true}
+                      breakpoints={{
+                        320: {
+                          slidesPerView: 1,
+                        },
+                        425: {
+                          slidesPerView: 1,
+                        },
+                        // For screens larger than or equal to 768px
+                        768: {
+                          slidesPerView: 2, // Show 2 slides per view
+                        },
+                        // For screens larger than or equal to 1024px
+                        1024: {
+                          slidesPerView: 2, // Show 3 slides per view
+                        },
+                        // You can add more breakpoints if needed
+                      }}
                       pagination={{
                         clickable: true,
                       }}
@@ -70,43 +87,32 @@ export default function Review() {
                       className="reviewswiper"
                     >
                       <SwiperSlide className="review-slider-img-cont">
-  
-
                         <div className="review-descp">
                           <p>Very nice!</p>
                         </div>
                       </SwiperSlide>
                       <SwiperSlide className="review-slider-img-cont">
-  
-
                         <div className="review-descp">
                           <p>Very nice!</p>
                         </div>
                       </SwiperSlide>
                       <SwiperSlide className="review-slider-img-cont">
-  
-
                         <div className="review-descp">
                           <p>Very nice!</p>
                         </div>
                       </SwiperSlide>
                       <SwiperSlide className="review-slider-img-cont">
-  
-
                         <div className="review-descp">
                           <p>Very nice!</p>
                         </div>
                       </SwiperSlide>
                       <SwiperSlide className="review-slider-img-cont">
-  
-
                         <div className="review-descp">
                           <p>Very nice!</p>
                         </div>
                       </SwiperSlide>
                     </Swiper>
                     {/* ))} */}
-
                   </div>
                 </div>
               </div>
