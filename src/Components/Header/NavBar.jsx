@@ -1,6 +1,8 @@
 import React from "react";
 import "../../index.css";
 import logo from "../../Assets/wny-logo-.png";
+import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
+import { Link } from "react-router-dom";
 export default function NavBar() {
   return (
     <header
@@ -74,19 +76,17 @@ export default function NavBar() {
                 <div className="pbmit-logo">
                   <div className="site-branding pbmit-logo-area">
                     <div className="wrap">
-                        <a
-                          href="https://xinterio-demo.pbminfotech.com/demo3/"
-                          rel="home"
-                        >
-                          <img
-                            className="pbmit-main-logo"
-                            src={logo}
-                            alt="Xinterio Demo3"
-                            title="Xinterio Demo3"
-                          />
-
-                        </a>
-
+                      <a
+                        href="https://xinterio-demo.pbminfotech.com/demo3/"
+                        rel="home"
+                      >
+                        <img
+                          className="pbmit-main-logo"
+                          src={logo}
+                          alt="Xinterio Demo3"
+                          title="Xinterio Demo3"
+                        />
+                      </a>
                     </div>
                     {/* .wrap */}
                   </div>
@@ -102,12 +102,16 @@ export default function NavBar() {
                         aria-label="Top Menu"
                       >
                         <div className="menu-main-menu-container">
-                          <ul style={{color:'black'}} id="pbmit-top-menu" className="menu">
+                          <ul
+                            style={{ color: "black" }}
+                            id="pbmit-top-menu"
+                            className="menu"
+                          >
                             <li
                               id="menu-item-5671"
                               className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-5671"
                             >
-                              <a  href="/">Home</a>
+                              <a href="/">Home</a>
                               {/* <ul className="sub-menu">
                                 <li
                                   id="menu-item-5961"
@@ -234,96 +238,16 @@ export default function NavBar() {
                             >
                               <a href="#">Services</a>
                               <ul className="sub-menu">
-                                <li
-                                  id="menu-item-5701"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5701"
-                                >
-                                  <a href="/designplanning">
-                                    <span className="pbmit-span-wrapper">
-                                      Design &amp; Planning
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5700"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5700"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/custom-solutions/">
-                                    <span className="pbmit-span-wrapper">
-                                      Custom Solutions
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5699"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5699"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/furniture-decor/">
-                                    <span className="pbmit-span-wrapper">
-                                      Furniture &amp; Decor
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5698"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5698"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/2d-3d-layouts/">
-                                    <span className="pbmit-span-wrapper">
-                                      2D/3D Layouts
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5693"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5693"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/transforming-rooms/">
-                                    <span className="pbmit-span-wrapper">
-                                      Transforming Rooms
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5694"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5694"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/weaving-dreams/">
-                                    <span className="pbmit-span-wrapper">
-                                      Weaving Dreams
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5695"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5695"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/interior-decorator/">
-                                    <span className="pbmit-span-wrapper">
-                                      Interior Decorator
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5696"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5696"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/professional-interior/">
-                                    <span className="pbmit-span-wrapper">
-                                      Professional Interior
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5697"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5697"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/service/interior-work-plan/">
-                                    <span className="pbmit-span-wrapper">
-                                      Interior Work Plan
-                                    </span>
-                                  </a>
-                                </li>
+                                {ServiceData.map((p) => {
+                                  return (
+                                    <li
+                                      id="menu-item-5701"
+                                      className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5701"
+                                    >
+                                      <Link to={p.slug}>{p.title}</Link>
+                                    </li>
+                                  );
+                                })}
                               </ul>
                               <span className="sub-menu-toggle">
                                 <i className="pbmit-base-icon-angle-right" />
@@ -795,7 +719,6 @@ export default function NavBar() {
         {/* pbmit-header-height-wrapper-end */}
       </div>
       {/* pbmit-header-overlay-end */}{" "}
-
     </header>
   );
 }
