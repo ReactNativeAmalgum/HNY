@@ -244,7 +244,7 @@ export default function NavBar() {
                                       id="menu-item-5701"
                                       className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5701"
                                     >
-                                      <Link to={p.slug}>{p.title}</Link>
+                                      <a to={p.slug}>{p.title}</a>
                                     </li>
                                   );
                                 })}
