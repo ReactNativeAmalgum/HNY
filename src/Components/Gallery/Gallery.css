@@ -1,0 +1,8 @@
+.gallery-image{
+    height: 300px;
+    width: 400px;
+}
+.gallery-image img{
+    height: 100%;
+    width: 100%;
+}

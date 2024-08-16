@@ -1,0 +1,456 @@
+
+
+
+/* CONTACT BANNER */
+.contact-banner{
+    background-image: url(https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/Contact-1-title-area-parallax.jpg);
+    width: 100%;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+
+.contact-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.contact-p h1{
+    font-size: 60px;
+    letter-spacing: -.3px;
+    line-height: 1.08em;
+    font-family: Montserrat, serif;
+    color: #212121;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;   
+}
+
+.single-contact-info-wrap {
+    display: flex;
+    margin: 0 0 30px;
+  }
+  .single-contact-info-wrap:last-child {
+    margin-bottom: 0;
+  }
+  .single-contact-info-wrap .info-icon i {
+    font-size: 30px;
+    color: #ea622b;
+  }
+  .single-contact-info-wrap .info-content {
+    margin-left: 20px;
+  }
+  .single-contact-info-wrap .info-content .title {
+    font-size: 20px;
+    margin: 0 0 10px;
+    line-height: 1;
+    display: block;
+	font-family: 'Playfair Display', serif;
+  }
+  .single-contact-info-wrap .info-content p {
+    margin: 0;
+  }
+  .single-contact-info-wrap .info-content p.width {
+	font-family: 'Open Sans', sans-serif !important;
+    width: 60%;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .single-contact-info-wrap .info-content p.width {
+      width: 100%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .single-contact-info-wrap .info-content p.width {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .single-contact-info-wrap .info-content p.width {
+      width: 100%;
+    }
+  }
+  .single-contact-info-wrap:hover .info-icon i {
+    -webkit-animation: 500ms ease-in-out 0s normal none 1 running tada;
+            animation: 500ms ease-in-out 0s normal none 1 running tada;
+  }
+  
+  .contact-from-wrap {
+    box-shadow: 0 25px 45px rgba(1, 2, 2, 0.12);
+    padding: 50px;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-from-wrap {
+      padding: 30px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .contact-from-wrap {
+      padding: 30px;
+      margin-top: 30px;
+    }
+  }
+  .contact-from-wrap form input,
+  .contact-from-wrap form textarea {
+    background: transparent;
+    border: 1px solid #e5e5e5;
+    color: #000000;
+    height: 50px;
+    padding: 2px 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  .contact-from-wrap form input::-moz-input-placeholder,
+  .contact-from-wrap form textarea::-moz-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  .contact-from-wrap form input::-webkit-input-placeholder,
+  .contact-from-wrap form textarea::-webkit-input-placeholder {
+    color: #000000;
+    opacity: 1;
+  }
+  .contact-from-wrap form input.submit,
+  .contact-from-wrap form textarea.submit {
+    background-color: rgb(230 104 117);
+    color: #000;
+    cursor: pointer;
+    height: 55px;
+    text-transform: uppercase;
+    margin: 0;
+    border: none;
+  }
+  .contact-from-wrap form input.submit:hover,
+  .contact-from-wrap form textarea.submit:hover {
+    background-color: #000000;
+  }
+  .contact-from-wrap form textarea {
+    height: 120px;
+    padding: 14px 24px 2px;
+  }
+  
+  .map iframe {
+    height: 500px;
+    width: 100%;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .map iframe {
+      height: 350px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .map iframe {
+      height: 300px;
+    }
+  }
+  
+  .error-content .title {
+    font-size: 36px;
+    margin: 40px 0 20px;
+    line-height: 1;
+  }
+  @media only screen and (max-width: 767px) {
+    .error-content .title {
+      font-size: 24px;
+      margin: 25px 0 20px;
+    }
+  }
+  .error-content p {
+    width: 70%;
+    margin: 0 auto 28px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .error-content p {
+      width: 85%;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .error-content p {
+      width: 100%;
+      margin: 0 auto 20px;
+    }
+  }
+  
+  .team-wrap {
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .team-wrap .team-top {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+  .team-wrap .team-top img {
+    width: 100%;
+  }
+  .team-wrap .team-top .team-top-content {
+    position: absolute;
+    padding: 30px 30px;
+    bottom: -40%;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.5s ease;
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .team-wrap .team-top .team-top-content {
+      padding: 30px 20px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .team-wrap .team-top .team-top-content {
+      padding: 30px 20px;
+    }
+  }
+  .team-wrap .team-top .team-top-content .name {
+    font-size: 28px;
+    color: #FFFFFF;
+    margin: 0 0 2px;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .team-wrap .team-top .team-top-content .name {
+      font-size: 25px;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .team-wrap .team-top .team-top-content .name {
+      font-size: 22px;
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    .team-wrap .team-top .team-top-content .name {
+      font-size: 22px;
+    }
+  }
+  .team-wrap .team-top .team-top-content .profession {
+    font-size: 16px;
+    color: #FFFFFF;
+  }
+  .team-wrap .team-top::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: #ea622b;
+    transition: all 0.5s ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+ .contact-uss h2{
+	font-family: 'Playfair Display', serif;
+ }
+
+ /* What we offer css */
+
+ .what-we-banner{
+  background-image: 
+  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url("https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/parallax-1.jpg");
+    background-position: fixed;
+    background-attachment: fixed;
+    width: 100%;
+    height: 600px;
+ }
+
+ .what-we-banner h1{
+  color: #fff !important;
+ }
+
+ .edgtf-custom-font-holder{
+    display: flex;
+    justify-content: start;
+    padding-left: 89px;
+    text-align: center;
+    height: 100%;
+    align-items: center;
+ }
+
+
+ /* what we offer */
+
+ .box-item{
+    display: flex;
+    justify-content: center;
+    padding: 55px 0;
+ }
+ .box-item i{
+    font-size: 70px;
+    padding-right: 35px;
+    font-weight: 500;
+    color: #8ed1dc;
+ }
+
+ .about-box p{
+    text-align: start;
+    letter-spacing: 0.1px;
+ }
+
+
+ /* Gallery css */
+ 
+
+ .gall-banner{
+  background-image: url(https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/Contact-1-title-area-parallax.jpg);
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+}
+
+.contacttt-p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.contacttt-p h1{
+  font-size: 60px;
+  letter-spacing: -.3px;
+  line-height: 1.08em;
+  font-family: Montserrat, serif;
+  color: #212121;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;   
+}
+
+body,html{
+  overflow-x: hidden;
+}
+
+#project-version-one {
+	padding: 80px 0 50px;
+}
+#project-version-one .gallery-filter {
+	margin-bottom: 50px;
+	text-align: center;
+	border-bottom: 1px solid #E2E2E2;
+}
+#project-version-one .gallery-filter li {
+	display: inline;
+}
+#project-version-one .gallery-filter li span {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 45px;
+	color: #787878;
+	font-family: 'Playfair Display', serif;
+	font-weight: 600;
+	text-transform: uppercase;
+	cursor: pointer;
+	padding: 0 20px;
+	position: relative;
+	transition: all .3s ease;
+}
+#project-version-one .gallery-filter li.active span:before {
+	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #d4a762;
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+}
+#project-version-one .gallery-filter li.active span,
+#project-version-one .gallery-filter li:hover span {
+	color: #d4a762;
+}
+#project-version-one .col-lg-4 {
+    margin-bottom: 20px;
+    display: none;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+#project-version-one .col-lg-4 .img-wrap {
+	position: relative;
+}
+#project-version-one .col-lg-4 .img-wrap img {
+	width: 100%;
+}
+#project-version-one .col-lg-4 .img-wrap .content-wrap {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px;
+	cursor: pointer;
+	opacity: 0;
+	background-color: transparent;
+	transition: all .3s ease;
+}
+#project-version-one .col-lg-4 .img-wrap .content-wrap:before{
+
+	background: rgba(252, 90, 27, .85) !important;
+}
+
+
+
+#project-version-one .col-lg-4:hover .img-wrap .content-wrap {
+	opacity: 1 !important;
+}
+#project-version-one .col-lg-4 .img-wrap .content-wrap .border {
+	width: 100%;
+	height: 100%;
+	border: 1px solid #fff;
+}
+#project-version-one .col-lg-4 .img-wrap .content-wrap h4 {
+	color: #fff;
+	margin: 0;
+	font-size: 16px;
+	line-height: 22px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+}
+#project-version-one .col-lg-4 .img-wrap .content-wrap span {
+	color: #fff;
+	display: block;
+	font-size: 14px;
+	line-height: 22px;
+	text-transform: capitalize;
+	font-weight: 600;
+	text-align: center;
+}
+#project-version-one .col-lg-4 .img-wrap .content-wrap .content {
+	position: relative;
+	top: 45%;
+}
+
+.img-gallery img{
+  width: 540px !important;
+  padding: 10px;
+  border-radius: 15px !important;
+ 
+}
+
+.gallery-fig{
+  position: relative;
+  top: 30px;
+  left: 20px !important;
+}
+
+.view-gall{
+  display: flex;
+  justify-content: end;
+  color: black !important;
+}
+.view-gall a{
+  color: black !important;
+  font-size: medium;
+  border-radius: 13px;
+  padding: 7px;
+  background: red;
+  border: 2px solid red;
+}
+.view-gall a:hover{
+  color:white !important;
+ 
+}
+
+

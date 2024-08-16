@@ -1,0 +1,70 @@
+/* .back-imgg{
+    background-repeat: no-repeat;
+    
+} */
+
+.details{
+    background-image: url(https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/img1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover   ;
+    height: 45vh;
+}
+
+.mySwiper{
+    height: 45vh;
+}
+.details h1, h2, h3, h4, h5 {
+    font-family: 'Space Grotesk', serif;
+    color: #e5646e !important;
+    font-weight: 700;
+    font-size: 35px;
+    letter-spacing: -.3px;
+    line-height: 1.2em;
+}
+.praa p{
+    margin: 50px 0 0 0;
+}
+
+.linkkingg-btn a{
+    color:#69c5d3 !important;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    font-style: none;
+}
+
+
+
+.dgg{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.marg-t{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+@media (max-width: 992px){
+         .card-top{
+            margin-top: 30px;
+         }
+
+         .praa{
+            padding: 0 20px;
+         }
+
+         .linkkingg-btn a {
+            color: #69c5d3 !important;
+            font-size: 18px;
+            font-weight: 600;
+            padding: 0 20px;
+            text-decoration: none;
+            font-style: none;
+        }
+
+        .beautih1{
+            padding:  0 20px;
+        }
+    }

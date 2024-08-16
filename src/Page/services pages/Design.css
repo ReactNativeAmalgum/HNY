@@ -1,0 +1,481 @@
+.section1-design-body-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  padding-bottom: 30px;
+}
+
+.design-cont {
+  width: 100%;
+}
+
+.design-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  /* height: 500px; */
+  /* background-color: aquamarine; */
+}
+
+.design-col {
+  width: 100%;
+  /* height: 900px; */
+  /* border: 1px solid black; */
+  /* background-color: #ff1a1a; */
+}
+
+/************ LEFT CARD ************************/
+.left-col-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.left-card {
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+  /* background-color: blueviolet; */
+}
+
+/***************left card fiest con**********************/
+.left-card-first-cont {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+  padding:30px;
+}
+
+.a-arrow-cont{
+  /* background-color: #4caf50; */
+  gap:30px;
+  justify-content: space-between;
+}
+.left-card-first-cont h2 {
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -.25px;
+  color: #403226;
+  text-transform: capitalize;
+  font-style: normal;
+}
+
+.left-card-first-cont ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  
+}
+
+.left-card-first-cont li {
+  /* margin: 10px 0; */
+  color: black;
+  position: relative;
+  /* background-color: orange; */
+  display: flex;
+  border:1px solid #ddd;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  justify-content: space-between;
+}
+
+.left-card-first-cont li a {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  color: #333 !important;
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 50px 10px; 
+  font-size:15px;
+  transition: color 0.3s ease;
+  /* background-color: #45a049; */
+}
+
+/* Left side icon */
+.left-card-first-cont li a::before {
+  position: absolute;
+  content: attr(data-index-left) " +";
+  left: -10px; 
+  font-size: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease;
+}
+
+/* Right side icon */
+.left-card-first-cont li {
+  position: relative; /* Ensure that pseudo-elements are positioned relative to this container */
+  margin: 10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-card-first-cont li a {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  color: #333 !important;
+  text-decoration: none;
+  font-size: 15px;
+  padding: 5px 0; /* Adjust padding as needed */
+  transition: color 0.3s ease;
+  position: relative; /* Ensure pseudo-elements are positioned relative to this container */
+}
+
+.left-card-first-cont li a::before,
+.left-card-first-cont li a::after {
+  position: absolute;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 0.4s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.left-card-first-cont li a::before {
+  content: attr(data-index-left) " +";
+  left: -30px; /* Adjust as needed */
+}
+
+.left-card-first-cont li a::after {
+  content: attr(data-index-right);
+  /* right: 10px; */
+}
+
+.left-card-first-cont li a:hover {
+  color: #4caf50;
+}
+
+.left-card-first-cont li a:hover::before,
+.left-card-first-cont li a:hover::after {
+  color: #4caf50;
+  transform: translateY(-50%) rotateZ(20deg); 
+}
+
+.a-arrow-cont {
+  display: flex;
+  align-items: center;
+  /* gap: 50px;  */
+  width: 250px !important;
+}
+
+.right-arrow {
+  font-size: 35px;
+  transition: transform 0.4s ease;
+
+}
+
+.a-arrow-cont:hover .right-arrow {
+  transform: rotate(320deg);
+  color: #4caf50;
+}
+
+/***************Left card img cont ***********************/
+.left-card-img-cont {
+  position: relative; /* Important for absolute positioning of overlay */
+  width: 90%;
+  height: 400px;
+  display: flex;
+}
+
+.left-card-img-cont img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.img-overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+  z-index: 1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  color: white;
+  text-align: center;
+}
+
+.text-overlay h4 {
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: -0.25px;
+  text-transform: none;
+  font-style: normal;
+  width: max-content;
+  color: white !important;
+}
+.text-overlay h3 {
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  letter-spacing: -0.25px;
+  text-transform: none;
+  font-style: normal;
+  color: white !important;
+}
+
+.register-btn {
+  background-color: #4caf50;
+
+  border-radius: 30px;
+  /* width: 100%; */
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Adds a smooth transition effect */
+}
+
+.register-btn p {
+  color: white;
+  font-size: 16px;
+  margin: 0;
+}
+
+/* Optional: Hover effect */
+.register-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+.text-overlay span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+/*****************Left Third Card************************/
+.left-third-card{
+  padding:5px;
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  letter-spacing: -.25px;
+}
+.left-third-card h2{
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 30px;
+  letter-spacing: -.25px;
+}
+.file-cont{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:30px;
+  margin-top: 30px;
+  align-items: center;
+}
+
+.file{
+  margin-top:10px;
+  display: flex;
+  justify-content: space-between;  
+  width: 100%;
+  align-items:center ;
+  font-size: 15px;
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  height: 70px;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding-left: 10px;
+  padding-right: 5px;
+
+}
+.second-file{
+  background-color: #BB9A65;
+}
+
+.file-iiner-cont{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+}
+.file-iiner-cont span{
+  padding-left: 20px;
+}
+.download{
+  font-size: 20px;
+}
+.download-circle{
+  width: 60px;
+  height: 60px;
+  background-color: rgb(250, 250, 250);
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+/*****************Right Card**********************/
+/*****************Right Second Card***************/
+.right-card2-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aliceblue !important; */
+}
+.right-card-2-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right-card-2-first-div {
+  display: flex;
+  /* background-color: orange; */
+  width: 100%;
+}
+
+.right-card-2-first-div h4{
+  font-weight: 700;
+  font-size: 29px;
+  font-family: Space Grotesk, sans-serif;
+
+}
+.right-card-2-second-div {
+  margin-top:0px
+}
+
+.right-card2-row {
+  display: flex;
+  flex-direction: column;
+}
+.right-card2 {
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+  /* background-color: blueviolet; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 10px;
+  flex-direction: column; /* Changed from row to column for better alignment */
+  /* border-radius: 30px; */
+}
+.right-card2-row {
+  background-color: pink;
+  display: contents;
+  flex-direction: row;
+}
+
+.right-card2-col-cont {
+}
+.right-card2-col {
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  /* background-color: #ff1a1a; */
+}
+
+/*****************Right Card*********************/
+/*****************Right third card***************/
+
+.right-col-cont {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+  /* background-color: blue; */
+}
+
+.right-card {
+  width: 90%;
+  height: 400px;
+  border-radius: 30px;
+  /* background-color: blueviolet; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /* Changed from row to column for better alignment */
+  border-radius: 30px;
+}
+.right-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.right-card-1 {
+  width: 90%;
+  height: 600px;
+}
+
+.right-card-3-row-cont {
+  /* background-color: rgb(5, 208, 215); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  /* gap:30px */
+}
+
+.right-card-3-col {
+  height: 300px;
+  width: 100%;
+  /* background-color: rgb(28, 232, 41); */
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: center;
+  /* border-radius: 50px; */
+  align-items: center;
+}
+.right-card-inner-cont {
+  /* background-color: pink; */
+  padding: 0px !important;
+}
+.right-card-inner-row {
+  /* background-color: antiquewhite; */
+}
+
+.right-card-3-card {
+  background-color: #ff1a1a;
+  height: 100%;
+  width: 95%;
+  border-radius: 30px;
+}
+.right-card-3-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}

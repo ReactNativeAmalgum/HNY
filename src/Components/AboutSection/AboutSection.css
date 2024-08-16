@@ -1,0 +1,35 @@
+.about-banner{
+    background-image: url("https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/About-simple-title-area-parallax.jpg");
+    background-position: fixed;
+    height: 600px;
+    background-size:  100% 100%;
+    width: 100%;
+    background-repeat: no-repeat;   
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle-card{
+    margin-top: 60px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.tittle-card h3{
+    padding: 0 0 0 25px;
+    text-align: justify;
+    font-family: Montserrat, serif;
+
+}
+
+.count{
+    color: #565656;
+    margin: 0 15px 4px 0;
+    vertical-align: middle;
+    display: inline-block;
+    text-transform: none;
+    font-size: 35px;
+}

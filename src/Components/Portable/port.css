@@ -1,0 +1,11 @@
+.service-cent{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-mar{
+    margin-top: 90px;
+    margin-bottom: 90px;
+}

@@ -1,0 +1,96 @@
+.section-whychoose-cont {
+  display: flex;
+  width: 100vw;
+  /* background-color: brown; */
+}
+.whychoose2-row {
+  display: flex;
+  flex-direction: row;
+  /* background-color: pink; */
+}
+
+.whychoose2-col {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 30px; */
+}
+
+.whychose-card-cont {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* background-color: aqua; */
+  position: relative;
+}
+.card-alingment {
+  width: auto;
+  height: 100%;
+  display: flex;
+  /* justify-content: flex-end; */
+  /* align-items: flex-end; */
+  /* background-color: aqua; */
+  position: relative;
+}
+
+.card {
+  width: 450px;
+  height: 450px !important;
+  border-radius: 30px !important;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  /* background-color: blue !important; */
+}
+.card img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 30px !important;
+}
+.card2 {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  margin-top: 200px;
+  margin-right: 50%;
+  border-radius: 30px;
+  /* border-radius: 30px; */
+  background-color: green;
+}
+.card2 img {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 30px !important;
+}
+.year-card {
+  width: 200px;
+  height: 100px;
+  padding-right: 30px;
+  position: absolute;
+  /* margin-top: 20px; */
+  margin-right: 65%;
+  margin-bottom: 50%;
+  /* border-radius: 30px; */
+  /* background-color: orange; */
+}
+.started-txt {
+  color: var(--pbmit-xinterio-global-color);
+  margin: 0 0 5px 10px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 24px;
+}
+.year-txt {
+  color: var(--pbmit-xinterio-global-color);
+  font-family: Space Grotesk, sans-serif;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  letter-spacing: 10px;
+  text-transform: none;
+  font-style: normal;
+}

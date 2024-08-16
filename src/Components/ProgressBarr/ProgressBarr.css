@@ -1,0 +1,65 @@
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #ffffff !important;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #5c5c5c !important;
+    transition: var(--bs-progress-bar-transition);
+}
+
+.pro-details{
+    padding: 10px 0;
+}
+
+/* ProgressBarr.css */
+.marg-t {
+    margin-top: 50px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+ 
+  
+  .shado p {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .our-h2 h2 {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .pro-details h5 {
+    margin: 20px 0 10px;
+    font-size: 1.2em;
+  }
+  
+
+  .titttle-upper-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    
+  }
+  .titttle-upper-footer h2{
+     margin-top: 95px;
+  }
+
+  .our-h2 p{
+    text-align: start;
+    }
+
+  

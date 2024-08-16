@@ -1,0 +1,117 @@
+/* src/components/CarouselBanner.css */
+
+.details h1, h2, h3, h4, h5 {
+  /* font-family: Montserrat, serif; */
+  /* color: #e5646e !important; */
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: -.3px;
+  line-height: 1.2em;
+}
+.carousel-container {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  padding:10px
+}
+
+.carousel-container {
+  /* padding: 15px; */
+  border-radius: 10px;
+}
+
+.slick-slide img {
+  border-radius: 10px;
+}
+
+.text-box {
+  min-width: 450px;
+  min-height: 350px;
+  height: 420px;
+  border-radius: 15px;
+  background-color: rgb(64 50 38 / 96%);
+  color: white;
+  display: flex;
+  align-items: left;
+  padding-left: 50px;
+  gap:20px;
+  justify-content: center;
+  position: absolute;
+  flex-direction: column;
+  top: 50%;
+  left: 55%;
+  right:2%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.text-box h3 {
+  font-family: "Space Grotesk" !important;
+  font-size: 60px;
+  color: white !important;
+  font-weight: 700;
+}
+.text-box .txt-h3{
+    font-family: "Space Grotesk" !important;
+  font-size: 60px;
+  color: white !important;
+  font-weight: 700;
+}
+.text-box h2{
+  color:white !important;
+  font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+}
+.slide-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.slick-slider {
+  width: 100%;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 1300px) {
+  .text-box {
+    min-width: 328px;
+    min-height: 350px;
+    border-radius: 15px;
+    background-color: rgb(64 50 38 / 96%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+}
+@media (max-width: 400px) {
+  .text-box {
+    min-width: 328px;
+    min-height: 238px;
+    border-radius: 15px;
+    background-color: rgb(64 50 38 / 96%);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 20% !important;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
