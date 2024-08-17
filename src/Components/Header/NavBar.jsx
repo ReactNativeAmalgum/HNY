@@ -658,7 +658,7 @@ export default function NavBar() {
                               id="menu-item-5662"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5662"
                             >
-                              <a href="https://xinterio-demo.pbminfotech.com/demo3/contact-us/">
+                              <a href="/contact">
                                 Contact Us
                               </a>
                             </li>
