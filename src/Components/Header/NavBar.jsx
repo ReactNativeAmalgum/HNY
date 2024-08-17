@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../index.css";
 import logo from "../../Assets/wny-logo-.png";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 import { Link } from "react-router-dom";
 export default function NavBar() {
+  const [toggle, setToggle] = useState(false);
+
+  console.log(toggle);
   return (
     <header
       id="masthead"
@@ -101,7 +104,11 @@ export default function NavBar() {
                         className="main-navigation pbmit-navbar  pbmit-main-active-color-globalcolor pbmit-dropdown-active-color-globalcolor"
                         aria-label="Top Menu"
                       >
-                        <div className="menu-main-menu-container">
+                        <div
+                          className={`menu-main-menu-container ${
+                            toggle ? "active" : ""
+                          }`}
+                        >
                           <ul
                             style={{ color: "black" }}
                             id="pbmit-top-menu"
@@ -112,41 +119,7 @@ export default function NavBar() {
                               className="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children menu-item-5671"
                             >
                               <a href="/">Home</a>
-                              {/* <ul className="sub-menu">
-                                <li
-                                  id="menu-item-5961"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5961"
-                                >
-                                  <a href="http://xinterio-demo.pbminfotech.com/demo1/">
-                                    <span className="pbmit-span-wrapper">
-                                      Homepage 01
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5960"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-5960"
-                                >
-                                  <a href="http://xinterio-demo.pbminfotech.com/demo2/">
-                                    <span className="pbmit-span-wrapper">
-                                      Homepage 02
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5692"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-1785 current_page_item menu-item-5692"
-                                >
-                                  <a
-                                    href="https://xinterio-demo.pbminfotech.com/demo3/"
-                                    aria-current="page"
-                                  >
-                                    <span className="pbmit-span-wrapper">
-                                      Homepage 03
-                                    </span>
-                                  </a>
-                                </li>
-                              </ul> */}
+
                               <span className="sub-menu-toggle">
                                 <i className="pbmit-base-icon-angle-right" />
                               </span>
@@ -168,65 +141,16 @@ export default function NavBar() {
                                   </a>
                                 </li>
                                 <li
-                                  id="menu-item-5729"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5729"
+                                  id="menu-item-5730"
+                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5730"
                                 >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/our-history/">
+                                  <a href="/weare">
                                     <span className="pbmit-span-wrapper">
-                                      Our History
+                                      What We Offer
                                     </span>
                                   </a>
                                 </li>
-                                <li
-                                  id="menu-item-5728"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5728"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/our-team/">
-                                    <span className="pbmit-span-wrapper">
-                                      Our Team
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5703"
-                                  className="menu-item menu-item-type-post_type menu-item-object-pbmit-team-member menu-item-5703"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/team-member/lewis-martin/">
-                                    <span className="pbmit-span-wrapper">
-                                      Team Single Details
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5727"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5727"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/faq/">
-                                    <span className="pbmit-span-wrapper">
-                                      FAQ
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5959"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5959"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/shop/">
-                                    <span className="pbmit-span-wrapper">
-                                      Shop
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5715"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5715"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/element/">
-                                    <span className="pbmit-span-wrapper">
-                                      Element
-                                    </span>
-                                  </a>
-                                </li>
+
                               </ul>
                               <span className="sub-menu-toggle">
                                 <i className="pbmit-base-icon-angle-right" />
@@ -257,413 +181,18 @@ export default function NavBar() {
                                 <i className="pbmit-base-icon-angle-right" />
                               </span>
                             </li>
-                            <li
-                              id="menu-item-5673"
-                              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5673"
-                            >
-                              <a href="#">Portfolio</a>
-                              <ul className="sub-menu">
-                                <li
-                                  id="menu-item-5674"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5674"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Masonry View
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5707"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5707"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/m-grid-col-2/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5706"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5706"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/m-grid-col-3/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 3
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5705"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5705"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/m-grid-col-4/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 4
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5704"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5704"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/m-grid-col-wide/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Wide
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                                <li
-                                  id="menu-item-5675"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5675"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Grid View
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5711"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5711"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/grid-col-2/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5710"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5710"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/grid-col-3/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 3
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5709"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5709"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/grid-col-4/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 4
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5708"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5708"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/grid-no-gap/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid No Gap
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                                <li
-                                  id="menu-item-5676"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5676"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Infinite Scroll View
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5714"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5714"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/infinite-grid-col-2/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5713"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5713"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/infinite-grid-col-3/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 3
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5712"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5712"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/infinite-grid-col-4/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 4
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5719"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5719"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/infinite-grid-button/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Load Button
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                                <li
-                                  id="menu-item-5688"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5688"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Sortable View
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5722"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5722"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/sortable-grid-col-2/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5721"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5721"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/sortable-grid-col-3/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 3
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5720"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5720"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/sortable-grid-col-4/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 4
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                                <li
-                                  id="menu-item-5689"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5689"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Single Detail Style
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5718"
-                                      className="menu-item menu-item-type-post_type menu-item-object-pbmit-portfolio menu-item-5718"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/portfolio/minimalism/">
-                                        <span className="pbmit-span-wrapper">
-                                          Portfolio Detail Style 1
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5735"
-                                      className="menu-item menu-item-type-post_type menu-item-object-pbmit-portfolio menu-item-5735"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/portfolio/terracotta/">
-                                        <span className="pbmit-span-wrapper">
-                                          Portfolio Detail Style 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                              </ul>
-                              <span className="sub-menu-toggle">
-                                <i className="pbmit-base-icon-angle-right" />
-                              </span>
-                            </li>
-                            <li
-                              id="menu-item-5566"
-                              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5566"
-                            >
-                              <a href="#">Blogs</a>
-                              <ul className="sub-menu">
-                                <li
-                                  id="menu-item-5567"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5567"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Blog Masonry View
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5656"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5656"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-m-grid-col-2/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5655"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5655"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-m-grid-col-3/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 3
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5654"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5654"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-m-grid-col-4/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 4
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5653"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5653"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-masonry-wide/">
-                                        <span className="pbmit-span-wrapper">
-                                          Masonry Wide
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                                <li
-                                  id="menu-item-5568"
-                                  className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5568"
-                                >
-                                  <a href="#">
-                                    <span className="pbmit-span-wrapper">
-                                      Blog Grid View
-                                    </span>
-                                  </a>
-                                  <ul className="sub-menu">
-                                    <li
-                                      id="menu-item-5660"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5660"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-grid-col-2/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 2
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5659"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5659"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-grid-col-3/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 3
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5658"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5658"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-grid-col-4/">
-                                        <span className="pbmit-span-wrapper">
-                                          Grid Col 4
-                                        </span>
-                                      </a>
-                                    </li>
-                                    <li
-                                      id="menu-item-5657"
-                                      className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5657"
-                                    >
-                                      <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-sortable-grid-view/">
-                                        <span className="pbmit-span-wrapper">
-                                          Sortable Grid View
-                                        </span>
-                                      </a>
-                                    </li>
-                                  </ul>
-                                  <span className="sub-menu-toggle">
-                                    <i className="pbmit-base-icon-angle-right" />
-                                  </span>
-                                </li>
-                                <li
-                                  id="menu-item-5633"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5633"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/blog-classic/">
-                                    <span className="pbmit-span-wrapper">
-                                      Blog Classic
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5634"
-                                  className="menu-item menu-item-type-post_type menu-item-object-post menu-item-5634"
-                                >
-                                  <a href="https://xinterio-demo.pbminfotech.com/demo3/2024/05/09/frequently-utilized-metal-welding-system/">
-                                    <span className="pbmit-span-wrapper">
-                                      Blog Single Details
-                                    </span>
-                                  </a>
-                                </li>
-                              </ul>
-                              <span className="sub-menu-toggle">
-                                <i className="pbmit-base-icon-angle-right" />
-                              </span>
-                            </li>
+
                             <li
                               id="menu-item-5662"
                               className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5662"
                             >
-                              <a href="/contact">
-                                Contact Us
-                              </a>
+                              <a href="/contact">Contact Us</a>
                             </li>
                           </ul>
-                          <span className="closepanel">
+                          <span
+                            className="closepanel"
+                            onClick={() => setToggle(false)}
+                          >
                             <svg
                               className="qodef-svg--close qodef-m"
                               xmlns="http://www.w3.org/2000/svg"
@@ -708,7 +237,11 @@ export default function NavBar() {
                   </div>
                   <div className="pbmit-burger-menu-wrapper">
                     <div className="pbmit-mobile-menu-bg" />
-                    <button id="menu-toggle" className="nav-menu-toggle">
+                    <button
+                      id="menu-toggle"
+                      className="nav-menu-toggle"
+                      onClick={() => setToggle(true)}
+                    >
                       <i className="pbmit-base-icon-menu-1" />
                     </button>
                   </div>

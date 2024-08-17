@@ -12,6 +12,7 @@ export default function WhatweOffer2() {
           justifyContent: "center",
           alignContent: "center",
           alignItems: "center",
+          position:"relative"
 
         }}
     >

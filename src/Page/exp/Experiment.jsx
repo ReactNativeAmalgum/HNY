@@ -64,7 +64,7 @@ function Experiment() {
                 fontFamily: "'Open Sans', sans-serif",
               }}
             >
-              <Nav.Link href="/">Home</Nav.Link>
+              <Nav.Link href="/"><Link to={'/'}>Home</Link></Nav.Link>
               <Nav.Link href="/aboutpage">About</Nav.Link>
               <Nav.Link href="/weare">Who we are</Nav.Link>
               <NavDropdown title="Service" id="basic-nav-dropdown">
