@@ -1,4 +1,4 @@
-@charset "UTF-8";/*!
+@charset "UTF-8";/*
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
 Copyright (c) 2014 Daniel Eden
@@ -15558,7 +15558,7 @@ img.mfp-img {
 .mfp-gallery .mfp-image-holder .mfp-figure {
   cursor: pointer; }
 @media screen and (max-width: 800px) and (orientation: landscape), screen and (max-height: 300px) {
-  /**
+  /*
 	   * Remove all paddings around the image on small screen
 	   */
   .mfp-img-mobile .mfp-image-holder {
@@ -22078,7 +22078,7 @@ sr7-fonttest-wrap {
 .scrollbar-macosx > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -11px; }
 .scrollbar-macosx > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -11px; }
 
-/**************styles.css********************************
+/**************styles.css********************************/
 
 .wpcf7 .screen-reader-response {
 	position: absolute;
@@ -22107,7 +22107,7 @@ sr7-fonttest-wrap {
 
 .wpcf7 form.sent .wpcf7-response-output {
 	border-color: #46b450; /* Green */
-
+}
 
 .wpcf7 form.failed .wpcf7-response-output,
 .wpcf7 form.aborted .wpcf7-response-output {
@@ -32619,22 +32619,6 @@ body.rtl .floting-bar-social-wrap .pbmit-social-links li:not(:last-child) {
 
 
 /*************************woocommerce.css**********************/
-@charset "UTF-8";:root {
-  --woocommerce: #7F54B3;
-  --wc-green: #7ad03a;
-  --wc-red: #a00;
-  --wc-orange: #ffba00;
-  --wc-blue: #2ea2cc;
-  --wc-primary: #7F54B3;
-  --wc-primary-text: white;
-  --wc-secondary: #e9e6ed;
-  --wc-secondary-text: #515151;
-  --wc-highlight: #b3af54;
-  --wc-highligh-text: white;
-  --wc-content-bg: #fff;
-  --wc-subtext: #767676
-}
-
 @keyframes spin {
   100% {
       transform: rotate(360deg)
