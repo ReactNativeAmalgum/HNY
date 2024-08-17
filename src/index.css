@@ -8134,14 +8134,14 @@ ul.wp-block-page-list>li:not(.wp-block-navigation-item)>ul>li>ul,ul.wp-block-pag
   }
 
   .nav-menu-toggle {
-      display: block;
+      display: block !important;
       position: absolute;
       right: 0;
       top: 50%;
       -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
-      background-color: transparent;
+      background-color: pink !important;
       padding: 0;
       font-size: 35px;
       line-height: 35px;
@@ -8207,7 +8207,7 @@ ul.wp-block-page-list>li:not(.wp-block-navigation-item)>ul>li>ul,ul.wp-block-pag
       width: 0%;
       height: 100%;
       z-index: 99;
-      background: rgba(0,0,0,0.90);
+      background: rgba(0,0,0,0.90) !important;
       -webkit-transform: translateX(101%);
       -ms-transform: translateX(101%);
       transform: translateX(101%);
