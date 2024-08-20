@@ -7,6 +7,7 @@ import { Link, useLocation, useParams } from "react-router-dom";
 import { GrDocumentPdf } from "react-icons/gr";
 import { TfiDownload } from "react-icons/tfi";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
+import Footer from "../../Components/Footer/Footer";
 
 export default function Design_planning() {
   const { id } = useParams(); // Extracting id from the URL
@@ -19,6 +20,7 @@ export default function Design_planning() {
     return <div>Service Page not found</div>; // Render an error message if the service is not found
   }
   return (
+    <>
     <div>
       <div className="section1-design-body-cont">
         <div className="container">
@@ -189,5 +191,7 @@ export default function Design_planning() {
         </div>
       </div>
     </div>
+    <Footer />
+    </>
   );
 }

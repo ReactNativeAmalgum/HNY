@@ -128,30 +128,8 @@ export default function NavBar() {
                               id="menu-item-5672"
                               className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5672"
                             >
-                              <a href="#">Pages</a>
-                              <ul className="sub-menu">
-                                <li
-                                  id="menu-item-5730"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5730"
-                                >
-                                  <a href="/aboutpage">
-                                    <span className="pbmit-span-wrapper">
-                                      About Us
-                                    </span>
-                                  </a>
-                                </li>
-                                <li
-                                  id="menu-item-5730"
-                                  className="menu-item menu-item-type-post_type menu-item-object-page menu-item-5730"
-                                >
-                                  <a href="/weare">
-                                    <span className="pbmit-span-wrapper">
-                                      What We Offer
-                                    </span>
-                                  </a>
-                                </li>
+                              <a href="/aboutpage">About</a>
 
-                              </ul>
                               <span className="sub-menu-toggle">
                                 <i className="pbmit-base-icon-angle-right" />
                               </span>
