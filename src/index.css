@@ -10,6 +10,17 @@ Copyright (c) 2014 Daniel Eden
     animation-fill-mode: both
 }
 
+.offer-span span{
+font-size: 16px;
+}
+.what-link-width{
+  width: 50% !important;
+}
+@media (max-width:767px){
+  .what-link-width{
+    display: contents !important;
+  }
+}
 .animated.infinite {
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import { ServiceData } from "../Assets/Dynamic Data/ServiceData";
 export default function WhatweOffer2() {
   return (
     <section
@@ -222,53 +222,21 @@ export default function WhatweOffer2() {
                   </div>{" "}
                 </div>
                 <div className="pbmit-tabs">
-                  <ul className="pbmit-tabs-heading">
-                  
+                  <ul className="what-link-width pbmit-tabs-heading offer-span">
+                   {ServiceData.map((s, i) =>(
                     <li
-                      className="pbmit-tab-link pbmit-tab-li-active"
+                    key={i}
+                      className=" pbmit-tab-link pbmit-tab-li-active"
                       data-pbmit-tab={1}
                     >
                       <span>
-                        <Link to={"/designplanning/1"}>Design Consultancy</Link>
+                        <Link to={`designplanning/${s.id}`}>{s.title}</Link>
                       </span>
                       <i className="pbmit-base-icon-pbmit-up-arrow" />
                     </li>
-                    <li
-                      className="pbmit-tab-link pbmit-tab-li-active"
-                      data-pbmit-tab={1}
-                    >
-                      <span>
-                        <Link to={"/designplanning/2"}>Modular Kitchen Installation</Link>
-                      </span>
-                      <i className="pbmit-base-icon-pbmit-up-arrow" />
-                    </li>
-                    <li
-                      className="pbmit-tab-link pbmit-tab-li-active"
-                      data-pbmit-tab={1}
-                    >
-                      <span>
-                        <Link to={"/designplanning/3"}>Furniture & Home Decor</Link>
-                      </span>
-                      <i className="pbmit-base-icon-pbmit-up-arrow" />
-                    </li>
-                    <li
-                      className="pbmit-tab-link pbmit-tab-li-active"
-                      data-pbmit-tab={1}
-                    >
-                      <span>
-                        <Link to={"/designplanning/4"}>Other Expertise</Link>
-                      </span>
-                      <i className="pbmit-base-icon-pbmit-up-arrow" />
-                    </li>
-                    <li
-                      className="pbmit-tab-link pbmit-tab-li-active"
-                      data-pbmit-tab={1}
-                    >
-                      <span>
-                        <Link to={"/designplanning/5"}>commercial</Link>
-                      </span>
-                      <i className="pbmit-base-icon-pbmit-up-arrow" />
-                    </li>
+                   ))}
+
+
                   </ul>
                   <div className="pbmit-tab-content-wrapper">
                     <div className="pbmit-tab-content pbmit-tab-content-1 pbmit-tab-active">

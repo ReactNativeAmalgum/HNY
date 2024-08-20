@@ -20,7 +20,7 @@ export const ServiceData = [
       "https://image3.jdomni.in/banner/25092019/45/33/D1/D299D8E23AE6537EC2C4208848_1569389871651.jpg?output-format=webp",
       "https://image2.jdomni.in/banner/25092019/95/40/C5/107990125BF184511659DB49E4_1569390015561.jpg?output-format=webp",
     ],
-    title: "Modular Kitchen Installation",
+    title: "Kitchen Installation",
     description1:
       "Modular Kitchen is the art and science of enhancing the interior of a building to achieve a healthier and more aesthetically pleasing environment for the people using the space.",
     description2:
