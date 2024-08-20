@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./WhyChoos2.css";
+import { Link } from "react-router-dom";
 export default function WhyChoos2() {
   const [showMore, setShowMore] = useState(false);
 
@@ -96,16 +97,16 @@ export default function WhyChoos2() {
                     >
                       <div className="elementor-widget-container">
                         <div className="elementor-button-wrapper">
-                          <a
+                          <Link
                             className="elementor-button elementor-button-link elementor-size-sm"
-                            href="https://xinterio-demo.pbminfotech.com/demo3/about-us/"
+                            to='/aboutpage'
                           >
                             <span className="elementor-button-content-wrapper">
                               <span className="elementor-button-text">
                                 More About
                               </span>
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

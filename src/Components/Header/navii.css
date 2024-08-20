@@ -42,3 +42,16 @@
     --bs-navbar-padding-y: 0 !important;
     --bs-navbar-color: rgba(var(--bs-emphasis-color-rgb), 0.65);
 }
+
+.sub-menu {
+    display: none;
+  }
+  
+  .sub-menu.open {
+    display: block;
+  }
+  
+  /* Optional: Add a transition for smooth opening/closing */
+  .sub-menu {
+    transition: all 0.3s ease;
+  }

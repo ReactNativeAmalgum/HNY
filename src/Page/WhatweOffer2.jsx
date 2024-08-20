@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function WhatweOffer2() {
   return (
@@ -7,19 +8,15 @@ export default function WhatweOffer2() {
       data-id="f935a0f"
       data-element_type="section"
       style={{
-        margin:'5%',
-          display: "flow",
-          justifyContent: "center",
-          alignContent: "center",
-          alignItems: "center",
-          position:"relative"
-
-        }}
+        margin: "5%",
+        display: "flow",
+        justifyContent: "center",
+        alignContent: "center",
+        alignItems: "center",
+        position: "relative",
+      }}
     >
-      <div
-      
-        className="elementor-container elementor-column-gap-no"
-      >
+      <div className="elementor-container elementor-column-gap-no">
         <div
           className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4a6dc16 pbmit-bg-color-over-image pbmit-bgimage-no pbmit-bgcolor-yes"
           data-id="4a6dc16"
@@ -226,27 +223,50 @@ export default function WhatweOffer2() {
                 </div>
                 <div className="pbmit-tabs">
                   <ul className="pbmit-tabs-heading">
+                  
                     <li
                       className="pbmit-tab-link pbmit-tab-li-active"
                       data-pbmit-tab={1}
                     >
-                      <span>Design Consultancy</span>
+                      <span>
+                        <Link to={"/designplanning/1"}>Design Consultancy</Link>
+                      </span>
                       <i className="pbmit-base-icon-pbmit-up-arrow" />
                     </li>
-                    <li className="pbmit-tab-link " data-pbmit-tab={2}>
-                      <span>Architecture Design</span>
+                    <li
+                      className="pbmit-tab-link pbmit-tab-li-active"
+                      data-pbmit-tab={1}
+                    >
+                      <span>
+                        <Link to={"/designplanning/2"}>Modular Kitchen Installation</Link>
+                      </span>
                       <i className="pbmit-base-icon-pbmit-up-arrow" />
                     </li>
-                    <li className="pbmit-tab-link " data-pbmit-tab={3}>
-                      <span>Corporate Interior</span>
+                    <li
+                      className="pbmit-tab-link pbmit-tab-li-active"
+                      data-pbmit-tab={1}
+                    >
+                      <span>
+                        <Link to={"/designplanning/3"}>Furniture & Home Decor</Link>
+                      </span>
                       <i className="pbmit-base-icon-pbmit-up-arrow" />
                     </li>
-                    <li className="pbmit-tab-link " data-pbmit-tab={4}>
-                      <span>Commercial Interior </span>
+                    <li
+                      className="pbmit-tab-link pbmit-tab-li-active"
+                      data-pbmit-tab={1}
+                    >
+                      <span>
+                        <Link to={"/designplanning/4"}>Other Expertise</Link>
+                      </span>
                       <i className="pbmit-base-icon-pbmit-up-arrow" />
                     </li>
-                    <li className="pbmit-tab-link " data-pbmit-tab={5}>
-                      <span>Residential Interior</span>
+                    <li
+                      className="pbmit-tab-link pbmit-tab-li-active"
+                      data-pbmit-tab={1}
+                    >
+                      <span>
+                        <Link to={"/designplanning/5"}>commercial</Link>
+                      </span>
                       <i className="pbmit-base-icon-pbmit-up-arrow" />
                     </li>
                   </ul>

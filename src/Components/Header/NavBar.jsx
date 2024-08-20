@@ -3,9 +3,14 @@ import "../../index.css";
 import logo from "../../Assets/wny-logo-.png";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 import { Link } from "react-router-dom";
+import './navii.css'
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
+  const [isSubMenuOpen, setIsSubMenuOpen] = useState(false);
 
+  const toggleSubMenu = () => {
+    setIsSubMenuOpen(!isSubMenuOpen);
+  };
   console.log(toggle);
   return (
     <header
@@ -136,15 +141,24 @@ export default function NavBar() {
                             </li>
                             <li
                               id="menu-item-5677"
-                              className="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5677"
+                              className={`menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-5677 ${
+                                isSubMenuOpen ? "open" : ""
+                              }`}
                             >
-                              <a href="#">Services</a>
-                              <ul className="sub-menu">
-                                {ServiceData.map((p) => {
+                              <a href="#" onClick={toggleSubMenu}>
+                                Services
+                              </a>
+                              <ul
+                                className={`sub-menu ${
+                                  isSubMenuOpen ? "open" : ""
+                                }`}
+                              >
+                                {ServiceData.map((p, i) => {
                                   return (
                                     <li
                                       id="menu-item-5701"
                                       className="menu-item menu-item-type-post_type menu-item-object-pbmit-service menu-item-5701"
+                                      key={i}
                                     >
                                       <Link to={`/designplanning/${p.id}`}>
                                         <span className="pbmit-span-wrapper">
@@ -155,7 +169,10 @@ export default function NavBar() {
                                   );
                                 })}
                               </ul>
-                              <span className="sub-menu-toggle">
+                              <span
+                                className="sub-menu-toggle"
+                                onClick={toggleSubMenu}
+                              >
                                 <i className="pbmit-base-icon-angle-right" />
                               </span>
                             </li>
@@ -201,8 +218,8 @@ export default function NavBar() {
                 <div className="pbmit-right-box d-flex align-items-center">
                   <div className="pbmit-button-box-second">
                     <div className="pbmit-header-button2">
-                      <a
-                        href="https://xinterio-demo.pbminfotech.com/demo3/contact-us/"
+                      <Link
+                        to={'/contact'}
                         className="pbmit-header-button"
                       >
                         <span className="pbmit-header-button-wrapper">
@@ -210,7 +227,7 @@ export default function NavBar() {
                             Book Consult
                           </span>
                         </span>{" "}
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   <div className="pbmit-burger-menu-wrapper">
