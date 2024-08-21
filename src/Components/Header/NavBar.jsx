@@ -21,6 +21,11 @@ export default function NavBar() {
     }
   };
 
+  const handleLinkClick = () => {
+    setToggle(false);
+    setIsSubMenuOpen(false);
+  };
+
   useEffect(() => {
     if (toggle || isSubMenuOpen) {
       document.addEventListener("mousedown", handleOutsideClick);
@@ -101,7 +106,7 @@ export default function NavBar() {
                   <div className="site-branding pbmit-logo-area">
                     <div className="wrap">
                       <a
-                        href="https://xinterio-demo.pbminfotech.com/demo3/"
+                        href="/"
                         rel="home"
                       >
                         <img
@@ -160,7 +165,10 @@ export default function NavBar() {
                               >
                                 {ServiceData.map((p, i) => (
                                   <li className="menu-item" key={i}>
-                                    <Link to={`/designplanning/${p.id}`}>
+                                    <Link
+                                      to={`/designplanning/${p.id}`}
+                                      onClick={handleLinkClick}
+                                    >
                                       <span className="pbmit-span-wrapper">
                                         {p.title}
                                       </span>

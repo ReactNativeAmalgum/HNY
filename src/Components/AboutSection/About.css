@@ -40,6 +40,14 @@
   text-align: center;
 }
 @media (max-width: 768px) {
+  .NewAboutUS-Image-con{
+    height: 35vh;
+    margin: 30px 0px 0px 0px;
+  }
+  .NewAboutUS-Image-Forth-con{
+    height: 35vh !important;
+    margin: 0px 0px 0px 0px;
+  }
   .NewAboutUS-Image-con img {
     object-fit: cover;
   }

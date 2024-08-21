@@ -8,7 +8,7 @@
 .carousel-container {
   display: flex;
   position: relative;
-  height: 100vh;
+  height: 5vh;
   padding: 10px;
   border-radius: 10px;
 }
