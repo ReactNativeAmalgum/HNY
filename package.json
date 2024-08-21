@@ -10,6 +10,7 @@
     "antd": "^5.19.1",
     "bootstrap": "^5.3.3",
     "i": "^0.3.7",
+    "mdb-react-ui-kit": "^8.0.0",
     "my-app": "file:",
     "npm": "^10.8.2",
     "postcss-loader": "^8.1.1",

@@ -27,7 +27,7 @@ export default function Design_planning() {
           <div className="design-cont">
             <div className="row">
               <div className="design-row">
-                <div className="specillay-col-left col-4 order-2 order-md-1 ">
+                <div className="specillay-col-left col-4 order-2  ">
                   <div className="left-design-cont design-col ">
                     <div className="left-col-cont">
                       <div className="left-card">
@@ -41,7 +41,7 @@ export default function Design_planning() {
                                     to={`/designplanning/${service.id}`}
                                     data-index-left=""
                                   >
-                                    {service.title.toUpperCase()}
+                                    {service.title}
                                   </Link>
                                   <FaArrowCircleRight className="right-arrow" />
                                 </div>
@@ -51,10 +51,10 @@ export default function Design_planning() {
                         </div>
                       </div>
                       <div className="left-card-img-cont">
-                        <img
+                        {/* <img
                           src="https://img.freepik.com/free-photo/retro-couch-living-room_23-2150711898.jpg?t=st=1723629736~exp=1723633336~hmac=3f22c5a22781deae0c97ac4858a721c8a02fd16650f244da5a95fcaf0d27ae79&w=900"
                           alt="couch"
-                        />
+                        /> */}
                         <div className="img-overlay"></div>
                         <div className="text-overlay">
                           <h4>Ready to start learning?</h4>
@@ -70,7 +70,7 @@ export default function Design_planning() {
                     </div>
                   </div>
                 </div>
-                <div className="specifically-right-col col-8 order-1 order-md-2 ">
+                <div className="specifically-right-col col-8 order-1  ">
                   {/* <div className="design-col"> */}
                   <div className="right-col-cont">
                     <div className="right-card-1 right-card">

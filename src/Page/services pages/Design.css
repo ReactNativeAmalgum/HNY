@@ -1,6 +1,6 @@
-body{
+body {
   padding: 0px;
-  margin:0px
+  margin: 0px;
 }
 .section1-design-body-cont {
   display: flex;
@@ -189,17 +189,20 @@ body{
 /***************Left card img cont ***********************/
 .left-card-img-cont {
   position: relative; /* Important for absolute positioning of overlay */
-  width: 90%;
+  /* width: 100%; */
+  border-radius: 30px;
+  padding: 5%;
   height: 400px;
+  background-image: url("https://img.freepik.com/free-photo/retro-couch-living-room_23-2150711898.jpg?t=st=1723629736~exp=1723633336~hmac=3f22c5a22781deae0c97ac4858a721c8a02fd16650f244da5a95fcaf0d27ae79&w=900");
   display: flex;
 }
 
-.left-card-img-cont img {
+/* .left-card-img-cont img {
   width: 100%;
   height: 100%;
   border-radius: 30px;
-  object-fit: cover; /* Ensures the image covers the container */
-}
+  object-fit: cover; 
+} */
 
 .img-overlay {
   content: "";
@@ -215,13 +218,14 @@ body{
 }
 
 .text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  /* z-index: 2; */
   color: white;
-  text-align: center;    display: flex;
+  text-align: center;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -230,7 +234,6 @@ body{
 .text-overlay h4 {
   font-family: Space Grotesk, sans-serif;
   font-weight: 700;
-  /* font-size: 30px; */
   line-height: 40px;
   letter-spacing: -0.25px;
   text-transform: none;
@@ -279,7 +282,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
 }
 
 /*****************Left Third Card************************/
@@ -532,36 +535,70 @@ body{
     flex: 1 1 calc(50% - 10px); /* Adjust for spacing */
     max-width: calc(50% - 10px);
   }
-
 }
 
 /* Medium devices (tablets, 768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
   .service-gallery {
-    flex: 1 1 calc(33.33% - 20px); 
+    flex: 1 1 calc(33.33% - 20px);
     max-width: calc(50.33% - 20px);
   }
   .service-gallery img {
     height: 100%;
   }
-  
+}
+
+.list-cont {
+  list-style-type: none; /* Remove default list styling */
+  padding: 0;
+}
+
+.list-cont li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+.a-arrow-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.a-arrow-cont a {
+  font-size: 18px;
+  text-decoration: none; /* Remove underline from links */
+  transition: color 0.3s ease;
+}
+
+.a-arrow-cont a:hover {
+}
+
+.right-arrow {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+
+.a-arrow-cont:hover .right-arrow {
+  transform: translateX(5px); /* Slide arrow slightly on hover */
 }
 
 /* Large devices (desktops, 992px to 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
   .service-gallery {
-    flex: 1 1 calc(33.33% - 20px); 
+    flex: 1 1 calc(33.33% - 20px);
     max-width: calc(50.33% - 20px);
   }
   .service-gallery img {
     height: 100%;
+  }
+  .specillay-col {
+    width: 100% !important;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .service-gallery {
-    flex: 1 1 calc(33.33% - 20px); 
+    flex: 1 1 calc(33.33% - 20px);
     max-width: calc(50.33% - 20px);
   }
   .service-gallery img {
@@ -609,13 +646,15 @@ body{
   }
 
   .text-overlay h4 {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
 
   .text-overlay h3 {
-    font-size: 18px;
+    /* font-size: 18px; */
   }
-
+  .left-card-first-cont{
+    margin-top:20px
+  }
 }
 
 /* Tablets (max-width: 768px) */
@@ -652,6 +691,7 @@ body{
   }
   .left-design-cont {
     /* display: none; */
+    
   }
   .order-md-2 {
     order: 2 !important;
@@ -660,19 +700,24 @@ body{
   .right-card-3-col {
     /* width: 300px; */
   }
-  .specillay-col-left{
+  .specillay-col-left {
     width: 100% !important;
   }
-  .specifically-right-col{
+  .specifically-right-col {
     width: 100% !important;
+  }
+  .left-card-img-cont {
+    width: 100% !important;
+    justify-content: center;
+  }
+  .left-card-first-cont{
+    margin-top:20px
   }
 }
 
 /* Large Devices (max-width: 992px) */
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
   .service-gallery-cont {
-    /* background-color: pink; */
-    /* gap:30px !important; */
     height: 100%;
     width: 100%;
     display: flex;
@@ -683,5 +728,35 @@ body{
     width: 250px;
     height: 250px;
   }
-}
+  .right-card2-col-cont {
+    padding-right: 10px;
+  }
+  .design-row {
+    flex-direction: column;
+  }
 
+  .left-card,
+  .right-card {
+    width: 100%;
+  }
+
+  .right-card2-row {
+    flex-direction: column;
+  }
+
+  .right-card-3-row-cont {
+    flex-direction: column;
+  }
+  .specifically-right-col {
+    display: contents;
+  }
+  .specillay-col-left {
+    width: 100% !important;
+    padding: 35px;
+  }
+  .left-card-img-cont{
+    width: 100% !important;
+    justify-content: center;
+    align-items: center;
+  }
+}

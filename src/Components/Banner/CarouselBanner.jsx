@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { Nav } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const CarouselBanner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -25,12 +26,15 @@ const CarouselBanner = () => {
   const moreAbout = () => {
     return (
       <div className="booknow-circle-cont">
-        <div className="book-now">
-          <span>Book Now</span>
-        </div>
-        <div className="circle">
-          <FaArrowRight />
-        </div>
+        <Link to={"/contact"} style={{ textDecoration: "none" }}>
+          <div className="book-now">
+            <span> Book Now</span>
+          </div>
+
+          <div className="circle">
+            <FaArrowRight />
+          </div>
+        </Link>
       </div>
     );
   };
@@ -62,7 +66,6 @@ const CarouselBanner = () => {
         <h3 className="txt-h3">{slides[currentSlide].text}</h3>
         <h2>{slides[currentSlide].text2}</h2>
         {moreAbout()}
-
       </div>
       <Slider {...settings}>
         {slides.map((slide) => (

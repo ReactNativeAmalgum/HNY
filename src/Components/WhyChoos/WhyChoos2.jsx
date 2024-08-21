@@ -99,7 +99,7 @@ export default function WhyChoos2() {
                         <div className="elementor-button-wrapper">
                           <Link
                             className="elementor-button elementor-button-link elementor-size-sm"
-                            to='/aboutpage'
+                            to="/aboutpage"
                           >
                             <span className="elementor-button-content-wrapper">
                               <span className="elementor-button-text">
@@ -117,7 +117,7 @@ export default function WhyChoos2() {
             <div className="special-col-2 col-6">
               <div className="card-alingment">
                 <div className="whychose-card-cont">
-                  <div className="card">
+                  <div className="whychoose2-card">
                     <img src="https://img.freepik.com/free-photo/3d-rendering-cinema-director-chair_23-2151169469.jpg?t=st=1723535046~exp=1723538646~hmac=48ed31a4763c98c6ed4b63d8ca280ebdadb72ee5c9d51993ae65481d270d3948&w=1060" />
                   </div>
                   <div className="card2">

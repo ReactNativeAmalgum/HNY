@@ -31,7 +31,7 @@
   position: relative;
 }
 
-.card {
+.whychoose2-card {
   width: 450px;
   height: 450px !important;
   border-radius: 30px !important;
@@ -40,7 +40,7 @@
   position: relative;
 }
 
-.card img {
+.whychoose2-card img {
   width: 100% !important;
   height: 100% !important;
   border-radius: 30px !important;
@@ -67,7 +67,7 @@
   height: 100px;
   padding-right: 30px;
   position: absolute;
-  margin-right: 65%;
+  margin-right: 50%;
   margin-bottom: 50%;
 }
 
@@ -93,7 +93,7 @@
 
 /* Responsive Styles */
 @media (max-width: 1300px) {
-  .card {
+  .whychoose2-card {
     width: 350px;
     height: 350px !important;
   }
@@ -129,7 +129,7 @@
     width: 100% !important;
     display: flex;
   }
-  .card {
+  .whychoose2-card {
     /* width: 300px;
     height: 300px !important; */
     width: fit-content !important;
@@ -178,29 +178,91 @@
 }
 
 @media (max-width: 480px) {
-  .card {
+  .whychoose2-card {
     width: 240px;
-    height: 240px !important;
+    padding-top:5%;
+    /* height: 240px !important; */
+  }
+  .special-col-2 {
+    display: contents;
   }
 
   .card2 {
     width: 150px;
     height: 150px;
+    display: none;
     margin-top: 100px;
   }
 
+
+  .started-txt {
+    /* font-size: 18px; */
+    line-height: 16px;
+  }
   .year-card {
     width: 120px;
     height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px; 
   }
-
+  
   .started-txt {
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 16px;
+    margin: 0; /* Remove margin */
+    text-align: center;
   }
-
+  
   .year-txt {
-    font-size: 40px;
+    /* font-size: 40px; */
     line-height: 50px;
+    margin: 0; /* Remove margin */
+    text-align: center;
+  }
+  
+}
+
+
+@media (max-width:1023px){
+  .whychoose2-row{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .special-col {
+    display: contents;
+  }
+  .card2 {
+    width: 150px;
+    height: 150px;
+    display: none;
+    margin-top: 100px;
+  }
+  .year-card {
+    width: 120px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px; 
+  }
+  .special-col-2 {
+    display: contents;
+  }
+  .card-alingment{
+    padding-top:10px
   }
 }

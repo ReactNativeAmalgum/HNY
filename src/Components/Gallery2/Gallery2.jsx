@@ -29,10 +29,7 @@ function Gallery2() {
                   This is some sample text for the card content. You can place
                   more details here.
                 </p>
-                <p className="gallery-card-text">
-                  This is some sample text for the card content. You can place
-                  more details here.
-                </p>
+
                 {showMore && (
                   <p className="gallery-card-text">
                     This is some sample text for the card content. You can place
@@ -49,7 +46,7 @@ function Gallery2() {
             </div>
             <div className="cont-col9 gallery-custom-col col-9">
               <Swiper
-                slidesPerView={3}
+                slidesPerView={1}
                 spaceBetween={30}
                 freeMode={true}
                 modules={[FreeMode, Autoplay]}
@@ -60,6 +57,9 @@ function Gallery2() {
                   disableOnInteraction: true,
                 }}
                 breakpoints={{
+                  200:{
+                    slidesPerView:1,
+                  },
                   320:{
                     slidesPerView:1
                   },

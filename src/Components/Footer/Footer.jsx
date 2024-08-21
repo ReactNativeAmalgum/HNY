@@ -75,14 +75,9 @@ function Footer() {
                           <FaInstagram />
                         </i>
                       </Link>
-                      <Link className="facebook" to="">
+                      <Link className="google-plus" to="">
                         <i className="fa fa-facebook">
                           <FaFacebookF />
-                        </i>
-                      </Link>
-                      <Link className="facebook" to="">
-                        <i className="fa fa-facebook">
-                          <CiTwitter />
                         </i>
                       </Link>
                     </ul>
