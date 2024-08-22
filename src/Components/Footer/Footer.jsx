@@ -26,18 +26,18 @@ function Footer() {
                   <div className="footer-widget footer-list">
                     <h3 className="footer-title">Useful Link</h3>
                     <ul>
-                      <li>
+                      <li onClick={() => window.scrollTo(0, 0)}>
                         <Link to="/">Home</Link>
                       </li>
 
-                      <li>
-                        <Link to="/interior-designing">Service</Link>
+                      <li onClick={() => window.scrollTo(0, 0)}>
+                        <Link to={`/aboutpage`}>About</Link>
                       </li>
-                      <li>
-                        <Link to="/workpage">Work</Link>
+                      <li onClick={() => window.scrollTo(0, 0)}>
+                      <Link to={`/designplanning/1`}>Service</Link>
                       </li>
-                      <li>
-                        <Link to="/contactpage">Contact Us </Link>
+                      <li onClick={() => window.scrollTo(0, 0)}>
+                        <Link to="/contact">Contact Us </Link>
                       </li>
                     </ul>
                   </div>

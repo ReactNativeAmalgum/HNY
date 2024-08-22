@@ -39,11 +39,16 @@ export default function Design_planning() {
                                   <div className="a-arrow-cont">
                                     <Link
                                       to={`/designplanning/${service.id}`}
-                                      data-index-left=""
+                                      className={
+                                        window.location.pathname ===
+                                        `/designplanning/${service.id}`
+                                          ? "active"
+                                          : ""
+                                      }
                                     >
-                                      {service.title}
+                                      + {service.title}
                                     </Link>
-                                    <FaArrowCircleRight className="right-arrow" />
+                                    {/* <FaArrowCircleRight className="right-arrow" /> */}
                                   </div>
                                 </li>
                               ))}
@@ -97,9 +102,7 @@ export default function Design_planning() {
                               </span>
                               {service.description1}
                             </p>
-                            <p>
-                              {service.description2}
-                            </p>
+                            <p>{service.description2}</p>
                           </div>
                           <div className="container">
                             <div className="right-card2-cont">

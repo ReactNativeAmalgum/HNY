@@ -223,20 +223,24 @@ export default function WhatweOffer2() {
                 </div>
                 <div className="pbmit-tabs">
                   <ul className="what-link-width pbmit-tabs-heading offer-span">
-                   {ServiceData.map((s, i) =>(
-                    <li
-                    key={i}
-                      className=" pbmit-tab-link pbmit-tab-li-active"
-                      data-pbmit-tab={1}
-                    >
-                      <span>
-                        <Link to={`designplanning/${s.id}`}>{s.title}</Link>
-                      </span>
-                      <i className="pbmit-base-icon-pbmit-up-arrow" />
-                    </li>
-                   ))}
-
-
+                    {ServiceData.map((s, i) => (
+                      <li
+                        key={i}
+                        className=" pbmit-tab-link pbmit-tab-li-active"
+                        data-pbmit-tab={1}
+                        onClick={() => window.scrollTo(0, 0)}
+                      >
+                        <span>
+                          <Link
+                            onClick={() => window.scrollTo(0, 0)}
+                            to={`designplanning/${s.id}`}
+                          >
+                            {s.title}
+                          </Link>
+                        </span>
+                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                      </li>
+                    ))}
                   </ul>
                   <div className="pbmit-tab-content-wrapper">
                     <div className="pbmit-tab-content pbmit-tab-content-1 pbmit-tab-active">

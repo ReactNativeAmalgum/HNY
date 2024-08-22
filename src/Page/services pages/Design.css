@@ -51,20 +51,11 @@ body {
   display: flex;
   border: 1px solid #ddd;
   border-radius: 30px;
-  /* justify-content: center; */
-  align-items: center;
   flex-direction: column;
   height: 100%;
-  /* background-color: #f9f9f9; */
-
-  padding: 10px;
+  padding: 30px;
 }
 
-.a-arrow-cont {
-  /* background-color: #4caf50; */
-  gap: 30px;
-  justify-content: space-between;
-}
 .left-card-first-cont h2 {
   font-family: Space Grotesk, sans-serif;
   font-weight: 700;
@@ -81,110 +72,32 @@ body {
   padding: 0;
   margin: 0;
 }
-
 .left-card-first-cont li {
-  /* margin: 10px 0; */
-  color: black;
   position: relative;
-  /* background-color: orange; */
   display: flex;
   border: 1px solid #ddd;
   border-right: none;
   border-left: none;
   border-top: none;
   justify-content: space-between;
+  margin: 10px 0;
 }
 
 .left-card-first-cont li a {
   font-family: "Space Grotesk", sans-serif;
-  font-weight: 600;
-  color: #333 !important;
+  font-weight: 500 !important;
+  color: #a08c7a !important;
   text-decoration: none;
   display: inline-block;
-  padding: 5px 50px 10px;
+  padding: 10px 50px 10px 2px;
   font-size: 15px;
   transition: color 0.3s ease;
-  /* background-color: #45a049; */
 }
 
-/* Left side icon */
-.left-card-first-cont li a::before {
-  position: absolute;
-  /* content: attr(data-index-left) " +"; */
-  left: -10px;
-  font-size: 20px;
-  top: 50%;
-  transform: translateY(-50%);
-  color: rgba(0, 0, 0, 0.7);
-  transition: all 0.4s ease;
+.left-card-first-cont li a.active {
+  color: #bb9a65 !important; /* Color for the active link */
 }
 
-/* Right side icon */
-.left-card-first-cont li {
-  position: relative; /* Ensure that pseudo-elements are positioned relative to this container */
-  margin: 10px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.left-card-first-cont li a {
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 600;
-  color: #333 !important;
-  text-decoration: none;
-  font-size: 15px;
-  padding: 5px 0; /* Adjust padding as needed */
-  transition: color 0.3s ease;
-  position: relative; /* Ensure pseudo-elements are positioned relative to this container */
-}
-
-.left-card-first-cont li a::before,
-.left-card-first-cont li a::after {
-  position: absolute;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.7);
-  transition: all 0.4s ease;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.left-card-first-cont li a::before {
-  /* content: attr(data-index-left) " +";
-  left: -30px;  */
-}
-
-.left-card-first-cont li a::after {
-  content: attr(data-index-right);
-  /* right: 10px; */
-}
-
-.left-card-first-cont li a:hover {
-  color: #4caf50;
-}
-
-.left-card-first-cont li a:hover::before,
-.left-card-first-cont li a:hover::after {
-  color: #4caf50;
-  transform: translateY(-50%) rotateZ(20deg);
-}
-
-.a-arrow-cont {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  /* background-color: #BB9A65; */
-}
-
-.right-arrow {
-  font-size: 35px;
-  transition: transform 0.4s ease;
-}
-
-.a-arrow-cont:hover .right-arrow {
-  transform: rotate(320deg);
-  color: #4caf50;
-}
 
 /***************Left card img cont ***********************/
 .left-card-img-cont {
@@ -196,13 +109,6 @@ body {
   background-image: url("https://img.freepik.com/free-photo/retro-couch-living-room_23-2150711898.jpg?t=st=1723629736~exp=1723633336~hmac=3f22c5a22781deae0c97ac4858a721c8a02fd16650f244da5a95fcaf0d27ae79&w=900");
   display: flex;
 }
-
-/* .left-card-img-cont img {
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-  object-fit: cover; 
-} */
 
 .img-overlay {
   content: "";
@@ -218,11 +124,7 @@ body {
 }
 
 .text-overlay {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* left: 50%; */
-  /* transform: translate(-50%, -50%); */
-  /* z-index: 2; */
+
   color: white;
   text-align: center;
   display: flex;
@@ -244,7 +146,6 @@ body {
 .text-overlay h3 {
   font-family: Space Grotesk, sans-serif;
   font-weight: 700;
-  /* font-size: 36px; */
   line-height: 46px;
   letter-spacing: -0.25px;
   text-transform: none;
@@ -554,31 +455,8 @@ body {
 }
 
 .list-cont li {
-  margin-bottom: 10px; /* Space between list items */
-}
-
-.a-arrow-cont {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.a-arrow-cont a {
-  font-size: 18px;
-  text-decoration: none; /* Remove underline from links */
-  transition: color 0.3s ease;
-}
-
-.a-arrow-cont a:hover {
-}
-
-.right-arrow {
-  font-size: 20px;
-  transition: transform 0.3s ease;
-}
-
-.a-arrow-cont:hover .right-arrow {
-  transform: translateX(5px); /* Slide arrow slightly on hover */
+  margin-bottom: 10px;
+  color: rgb(64, 50, 38) !important;
 }
 
 /* Large devices (desktops, 992px to 1199px) */
@@ -652,8 +530,8 @@ body {
   .text-overlay h3 {
     /* font-size: 18px; */
   }
-  .left-card-first-cont{
-    margin-top:20px
+  .left-card-first-cont {
+    margin-top: 20px;
   }
 }
 
@@ -691,7 +569,6 @@ body {
   }
   .left-design-cont {
     /* display: none; */
-    
   }
   .order-md-2 {
     order: 2 !important;
@@ -710,8 +587,8 @@ body {
     width: 100% !important;
     justify-content: center;
   }
-  .left-card-first-cont{
-    margin-top:20px
+  .left-card-first-cont {
+    margin-top: 20px;
   }
 }
 
@@ -754,7 +631,7 @@ body {
     width: 100% !important;
     padding: 35px;
   }
-  .left-card-img-cont{
+  .left-card-img-cont {
     width: 100% !important;
     justify-content: center;
     align-items: center;
