@@ -20536,7 +20536,7 @@ body.rtl .elementor-1785 .elementor-element.elementor-element-269199b {
   }
 
   .pbmit-heading-subheading .pbmit-element-title {
-    font-size: 40px;
+    /* font-size: 40px; */
     line-height: 46px;
   }
 
@@ -20697,7 +20697,7 @@ body.rtl .elementor-1785 .elementor-element.elementor-element-269199b {
   }
 
   .pbmit-heading-subheading .pbmit-element-title {
-    font-size: 45px;
+    /* font-size: 45px; */
     line-height: 50px;
   }
 }
@@ -27830,7 +27830,7 @@ h6 {
 .pbmit-heading-subheading .pbmit-element-title {
   font-family: Space Grotesk, sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  /* font-size: 48px; */
   line-height: 48px;
   letter-spacing: -2px;
   color: #403226;
@@ -32371,7 +32371,7 @@ body .elementor-drop-cap .elementor-drop-cap-letter {
 }
 
 .pbmit-tabs .pbmit-tab-list h2 {
-  font-size: 36px;
+  /* font-size: 36px; */
   line-height: 40px;
   margin-bottom: 15px;
 }
