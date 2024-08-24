@@ -8,7 +8,7 @@ function ContactPage() {
       <section>
         <div className="contact-banner">
           <div className="contact-p">
-            <h1>Contact us</h1>
+            <h1 style={{color:'white'}} >Contact us</h1>
           </div>
         </div>
       </section>
