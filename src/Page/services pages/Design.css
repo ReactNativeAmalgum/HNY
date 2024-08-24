@@ -590,6 +590,9 @@ body {
   .left-card-first-cont {
     margin-top: 20px;
   }
+  .year-card{
+    display: none;
+  }
 }
 
 /* Large Devices (max-width: 992px) */
@@ -629,7 +632,7 @@ body {
   }
   .specillay-col-left {
     width: 100% !important;
-    padding: 35px;
+    /* padding: 35px; */
   }
   .left-card-img-cont {
     width: 100% !important;

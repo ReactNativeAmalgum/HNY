@@ -38,6 +38,7 @@ export default function Design_planning() {
                                 <li key={service.id}>
                                   <div className="a-arrow-cont">
                                     <Link
+                                    onClick={() => window.scrollX(0,0)}
                                       to={`/designplanning/${service.id}`}
                                       className={
                                         window.location.pathname ===
