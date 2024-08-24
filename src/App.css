@@ -2,14 +2,32 @@
 
 
 /* CONTACT BANNER */
-.contact-banner{
-    background-image: url('https://img.freepik.com/free-photo/emotional-young-woman-designer-talking-by-phone_171337-15735.jpg?t=st=1724511941~exp=1724515541~hmac=2456e13e68d4c820f8c4ad27ac93996a7511c90e2343f490fdda0b0be647fe43&w=1060');
-    width: 100% !important;
-    height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover; /* Ensures the background image covers the full width */
-    background-position: center; /* Centers the image */
+.contact-banner {
+  background-image: url('https://img.freepik.com/free-photo/emotional-young-woman-designer-talking-by-phone_171337-15735.jpg?t=st=1724511941~exp=1724515541~hmac=2456e13e68d4c820f8c4ad27ac93996a7511c90e2343f490fdda0b0be647fe43&w=1060');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;   
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Add padding for smaller screens */
+  height: 500px;
 }
+
+.contact-banner h1 {
+  /* font-size: 40px; */
+  letter-spacing: -.3px;
+  line-height: 1.08em;
+  font-family: Montserrat, serif;
+  color: #ffffff !important;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 
 .contact-p{
   display: flex;
@@ -456,3 +474,39 @@ body,html{
 }
 
 
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  .contact-banner {
+      height: 500px;
+  }
+  .contact-banner h1 {
+      font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-banner {
+      /* height: 600px; */
+  }
+  .contact-banner h1 {
+      font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-banner {
+      height: 300px;
+  }
+  .about-banner h1 {
+      font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-banner {
+      height: 250px;
+  }
+  .about-banner h1 {
+      font-size: 24px;
+  }
+}

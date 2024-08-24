@@ -2,14 +2,13 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Footer from "../Components/Footer/Footer";
+import '../App.css'
 function ContactPage() {
   return (
     <>
       <section>
         <div className="contact-banner">
-          <div className="contact-p">
-            <h1 style={{color:'white'}} >Contact us</h1>
-          </div>
+          <h1>Contact Us</h1>
         </div>
       </section>
       <section className="mt-5">
