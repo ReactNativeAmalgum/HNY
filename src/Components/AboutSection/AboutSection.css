@@ -1,45 +1,62 @@
-.about-banner{
+.about-banner {
     background-image: url("https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/About-simple-title-area-parallax.jpg");
-    background-position: fixed;
-    height: 600px;
-    background-size:  100% 100%;
+    background-position: center;
+    background-size: cover;
     width: 100%;
     background-repeat: no-repeat;   
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px; /* Add padding for smaller screens */
+    height: 400px; 
 }
-.about-banner h1{
-    font-size: 60px;
+
+.about-banner h1 {
+    font-size: 40px;
     letter-spacing: -.3px;
     line-height: 1.08em;
     font-family: Montserrat, serif;
     color: #212121;
     font-weight: 700;
     display: flex;
-    justify-content: center
+    justify-content: center;
+    text-align: center;
 }
 
-.tittle-card{
-    margin-top: 60px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+    .about-banner {
+        height: 500px;
+    }
+    .about-banner h1 {
+        font-size: 50px;
+    }
 }
 
-.tittle-card h3{
-    padding: 0 0 0 25px;
-    text-align: justify;
-    font-family: Montserrat, serif;
-
+@media screen and (min-width: 1024px) {
+    .about-banner {
+        /* height: 600px; */
+    }
+    .about-banner h1 {
+        font-size: 60px;
+    }
 }
 
-.count{
-    color: #565656;
-    margin: 0 15px 4px 0;
-    vertical-align: middle;
-    display: inline-block;
-    text-transform: none;
-    font-size: 35px;
+@media screen and (max-width: 767px) {
+    .about-banner {
+        height: 300px;
+    }
+    .about-banner h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .about-banner {
+        height: 250px;
+    }
+    .about-banner h1 {
+        font-size: 24px;
+    }
 }
