@@ -1,11 +1,6 @@
 import React from "react";
 import "./navii.css";
-import Container from "react-bootstrap/Container";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import logo from "../../Assets/wny-logo-.png";
-import Button from "react-bootstrap/esm/Button";
+
 function Navigator() {
   return (
     <>

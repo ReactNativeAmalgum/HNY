@@ -64,20 +64,77 @@ function About() {
                     </h2>
                     <h3 className="textcent">Welcome to HNY Interiors</h3>
                     <p style={{ textAlign: "justify" }}>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Corrupti, laboriosam sunt. Delectus quibusdam ea
+                      Welcome to Hny Studio, Thane's leading destination for
+                      high-quality interior design services. We are a team of
+                      passionate and creative interior designers and decorators
+                      in Thane, Maharashtra, who work in the bustling
+                      Waghbil-Thane West area.Our goal is to make your spaces
+                      aesthetically pleasing and functional, reflecting your
+                      personality and lifestyle.
                     </p>
                     <p style={{ textAlign: "justify" }}>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Ut consectetur laudantium enim illum quia quos obcaecati
-                      molestiae, illo optio aliquam dolor odio ea, sint non
-                      blanditiis iure nobis consequatur vitae? Lorem ipsum dolor
-                      sit amet consectetur adipisicing elit. Eligendi maiores
-                      aut impedit dolorem itaque ratione, quas perferendis,
-                      fugiat, nobis inventore nemo? Nihil obcaecati earum, esse
-                      necessitatibus quibusdam consectetur voluptatem! Atque?
+                      Hny Studio takes pride in its ability to provide great
+                      interior design solutions that are suited to each client's
+                      specific needs. Our Thane interior designers and
+                      decorators have successfully developed and implemented a
+                      wide range of projects, including residential, commercial,
+                      and architectural designs. Each project is tackled from a
+                      new angle, guaranteeing that the end product is not only
+                      physically appealing but also highly useful and
+                      comfortable.
                     </p>
-
+                    <p style={{ textAlign: "justify" }}>
+                      We think that great design is a collaborative effort,
+                      therefore we work closely with our clients to understand
+                      their vision, preferences, and needs. This collaborative
+                      approach enables us to build rooms that authentically
+                      reflect the client's personality and lifestyle. Our
+                      Interior Designers & Interior Decorators in Thane are
+                      experts at integrating creativity and pragmatism, ensuring
+                      that each design element has a function and contributes to
+                      the overall beauty.
+                    </p>
+                    {showMore && (
+                      <>
+                        <p style={{ textAlign: "justify" }}>
+                          Our portfolio showcases some of the finest designs we
+                          have completed, thanks to our renowned designers'
+                          expertise and dedication. From modern apartments to
+                          elegant office spaces, our projects demonstrate our
+                          versatility and commitment to excellence. We
+                          understand that every project is unique, and we strive
+                          to exceed our clients' expectations by delivering
+                          designs that are innovative, functional, and timeless.
+                        </p>
+                        <p style={{ textAlign: "justify" }}>
+                          As leading Interior Designers & Interior Decorators in
+                          Thane, we stay up to current on industry trends and
+                          innovations. This enables us to include cutting-edge
+                          design aspects and environmental methods into our
+                          projects, guaranteeing that our clients receive the
+                          most effective solutions. Our team's attention to
+                          detail, rigorous preparation, and unique approach
+                          distinguish us from the competition.
+                        </p>
+                        <p style={{ textAlign: "justify" }}>
+                          At Hny Studio, we are enthusiastic about designing
+                          places that inspire and delight. Whether you want to
+                          redecorate your house, office, or any other location,
+                          our Thane interior designers and decorators will help
+                          you realize your vision. We urge you to look through
+                          our portfolio and see the difference that outstanding
+                          design can create.
+                        </p>
+                        <p style={{ textAlign: "justify" }}>
+                          Thank you for looking into Hny Studio for your
+                          interior design needs. We look forward to working with
+                          you and developing settings that you will enjoy for
+                          many years to come. Contact us immediately to set up a
+                          consultation and start renovating your space with
+                          Thane's best interior designers and decorators.
+                        </p>
+                      </>
+                    )}
                     <touchableHilight
                       className={"NewAboutUs-ReadMore"}
                       onClick={toggleShowMore}

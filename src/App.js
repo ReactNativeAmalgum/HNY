@@ -14,7 +14,7 @@ import WhyChoos2 from "./Components/WhyChoos/WhyChoos2.jsx";
 import Review from "./Components/Review/Review.jsx";
 import Design_planning from "./Page/services pages/Design_planning.jsx";
 import { ServiceData } from "./Assets/Dynamic Data/ServiceData.js";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
@@ -25,8 +25,8 @@ function App() {
         <Route path="/weare" element={<WhatWeOffer />} />
         <Route path="/servicepage" element={<Service />} />
         <Route path="/contact" element={<ContactPage />} />
-        {/* <Route path='/gallery' element={<GalleryPage/>}/> */}
-        <Route path="/gallery2" element={<Gallery2 />} />
+        <Route path='/gallery' element={<GalleryPage/>}/>
+        {/* <Route path="/gallery2" element={<Gallery2 />} /> */}
         <Route path="/whychoose2" element={<WhyChoos2 />} />
         <Route path="/review" element={<Review />} />
         {/* <Route path='/exp' element={<Experiment />} /> */}

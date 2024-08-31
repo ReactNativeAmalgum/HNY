@@ -3,7 +3,7 @@ import "../../index.css";
 import logo from "../../Assets/wny-logo-.png";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 import { Link } from "react-router-dom";
-import './navii.css';
+import "./navii.css";
 
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
@@ -105,10 +105,7 @@ export default function NavBar() {
                 <div className="pbmit-logo">
                   <div className="site-branding pbmit-logo-area">
                     <div className="wrap">
-                      <a
-                        href="/"
-                        rel="home"
-                      >
+                      <a href="/" rel="home">
                         <img
                           className="pbmit-main-logo"
                           src={logo}
@@ -182,6 +179,9 @@ export default function NavBar() {
                               >
                                 <i className="pbmit-base-icon-angle-right" />
                               </span>
+                            </li>
+                            <li className="menu-item">
+                              <a href="/gallery">Gallery</a>
                             </li>
                             <li className="menu-item">
                               <a href="/contact">Contact Us</a>

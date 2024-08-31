@@ -1,0 +1,22 @@
+/* Container div styling */
+.interior-work-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1500px; 
+    text-align: center;
+    /* background-color: #f9f9f9;  */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Paragraph styling */
+  .interior-work-paragraph {
+    /* margin-top: 50px !important; */
+    font-size: 16px; /* Adjust font size */
+    text-align: center;
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark text color for contrast */
+    margin-bottom: 16px; /* Space between paragraphs */
+    text-align: justify; /* Justify text for a clean look */
+  }
+  

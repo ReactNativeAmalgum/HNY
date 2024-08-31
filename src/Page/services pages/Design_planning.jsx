@@ -38,7 +38,7 @@ export default function Design_planning() {
                                 <li key={service.id}>
                                   <div className="a-arrow-cont">
                                     <Link
-                                    onClick={() => window.scrollX(0,0)}
+                                      onClick={() => window.scroll(0,0)}
                                       to={`/designplanning/${service.id}`}
                                       className={
                                         window.location.pathname ===
@@ -101,9 +101,11 @@ export default function Design_planning() {
                               >
                                 M
                               </span>
-                              {service.description1}
+                              {service.descp1}
                             </p>
-                            <p>{service.description2}</p>
+                            {[...Array(14)].map((_, index) => (
+                              <p key={index}>{service[`descp${index + 1}`]}</p>
+                            ))}
                           </div>
                           <div className="container">
                             <div className="right-card2-cont">
