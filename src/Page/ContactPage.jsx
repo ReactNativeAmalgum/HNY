@@ -2,7 +2,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Footer from "../Components/Footer/Footer";
-import '../App.css'
+import "../App.css";
 function ContactPage() {
   return (
     <>
@@ -11,6 +11,15 @@ function ContactPage() {
           <h1>Contact Us</h1>
         </div>
       </section>
+      <div className="card-md">
+        Finding the perfect interior designer near Thane can make all the
+        difference when it comes to transforming your living or working space
+        into a haven of style and comfort. At Hny Studio, we understand that a
+        well-designed space is essential for both functionality and aesthetics.
+        Our team of skilled interior designers is dedicated to delivering
+        exceptional design services tailored to your unique needs and
+        preferences.
+      </div>
       <section className="mt-5">
         <div className="container">
           <div className="section section-padding">
