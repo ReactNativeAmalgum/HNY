@@ -53,10 +53,10 @@ function Gallery2() {
                 modules={[FreeMode, Autoplay]}
                 className="mySwiper"
                 speed={1000}
-                // autoplay={{
-                //   delay: 1000,
-                //   disableOnInteraction: true,
-                // }}
+                autoplay={{
+                  delay: 1000,
+                  disableOnInteraction: true,
+                }}
                 breakpoints={{
                   200: {
                     slidesPerView: 1,
