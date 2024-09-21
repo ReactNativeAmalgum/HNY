@@ -1,14 +1,20 @@
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import Footer from "../Components/Footer/Footer";
-import "../App.css";
+// import "../App.css";
+import './Contact.css'
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
 function ContactPage() {
   return (
     <>
       <section>
         <div className="contact-banner">
-          <h1>Contact Us</h1>
+          <Fade delay={700} duration={900} >
+
+            <h1>Contact Us</h1>
+          </Fade>
+
         </div>
       </section>
       <div className="card-md">
@@ -32,11 +38,18 @@ function ContactPage() {
                         <i className="dlicon ui-1_home-51" />
                       </div>
                       <div className="info-content">
-                        <h3 className="title">Address</h3>
-                        <p className="width">
-                          A220, Business complex, LODHA AMARA, Kolshet Rd,
-                          Thane, Maharashtra 400607
-                        </p>
+                        <Bounce>
+                          <h3 className="title">Address</h3>
+
+                        </Bounce>
+                        <Slide direction="left">
+
+                          <p className="width">
+                            A220, Business complex, LODHA AMARA, Kolshet Rd,
+                            Thane, Maharashtra 400607
+                          </p>
+                        </Slide>
+
                       </div>
                     </div>
                     <div className="single-contact-info-wrap">
@@ -44,12 +57,16 @@ function ContactPage() {
                         <i className="dlicon ui-2_phone" />
                       </div>
                       <div className="info-content">
-                        <h3 className="title">Phone</h3>
-                        <p>
-                          {" "}
-                          Mobile: <span>(+91)90824 89772</span>
-                        </p>
-                        <p> {/* Hotline: <span>1802550 - 1102456</span> */}</p>
+                        <Bounce>
+                          <h3 className="title">Phone</h3>
+
+                        </Bounce>
+                        <Slide direction="left">
+
+                          <p>
+                            Mobile: <span>(+91)90824 89772</span>
+                          </p>
+                        </Slide>
                       </div>
                     </div>
                     <div className="single-contact-info-wrap">
@@ -57,8 +74,13 @@ function ContactPage() {
                         <i className="dlicon ui-1_email-85" />
                       </div>
                       <div className="info-content">
-                        <h3 className="title">Email</h3>
-                        <p>hnymumbai@gmail.com</p>
+                        <Bounce>
+                          <h3 className="title">Email</h3>
+                        </Bounce>
+                        <Slide direction="left">
+
+                          <p>hnymumbai@gmail.com</p>
+                        </Slide>
                         {/* <p>info@example.com</p> */}
                       </div>
                     </div>
@@ -67,21 +89,31 @@ function ContactPage() {
                         <i className="dlicon ui-2_share" />
                       </div>
                       <div className="info-content">
-                        <h3 className="title">Follow us</h3>
-                        <div className="social-icon-style mt-4">
-                          <a className="facebook" href="#">
+                        <Bounce>
+                          <h3 className="title">Follow us</h3>
+
+                        </Bounce>
+                        <div className="social-icon-style">
+                          <a className="facebook" href="https://www.facebook.com/HNYInteriorDesigner">
                             <i className="fa fa-facebook">
-                              <FaFacebookF />
+                              <Bounce>
+                                <FaFacebookF />
+                              </Bounce>
                             </i>
                           </a>
-                          <a className="twitter" href="#">
-                            <i className="fa fa-twitter">
-                              <FaTwitter />
+                          <a title="youtube" className="twitter" href="https://www.youtube.com/@hnyinteriors" target="_blank">
+                            <i className="fa fa-facebook">
+                              <Bounce delay={200}>
+                                <FaYoutube />
+                              </Bounce>
                             </i>
+
                           </a>
-                          <a className="google-plus" href="#">
+                          <a className="google-plus" href="https://www.instagram.com/hnyinteriors/">
                             <i className="fa fa-google-plus">
-                              <FaInstagram />
+                              <Bounce delay={300}>
+                                <FaInstagram />
+                              </Bounce>
                             </i>
                           </a>
                           {/* <a className="behance" href="#">
@@ -107,11 +139,13 @@ function ContactPage() {
                         placeholder="Your message"
                         defaultValue={""}
                       />
-                      <input
+                     <Fade delay={500} >
+                     <input
                         className="submit"
                         type="submit"
                         defaultValue="Send Message"
                       />
+                     </Fade>
                     </form>
                     <p className="form-messege" />
                   </div>

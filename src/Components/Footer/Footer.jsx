@@ -1,11 +1,40 @@
 import "./Footer.css";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
 import logo from "../../Assets/wny-logo-.png";
 import { Link } from "react-router-dom";
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 function Footer() {
+  const [isInView, setIsInView] = useState(false);
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting); // Check if it is in view
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (headingRef.current) {
+      observer.observe(headingRef.current);
+    }
+
+    return () => {
+      if (headingRef.current) {
+        observer.unobserve(headingRef.current);
+      }
+    };
+  }, []);
+
+  const heading = "Usefull Links".split(" ");
+  const heading2 = "Contact Us".split(" ")
+  const heading3 = "Social Media".split(" ")
   return (
     <>
       <div className="footer-color">
@@ -24,7 +53,18 @@ function Footer() {
                 </div>
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
-                    <h3 className="footer-title">Useful Link</h3>
+                    <h3 className="footer-title" ref={headingRef}>
+                      {heading.map((el, i) => (
+                        <motion.span
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} // fallback
+                          transition={{ duration: 0.5, delay: i * 0.3 }}
+                        >
+                          {el}{" "}
+                        </motion.span>
+                      ))}
+                    </h3>
                     <ul>
                       <li onClick={() => window.scrollTo(0, 0)}>
                         <Link to="/">Home</Link>
@@ -34,7 +74,7 @@ function Footer() {
                         <Link to={`/aboutpage`}>About</Link>
                       </li>
                       <li onClick={() => window.scrollTo(0, 0)}>
-                      <Link to={`/designplanning/1`}>Service</Link>
+                        <Link to={`/designplanning/1`}>Service</Link>
                       </li>
                       <li onClick={() => window.scrollTo(0, 0)}>
                         <Link to="/contact">Contact Us </Link>
@@ -44,7 +84,18 @@ function Footer() {
                 </div>
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
-                    <h3 className="footer-title">Contact Us</h3>
+                    <h3 className="footer-title" ref={headingRef}>
+                      {heading2.map((el, i) => (
+                        <motion.span
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} // fallback
+                          transition={{ duration: 0.5, delay: i * 0.3 }}
+                        >
+                          {el}{" "}
+                        </motion.span>
+                      ))}
+                    </h3>
                     <ul>
                       <li>
                         <span className="titl">T:</span>
@@ -68,18 +119,46 @@ function Footer() {
                 </div>
                 <div className="col mb-8">
                   <div className="footer-widget footer-list">
-                    <h3 className="footer-title">Social media</h3>
-                    <ul>
-                      <Link className="google-plus" to="">
-                        <i className="fa fa-google-plus">
-                          <FaInstagram />
-                        </i>
-                      </Link>
-                      <Link className="google-plus" to="">
-                        <i className="fa fa-facebook">
-                          <FaFacebookF />
-                        </i>
-                      </Link>
+                    <h3 className="footer-title" ref={headingRef}>
+                      {heading3.map((el, i) => (
+                        <motion.span
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} // fallback
+                          transition={{ duration: 0.5, delay: i * 0.3 }}
+                        >
+                          {el}{" "}
+                        </motion.span>
+                      ))}
+                    </h3>
+                    <ul style={{display:'flex', flexDirection:'row'}}>
+                      <a className="google-plus" href="https://www.instagram.com/hnyinteriors/">
+                        <Bounce delay={100}>
+
+                          <i className="fa fa-google-plus">
+
+                            <FaInstagram />
+                          </i>
+                        </Bounce>
+
+                      </a>
+                      <a className="google-plus" href="https://www.facebook.com/HNYInteriorDesigner">
+                        <Bounce delay={200}>
+                          <i className="fa fa-facebook">
+                            <FaFacebookF />
+                          </i>
+                        </Bounce>
+
+                      </a>
+                      <a className="google-plus" href="https://www.youtube.com/@hnyinteriors">
+                        <Bounce delay={300}>
+
+                          <i className="fa fa-facebook">
+                            <FaYoutube />
+                          </i>
+                        </Bounce>
+
+                      </a>
                     </ul>
                   </div>
                 </div>

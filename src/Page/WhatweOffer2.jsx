@@ -1,8 +1,35 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { ServiceData } from "../Assets/Dynamic Data/ServiceData";
 import whatwecanoffer from '../Assets/images/homewhatwecanoffer.jpg'
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
+
 export default function WhatweOffer2() {
+  const [isInView, setIsInView] = useState(false);
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting); // Check if it is in view
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (headingRef.current) {
+      observer.observe(headingRef.current);
+    }
+
+    return () => {
+      if (headingRef.current) {
+        observer.unobserve(headingRef.current);
+      }
+    };
+  }, []);
+
+  const heading = "WHAT WE CAN OFFER".split(" ");
   return (
     <section
       className="elementor-section elementor-top-section elementor-element elementor-element-f935a0f pbmit-col-stretched-none pbmit-bg-color-over-image elementor-section-boxed elementor-section-height-default elementor-section-height-default pbmit-col-stretched-no pbmit-bgimage-no pbmit-bgcolor-yes"
@@ -33,192 +60,202 @@ export default function WhatweOffer2() {
               <div className="elementor-widget-container">
                 <div className="pbmit-ele-header-area">
                   <div className="pbmit-heading-subheading pbmit-reverse-heading-yes animation-style2">
-                    <h4 className="pbmit-element-subtitle">
+                    <h4 className="pbmit-element-subtitle" ref={headingRef}>
                       <span></span>
-                      since 1986
+                      {heading.map((el, i) => (
+                        <motion.span
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }} // fallback
+                          transition={{ duration: 0.5, delay: i * 0.3 }}
+                        >
+                          {el}{" "}
+                        </motion.span>
+                      ))}
                     </h4>
                     <h2
                       className="pbmit-element-title"
                       style={{ perspective: 400 }}
-                    >
-                      <div
-                        className="split-line"
-                        style={{
-                          display: "block",
-                          textAlign: "center",
-                          position: "relative",
-                        }}
-                      >
+                    ><Bounce>
                         <div
+                          className="split-line"
                           style={{
+                            display: "block",
+                            textAlign: "center",
                             position: "relative",
-                            display: "inline-block",
-                          }}
-                        >
-                          {" "}
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            W
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            h
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            a
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            t
-                          </div>
-                        </div>{" "}
-                        <div
-                          style={{
-                            position: "relative",
-                            display: "inline-block",
                           }}
                         >
                           <div
                             style={{
                               position: "relative",
                               display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
                             }}
                           >
-                            C
-                          </div>
+                            {" "}
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              W
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              h
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              a
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              t
+                            </div>
+                          </div>{" "}
                           <div
                             style={{
                               position: "relative",
                               display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
                             }}
                           >
-                            a
-                          </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              C
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              a
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              n
+                            </div>
+                          </div>{" "}
                           <div
                             style={{
                               position: "relative",
                               display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
                             }}
                           >
-                            n
-                          </div>
-                        </div>{" "}
-                        <div
-                          style={{
-                            position: "relative",
-                            display: "inline-block",
-                          }}
-                        >
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              W
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              e
+                            </div>
+                          </div>{" "}
                           <div
                             style={{
                               position: "relative",
                               display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
                             }}
                           >
-                            W
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            e
-                          </div>
-                        </div>{" "}
-                        <div
-                          style={{
-                            position: "relative",
-                            display: "inline-block",
-                          }}
-                        >
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            O
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            f
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            f
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            e
-                          </div>
-                          <div
-                            style={{
-                              position: "relative",
-                              display: "inline-block",
-                              transform: "translate(0px, 0px)",
-                              opacity: 1,
-                            }}
-                          >
-                            r
-                          </div>
-                        </div>{" "}
-                      </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              O
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              f
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              f
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              e
+                            </div>
+                            <div
+                              style={{
+                                position: "relative",
+                                display: "inline-block",
+                                transform: "translate(0px, 0px)",
+                                opacity: 1,
+                              }}
+                            >
+                              r
+                            </div>
+                          </div>{" "}
+                        </div>
+                      </Bounce>
                     </h2>
                   </div>{" "}
                 </div>
@@ -232,12 +269,14 @@ export default function WhatweOffer2() {
                         onClick={() => window.scrollTo(0, 0)}
                       >
                         <span>
-                          <Link
-                            onClick={() => window.scrollTo(0, 0)}
-                            to={`designplanning/${s.id}`}
-                          >
-                            {s.title}
-                          </Link>
+                          <Bounce>
+                            <Link
+                              onClick={() => window.scrollTo(0, 0)}
+                              to={`designplanning/${s.id}`}
+                            >
+                              {s.title}
+                            </Link>
+                          </Bounce>
                         </span>
                         <i className="pbmit-base-icon-pbmit-up-arrow" />
                       </li>
@@ -259,34 +298,39 @@ export default function WhatweOffer2() {
                               <div className="inner-content">
                                 <div className="row g-0 tab-content-wrap">
                                   <div className="col-xl-5 pbmit-tab-img">
-                                    <img
-                                      loading="lazy"
-                                      decoding="async"
-                                      className="wp-image-17484 size-full"
-                                      src={whatwecanoffer}
-                                      alt="tab-img-01"
-                                      width={647}
-                                      height={497}
-                                    />
+                                    <Fade >
+                                      <img
+                                        loading="lazy"
+                                        decoding="async"
+                                        className="wp-image-17484 size-full"
+                                        src={whatwecanoffer}
+                                        alt="tab-img-01"
+                                        width={647}
+                                        height={497}
+                                      />
+                                    </Fade>
                                   </div>
                                   <div className="col-xl-7 pbmit-tab-list">
-                                    <h2>Giving your home a new style.</h2>
-                                    There are many variations of passages of
-                                    Lorem Ipsumbut the majority have suffered
-                                    alteration in some form, by injected humour,
-                                    or words which don't look even.
+                                    <Slide direction="right" >
+                                      <h2>Giving your home a new style.</h2>
+                                    </Slide>
+                                    Transforming your home with a new style can bring fresh energy and elevate its overall aesthetic. Whether you're opting for modern minimalism or a cozy rustic vibe, the right design choices can make your space feel brand new.
+
                                     <ul>
                                       <li>
-                                        Experienced, time-served engineers
+                                        Choose a color palette: <span style={{ paddingLeft: 10 }} /> Select colors that reflect your personality and create the ambiance you desire.
+
                                       </li>
-                                      <li>Commitment to customer service</li>
-                                      <li>
-                                        Commitment to taking the stress out of
-                                        your project.
+                                      <li> Update furniture and decor: <span style={{ paddingLeft: 10 }} />
+                                        Opt for pieces that match your new style, blending functionality with beauty.
+                                      </li>
+                                      <li> Incorporate texture and layers: <span style={{ paddingLeft: 10 }} />
+                                        Use rugs, cushions, and fabrics to add depth and warmth to the space.
+
                                       </li>
                                       <li>
-                                        Flexible with any structure of the
-                                        building
+                                        Add statement pieces: <span style={{ paddingLeft: 10 }} />
+                                        Integrate unique artwork, lighting, or accent furniture to create focal points in each room.
                                       </li>
                                     </ul>
                                   </div>

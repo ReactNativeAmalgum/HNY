@@ -91,6 +91,13 @@
   font-style: normal;
 }
 
+.pbmit-tab-link  span a{
+  text-decoration:  none !important;
+}
+.pbmit-tab-link  span a:hover{
+  color:#e5646e !important;
+}
+
 /* Responsive Styles */
 @media (max-width: 1300px) {
   .whychoose2-card {
@@ -167,6 +174,7 @@
   .pbmit-tabs {
     flex-direction: column;
   }
+
   .pbmit-tab-content-wrapper {
     padding: 0 !important;
     margin: 10px;

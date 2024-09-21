@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./About.css";
+import { motion } from "framer-motion";
+import { Slide } from "react-awesome-reveal";
 
 function About() {
   const [showMore, setShowMore] = useState(false);
@@ -7,6 +9,31 @@ function About() {
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
+
+  const [isInView, setIsInView] = useState(false);
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting); // Check if it is in view
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (headingRef.current) {
+      observer.observe(headingRef.current);
+    }
+
+    return () => {
+      if (headingRef.current) {
+        observer.unobserve(headingRef.current);
+      }
+    };
+  }, []);
+
+  const heading = "ABOUT US".split(" ");
 
   return (
     <section className="NewAbout-Section-1">
@@ -59,10 +86,21 @@ function About() {
               <div className="NewAbout-Section-con-details-Info">
                 <div className="NewAbout-Section-con-details-con">
                   <div className="NewAbout-Section-con-details-Info-con">
-                    <h2 className="NewAboutUs-tagLlines paddingtopr">
-                      About Us
+                    <h2 className="NewAboutUs-tagLlines paddingtopr " ref={headingRef}>
+                    {heading.map((el, i) => (
+                              <motion.span
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.5, delay: i * 0.3 }}
+                              >
+                                {el}{" "}
+                              </motion.span>
+                            ))}
                     </h2>
+                    <Slide direction="right">
                     <h3 className="textcent">Welcome to HNY Interiors</h3>
+                    </Slide>
                     <p style={{ textAlign: "justify" }}>
                       Welcome to Hny Studio, Thane's leading destination for
                       high-quality interior design services. We are a team of

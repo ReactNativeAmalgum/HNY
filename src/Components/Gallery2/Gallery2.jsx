@@ -10,6 +10,7 @@ import "swiper/css/pagination";
 // import required modules
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { Image } from "antd";
+import { Bounce, Slide } from "react-awesome-reveal";
 
 function Gallery2() {
   const [showMore, setShowMore] = useState(false);
@@ -24,16 +25,16 @@ function Gallery2() {
           <div className="gallery-custom-row row">
             <div className="gallery-custom-col col-3">
               <div className="gallery-card">
-                <h3 className="gallery-card-title">Our Services</h3>
+                <h3 className="gallery-card-title"> <Slide direction="left">
+                  Our Services
+                </Slide> </h3>
                 <p className="gallery-card-text">
-                  This is some sample text for the card content. You can place
-                  more details here.
+                  Our services are designed to meet your unique needs, offering personalized solutions that enhance your space and lifestyle.
                 </p>
 
                 {showMore && (
                   <p className="gallery-card-text">
-                    This is some sample text for the card content. You can place
-                    more details here.
+                    From concept to execution, we ensure quality, creativity, and excellence in every project
                   </p>
                 )}
                 <touchableHilight
@@ -52,19 +53,19 @@ function Gallery2() {
                 modules={[FreeMode, Autoplay]}
                 className="mySwiper"
                 speed={1000}
-                autoplay={{
-                  delay: 1000,
-                  disableOnInteraction: true,
-                }}
+                // autoplay={{
+                //   delay: 1000,
+                //   disableOnInteraction: true,
+                // }}
                 breakpoints={{
-                  200:{
-                    slidesPerView:1,
+                  200: {
+                    slidesPerView: 1,
                   },
-                  320:{
-                    slidesPerView:1
+                  320: {
+                    slidesPerView: 1
                   },
-                  425:{
-                    slidesPerView:1
+                  425: {
+                    slidesPerView: 1
                   },
                   // For screens larger than or equal to 768px
                   768: {
@@ -78,28 +79,40 @@ function Gallery2() {
                 }}
               >
                 <SwiperSlide className="slider-img-cont">
-                  <Image src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                  <a>Transforming Rooms</a>
+                  <img src="https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-2024-1720241010-wAOzD/mbr-1721373677-rlhqT/mbr-16-1721373695-xADzw.jpg" />
+
+                  <a> <Bounce >Transforming Rooms </Bounce></a>
+
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <Image src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                  <a>Weaving Dream</a>
+                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/portfolio-1000x615.jpg" />
+
+                  <a>  <Bounce >Weaving Dream </Bounce></a>
+
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <Image src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                  <a>Interior Decorator</a>
+                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/blog-1000x615.jpg" />
+
+                  <a>          <Bounce >Interior Decorator </Bounce></a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <Image src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                  <a>Professional Interior</a>
+                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/service-1000x615.jpg" />
+
+                  <a>             <Bounce >Professional Interior </Bounce></a>
+
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <Image src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                  <a>Interior Work Plan</a>
+                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/portfolio-1000x615.jpg" />
+
+                  <a><Bounce >Interior Work Plan </Bounce></a>
+
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <Image src="https://images.pexels.com/photos/1454806/pexels-photo-1454806.jpeg?auto=compress&cs=tinysrgb&w=600" />
-                  <a>2D/2D Layouts</a>
+                  <img src="https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/india-1634120414-v3jjP/designs-1634120429-iNDYp/kids-room-1634715806-YNILh/lk-in-kbr-0088-1640883105-1HYdh.png" />
+
+
+                  <a> <Bounce >2D/2D Layouts </Bounce></a>
+
                 </SwiperSlide>
               </Swiper>
             </div>

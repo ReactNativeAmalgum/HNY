@@ -4,6 +4,7 @@ import logo from "../../Assets/wny-logo-.png";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 import { Link } from "react-router-dom";
 import "./navii.css";
+import { FaYoutube } from "react-icons/fa";
 
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
@@ -51,28 +52,22 @@ export default function NavBar() {
               <div className="pbmit-pre-header-left">
                 <ul className="pbmit-social-links">
                   <li className="pbmit-social-li pbmit-social-facebook">
-                    <a title="Facebook" href="#" target="_blank">
+                    <a title="Facebook" href="https://www.facebook.com/HNYInteriorDesigner" target="_blank">
                       <span>
                         <i className="pbmit-base-icon-facebook-f" />
                       </span>
                     </a>
                   </li>
-                  <li className="pbmit-social-li pbmit-social-twitter">
-                    <a title="Twitter" href="#" target="_blank">
-                      <span>
-                        <i className="pbmit-base-icon-twitter-2" />
-                      </span>
-                    </a>
-                  </li>
+
                   <li className="pbmit-social-li pbmit-social-linkedin">
-                    <a title="LinkedIn" href="#" target="_blank">
+                    <a title="youtube" href="https://www.youtube.com/@hnyinteriors" target="_blank">
                       <span>
-                        <i className="pbmit-base-icon-linkedin-in" />
+                      <FaYoutube style={{color:'#403226'}} />
                       </span>
                     </a>
                   </li>
                   <li className="pbmit-social-li pbmit-social-instagram">
-                    <a title="Instagram" href="#" target="_blank">
+                    <a title="Instagram" href="https://www.instagram.com/hnyinteriors/" target="_blank">
                       <span>
                         <i className="pbmit-base-icon-instagram" />
                       </span>
@@ -83,15 +78,15 @@ export default function NavBar() {
               <div className="pbmit-pre-header-right">
                 <ul className="pbmit-contact-info">
                   <li>
-                    <i className="pbmit-base-icon-mail-alt" /> info@domain.com
+                    <i className="pbmit-base-icon-mail-alt" /> hnymumbai@gmail.com
                   </li>
                   <li>
                     <i className="pbmit-base-icon-location-dot-solid" />
-                    250 Main Street, 2nd Floor. USA
+                    A220, Business complex, LODHA AMARA
                   </li>
                   <li>
                     <i className="pbmit-base-icon-phone-volume-solid-1" />
-                    +89(0) 1256 2156
+                    +91 90824 89772
                   </li>
                 </ul>
               </div>

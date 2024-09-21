@@ -219,7 +219,7 @@
 }
 .prof
 {
-  width: 100px;
+  width: 50px;
 	border-radius: 30%;
 	background-color: #eee;
 }
@@ -342,6 +342,12 @@
 
   .review-descp p {
     font-size: 14px;
+  }
+  .review-row-cont{
+    flex-direction: column;
+  }
+  .custom-review-col{
+    display: contents;
   }
 }
 

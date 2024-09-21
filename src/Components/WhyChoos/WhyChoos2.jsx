@@ -1,16 +1,44 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./WhyChoos2.css";
 import { Link } from "react-router-dom";
-import homeabout from '../../Assets/images/homeabout.webp'
+import homeabout from '../../Assets/images/homeabout.webp';
+import { Bounce, Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 
 export default function WhyChoos2() {
   const [showMore, setShowMore] = useState(false);
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
+  
+  const [isInView, setIsInView] = useState(false);
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting); // Check if it is in view
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (headingRef.current) {
+      observer.observe(headingRef.current);
+    }
+
+    return () => {
+      if (headingRef.current) {
+        observer.unobserve(headingRef.current);
+      }
+    };
+  }, []);
+
+  const heading = "WHAT WE DO".split(" ");
+
   return (
     <div className={"section-whychoose-cont"}>
-      <div className={" container"}>
+      <div className={"container"}>
         <div className="row">
           <div className="whychoose2-row">
             <div className="special-col col-6">
@@ -29,22 +57,33 @@ export default function WhyChoos2() {
                     >
                       <div className="elementor-widget-container">
                         <div className="pbmit-heading-subheading pbmit-reverse-heading-yes animation-style2">
-                          <h4 className="pbmit-element-subtitle">
+                          <h4 className="pbmit-element-subtitle" ref={headingRef}>
                             <span></span>
-                            What we do
+                            {heading.map((el, i) => (
+                              <motion.span
+                                key={i}
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={isInView ? { opacity: 1, y: 0 } : {}}
+                                transition={{ duration: 0.5, delay: i * 0.3 }}
+                              >
+                                {el}{" "}
+                              </motion.span>
+                            ))}
                           </h4>
-                          <h2
-                            className="pbmit-element-title"
-                            style={{ perspective: 400 }}
-                          >
-                            About
-                          </h2>
+                          <Bounce>
+                            <h2
+                              className="pbmit-element-title"
+                              style={{ perspective: 400 }}
+                            >
+                              About
+                            </h2>
+                          </Bounce>
                           <div className="pbmit-heading-desc">
                             Welcome to Hny Studio, Thane's leading destination
                             for high-quality interior design services. We are a
                             team of passionate and creative interior designers
                             and decorators in Thane, Maharashtra, who work in
-                            the bustling Waghbil-Thane West area.Our goal is to
+                            the bustling Waghbil-Thane West area. Our goal is to
                             make your spaces aesthetically pleasing and
                             functional, reflecting your personality and
                             lifestyle.
@@ -70,7 +109,7 @@ export default function WhyChoos2() {
                                   preferences, and needs. This collaborative
                                   approach enables us to build rooms that
                                   authentically reflect the client's personality
-                                  and lifestyle. Our Interior Designers &
+                                  and lifestyle. Our Interior Designers & 
                                   Interior Decorators in Thane are experts at
                                   integrating creativity and pragmatism,
                                   ensuring that each design element has a
@@ -79,14 +118,14 @@ export default function WhyChoos2() {
                                 </div>
                               </>
                             )}
-                            <touchableHilight
+                            <span
                               className={"NewAboutUs-ReadMore"}
                               onClick={toggleShowMore}
                             >
                               {showMore ? "read less" : " read more..."}
-                            </touchableHilight>
+                            </span>
                           </div>
-                        </div>{" "}
+                        </div>
                       </div>
                     </div>
 
@@ -96,6 +135,8 @@ export default function WhyChoos2() {
                       data-element_type="widget"
                       data-widget_type="button.default"
                     >
+                                                <Slide direction="up" >
+
                       <div className="elementor-widget-container">
                         <div className="elementor-button-wrapper">
                           <Link
@@ -103,6 +144,7 @@ export default function WhyChoos2() {
                             to="/aboutpage"
                           >
                             <span className="elementor-button-content-wrapper">
+
                               <span className="elementor-button-text">
                                 More About
                               </span>
@@ -110,19 +152,21 @@ export default function WhyChoos2() {
                           </Link>
                         </div>
                       </div>
+                      </Slide>
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="special-col-2 col-6">
-              <div className="card-alingment">
+              <div className="card-alignment">
                 <div className="whychose-card-cont">
                   <div className="whychoose2-card">
-                    <img src={homeabout} />
+                    <img src={homeabout} alt="About Hny Studio" />
                   </div>
                   <div className="card2">
-                    <img src="https://img.freepik.com/free-photo/young-happy-couple-meeting-with-financial-advisor-office-woman-is-handshaking-with-agent_637285-3904.jpg?t=st=1723534595~exp=1723538195~hmac=eae58722805c45c0a532489aff8e790bb6f965c6b1794a66504a3f9d4fcf43af&w=1060" />
+                    <img src="https://img.freepik.com/free-photo/young-happy-couple-meeting-with-financial-advisor-office-woman-is-handshaking-with-agent_637285-3904.jpg?t=st=1723534595~exp=1723538195~hmac=eae58722805c45c0a532489aff8e790bb6f965c6b1794a66504a3f9d4fcf43af&w=1060" alt="Meeting" />
                   </div>
                   <div className="year-card">
                     <p className="started-txt">STARTED IN</p>

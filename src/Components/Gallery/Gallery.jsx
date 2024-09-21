@@ -1,5 +1,6 @@
 import React from "react";
 import "./Gallery.css";
+import { Slide } from "react-awesome-reveal";
 
 function Gallery() {
   return (

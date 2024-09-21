@@ -1,0 +1,19 @@
+.social-icon-style{
+    display: flex;
+    
+}
+.facebook, .twitter, .google-plus{
+    padding:5px
+}
+
+.facebook:hover, .twitter:hover, .google-plus:hover {
+    color :#e5646e !important;
+}
+
+.youtube {
+    padding: 5px;
+}
+
+.youtube:hover {
+    color: #e5646e !important; /* Change this to your desired hover color */
+}

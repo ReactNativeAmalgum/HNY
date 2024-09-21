@@ -71,10 +71,16 @@
   .social-icon-style {
     display: flex;
     justify-content: center;
+    align-items: center;
+
+  }
+  
+  .social-icon-style a {
+    color:black !important
   }
   
   .facebook {
-    padding: 0 25px;
+    /* padding: 0 25px; */
   }
   
   .footer-logo img {
@@ -90,6 +96,9 @@
     display: flex;
     justify-content: space-around;
     padding: 0px;
+  }
+  .footer-list li a{
+    text-decoration: none !important;
   }
   /* .footer-list{
     display: flex;

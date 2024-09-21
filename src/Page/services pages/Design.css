@@ -13,6 +13,9 @@ body {
 .design-cont {
 }
 
+.css-1sj2t5c, .css-1bwerz7{
+  height: 100% !important;
+}
 .design-row {
   display: flex;
   justify-content: center;
@@ -428,6 +431,8 @@ body {
     flex: 1 1 100%;
     max-width: 100%;
   }
+
+
 }
 
 /* Small devices (phones, 600px to 767px) */
@@ -482,6 +487,7 @@ body {
   .service-gallery img {
     height: 100%;
   }
+
 }
 
 /* Responsive Styles */
@@ -638,5 +644,28 @@ body {
     width: 100% !important;
     justify-content: center;
     align-items: center;
+  }
+  .css-1pvcaf{
+    width:100% !important;
+    padding:0px !important;
+    text-align: center !important;
+  }
+}
+
+@media(min-width:1024px){
+  .css-1pvcaf{
+  animation-delay: 0ms;
+  width: 100%;
+  }
+}
+
+.left-card-img-cont{
+  display: flex;
+  justify-content: center !important;
+}
+
+@media(max-width:767px){
+  .css-1bwerz7 img{
+    height:100% !important;
   }
 }

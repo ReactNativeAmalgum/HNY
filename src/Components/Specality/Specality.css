@@ -15,6 +15,9 @@
     margin-top: 18px;
 }
 
+.year-card{
+    display: none;
+}
 
 @media (max-width: 786px){
     .whycho{
@@ -152,9 +155,9 @@
 span.cat_subheading {
     width: 100%;
     float: left;
-    font-size: 25px;
-    color: #555555;
-    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 29px;
+    font-family: Space Grotesk, sans-serif !important;
 }
 
 .cat_section_headings h4 {

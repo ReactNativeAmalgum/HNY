@@ -39,8 +39,8 @@
 
 .swiper-slide img {
   width: 100% !important;
-  height: 100% !important;
-  border-radius: 20px;
+  /* height: 100% !important; */
+  border-radius: 20px !important;
   object-fit: cover;
   transition: transform 0.5s ease-in-out, border-radius 0.5s ease-in-out; /* Apply transitions */
 }
@@ -234,6 +234,7 @@
 
   .swiper-slide img {
     border-radius: 15px;
+
   }
 
   .gallery-card {
@@ -254,5 +255,19 @@
   }
   .gallery-custom-col{
     height:100%
+  }
+}
+
+@media (max-width:426px){
+  .slider-slide img{
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+@media (mix-width: 1400px){
+  .slider-slide img{
+    height: 100% !important;
+    width: 100% !important;
   }
 }

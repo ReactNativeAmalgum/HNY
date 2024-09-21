@@ -5142,7 +5142,7 @@ body.rtl .pbmit-heading-subheading .pbmit-element-title .split-line div {
 .pbmit-heading-subheading
   .pbmit-element-subtitle
   span:not(span.pbmit-button-wrapper, span.pbmit-button-text) {
-  display: none;
+  /* display: none; */
 }
 
 .pbmit-heading-subheading.right-align .pbmit-heading-desc,
@@ -11006,7 +11006,7 @@ body.rtl .pbmit-heading-subheading .pbmit-element-title .split-line div {
 .pbmit-heading-subheading
   .pbmit-element-subtitle
   span:not(span.pbmit-button-wrapper, span.pbmit-button-text) {
-  display: none;
+  /* display: none; */
 }
 
 .pbmit-heading-subheading.right-align .pbmit-heading-desc,

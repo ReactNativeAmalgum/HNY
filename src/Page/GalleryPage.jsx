@@ -4,6 +4,7 @@ import WorkTab from "./WorkTab";
 import { Link } from "react-router-dom";
 import { Image } from "antd";
 import './gallerypage.css'
+import { Bounce, Fade, Slide } from "react-awesome-reveal";
 function GalleryPage() {
   const [items, setItems] = useState([]);
 
@@ -50,13 +51,20 @@ function GalleryPage() {
 
   return (
     <>
-      <section>
-        <div className="gall-banner">
-          <div className="contacttt-p">
-            <h1 style={{color:'white'}} >Gallery</h1>
+      <Slide direction="right">
+
+        <section>
+          <div className="gall-banner">
+            <div className="contacttt-p">
+            <Fade delay={500} duration={500} >
+
+              <h1 style={{ color: 'white' }} >Gallery</h1>
+              </Fade>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </Slide>
+
       <div className="interior-work-container">
         {interiorWorkContent.map((item, index) => (
           <p key={index} className="interior-work-paragraph">
@@ -72,7 +80,10 @@ function GalleryPage() {
                 className="cat_section_headings wow zoom"
                 style={{ visibility: "visible", animationName: "zoom" }}
               >
-                <span className="cat_subheading">Our Gallery</span>
+              <Bounce>
+              <span className="cat_subheading">Our Gallery</span>
+
+              </Bounce>
                 {/* <h4>Banquet & Events</h4> */}
                 <div className="cat_border" />
               </div>
@@ -138,13 +149,15 @@ function GalleryPage() {
                       style={{ width: "100%", height: "100%" }}
                       className="img-wrap"
                     >
-                      <Image
+                    <Slide style={{height:'100%'}} direction="up">
+                     <Image
                         width={"100%"}
                         height={"100%"}
                         // style={{ width: "100%", height: "100%" }}
                         src={v.imageUr1}
                         alt=""
                       />
+                     </Slide>
                       {/* <a className="fancybox">
                         <div className="content-wrap hvr-rectangle-out">
                           <div className="border">

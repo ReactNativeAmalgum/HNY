@@ -1,6 +1,7 @@
 import React from "react";
 import "./Specality.css";
 import Marquee from "react-fast-marquee";
+import { Bounce } from "react-awesome-reveal";
 
 function Specality() {
   return (
@@ -13,7 +14,9 @@ function Specality() {
               style={{ visibility: "visible", animationName: "zoom" }}
             >
 
+              <Bounce>
               <h4>Our Services</h4>
+              </Bounce>
               <div className="cat_border" />
             </div>
           </div>
