@@ -5,7 +5,8 @@ import { Link } from "react-router-dom";
 import "./banner.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import banner1 from '../../Assets/images/homebanner1.webp'
+import banner2 from '../../Assets/images/homebanner2.webp'
 const CarouselBanner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -47,22 +48,22 @@ const CarouselBanner = () => {
   const slides = [
     {
       id: 1,
-      img: "https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-2024-1720241010-wAOzD/mbr-1721373677-rlhqT/mbr-23-1721373698-6QPrf.jpg",
+      img: banner1,
       text: "Beautiful Living Solution",
       text2: "HNY is a design firm that brings dimension to the design create for you",
     },
     {
       id: 2,
-      img: "https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/amj-2024-1711965337-VsMIK/mbr-1711965351-TMqEb/mbr17-1715845112-j1tZP.jpg",
+      img: banner2,
       text: "Beautiful Living Solution",
       text2: "Give your home a new look with these interior design ideas create for you",
     },
-    {
-      id: 3,
-      img: "https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-2024-1720241010-wAOzD/mbr-1721373677-rlhqT/mbr-11-1721373690-sJ0m2.jpg",
-      text: "Beautiful Living Solution",
-      text2: "HNY is a design firm that brings dimension to the design create for you",
-    },
+    // {
+    //   id: 3,
+    //   img: "https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-2024-1720241010-wAOzD/mbr-1721373677-rlhqT/mbr-11-1721373690-sJ0m2.jpg",
+    //   text: "Beautiful Living Solution",
+    //   text2: "HNY is a design firm that brings dimension to the design create for you",
+    // },
   ];
 
   return (

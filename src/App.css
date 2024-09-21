@@ -517,7 +517,6 @@ body,html{
 
 @media screen and (min-width: 1024px) {
   .contact-banner {
-      /* height: 600px; */
   }
   .contact-banner h1 {
       font-size: 60px;

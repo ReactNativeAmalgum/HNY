@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import "./WhyChoos2.css";
 import { Link } from "react-router-dom";
+import homeabout from '../../Assets/images/homeabout.webp'
+
 export default function WhyChoos2() {
   const [showMore, setShowMore] = useState(false);
-
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
@@ -118,7 +119,7 @@ export default function WhyChoos2() {
               <div className="card-alingment">
                 <div className="whychose-card-cont">
                   <div className="whychoose2-card">
-                    <img src="https://img.freepik.com/free-photo/3d-rendering-cinema-director-chair_23-2151169469.jpg?t=st=1723535046~exp=1723538646~hmac=48ed31a4763c98c6ed4b63d8ca280ebdadb72ee5c9d51993ae65481d270d3948&w=1060" />
+                    <img src={homeabout} />
                   </div>
                   <div className="card2">
                     <img src="https://img.freepik.com/free-photo/young-happy-couple-meeting-with-financial-advisor-office-woman-is-handshaking-with-agent_637285-3904.jpg?t=st=1723534595~exp=1723538195~hmac=eae58722805c45c0a532489aff8e790bb6f965c6b1794a66504a3f9d4fcf43af&w=1060" />

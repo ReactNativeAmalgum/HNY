@@ -38,11 +38,11 @@ export default function Design_planning() {
                                 <li key={service.id}>
                                   <div className="a-arrow-cont">
                                     <Link
-                                      onClick={() => window.scroll(0,0)}
+                                      onClick={() => window.scroll(0, 0)}
                                       to={`/designplanning/${service.id}`}
                                       className={
                                         window.location.pathname ===
-                                        `/designplanning/${service.id}`
+                                          `/designplanning/${service.id}`
                                           ? "active"
                                           : ""
                                       }
@@ -90,58 +90,52 @@ export default function Design_planning() {
                             </h4>
                           </div>
                           <div className="right-card-2-second-div">
-                            <p>
-                              <span
-                                style={{
-                                  fontSize: 52,
-                                  fontWeight: 700,
-                                  color: "#BB9A65",
-                                  fontFamily: "Space Grotesk",
-                                }}
-                              >
-                                M
-                              </span>
-                              {service.descp1}
-                            </p>
-                            {[...Array(14)].map((_, index) => (
-                              <p key={index}>{service[`descp${index + 1}`]}</p>
-                            ))}
-                          </div>
-                          <div className="container">
-                            <div className="right-card2-cont">
-                              <div className="row">
-                                <div className="right-card2-row">
-                                  <div className="col-6">
-                                    <div className="right-card2-col-cont"></div>
-                                  </div>
-                                  <div className="col-6">
-                                    <div className="right-card2-col-cont"></div>
-                                  </div>
+                            <div dangerouslySetInnerHTML={{ __html: service.descp }} />
+                            {[...Array(14)].map((_, index) => {
+                              const key = `descp${index + 1}`;
+                              return service[key] ? (
+                                <div key={index}>
+                                  <div dangerouslySetInnerHTML={{ __html: service[key] }} />
+                                </div>
+                              ) : null; 
+                            })}
+                          {/* </div> */}
+                        </div>
+                        <div className="container">
+                          <div className="right-card2-cont">
+                            <div className="row">
+                              <div className="right-card2-row">
+                                <div className="col-6">
+                                  <div className="right-card2-col-cont"></div>
+                                </div>
+                                <div className="col-6">
+                                  <div className="right-card2-col-cont"></div>
                                 </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div className="right-card">
-                        <div className="service-gallery-cont">
-                          <div className="service-gallery">
-                            <img src={service.img[1]} />
-                          </div>
-                          <div className="service-gallery">
-                            <img src={service.img[2]} />
-                          </div>
+                    </div>
+                    <div className="right-card">
+                      <div className="service-gallery-cont">
+                        <div className="service-gallery">
+                          <img src={service.img[1]} />
+                        </div>
+                        <div className="service-gallery">
+                          <img src={service.img[2]} />
                         </div>
                       </div>
                     </div>
-                    {/* </div> */}
                   </div>
+                  {/* </div> */}
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div >
       <Footer />
     </>
   );

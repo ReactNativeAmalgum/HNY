@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ServiceData } from "../Assets/Dynamic Data/ServiceData";
+import whatwecanoffer from '../Assets/images/homewhatwecanoffer.jpg'
 export default function WhatweOffer2() {
   return (
     <section
@@ -262,7 +263,7 @@ export default function WhatweOffer2() {
                                       loading="lazy"
                                       decoding="async"
                                       className="wp-image-17484 size-full"
-                                      src="https://img.freepik.com/free-photo/bouquet-rose-table_1339-3026.jpg?t=st=1723552327~exp=1723555927~hmac=56692b2b0f66fdfcfcfb116f07a463072d2ba2835c0eba619347f3fed54c7710&w=1060"
+                                      src={whatwecanoffer}
                                       alt="tab-img-01"
                                       width={647}
                                       height={497}

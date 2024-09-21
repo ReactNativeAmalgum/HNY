@@ -20,3 +20,8 @@
     text-align: center; 
   }
   
+  #project-version-one .gallery-filter {
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid #E2E2E2;
+  }
