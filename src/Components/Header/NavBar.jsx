@@ -214,10 +214,10 @@ export default function NavBar() {
                 </div>
                 <div className="pbmit-right-box d-flex align-items-center">
                   <div className="pbmit-header-button2">
-                    <Link to="/contact" className="pbmit-header-button">
+                    <Link style={{textDecoration:'none'}} to="./contact" clLinkssName="pbmit-header-button">
                       <span className="pbmit-header-button-wrapper">
                         <span className="pbmit-header-button2-text">
-                          Book Consult
+                          Contact Now
                         </span>
                       </span>
                     </Link>
