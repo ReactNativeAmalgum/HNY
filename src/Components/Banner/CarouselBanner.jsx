@@ -39,7 +39,7 @@ const CarouselBanner = () => {
       <div className="booknow-circle-cont">
         <Link to={"/contact"} style={{ textDecoration: "none" }}>
           <div className="banner-book-now2">
-            <span> Book Now</span>
+            <span style={{color:'#e5646e'}}> Book Now</span>
           </div>
         </Link>
       </div>
