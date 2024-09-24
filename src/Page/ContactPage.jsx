@@ -45,8 +45,7 @@ function ContactPage() {
                         <Slide direction="left">
 
                           <p className="width">
-                            A220, Business complex, LODHA AMARA, Kolshet Rd,
-                            Thane, Maharashtra 400607
+                          220, LODHA SIGNET A, Beside Lodha AMARA, Kolhshet Rd, Thane West, Maharashtra 400607
                           </p>
                         </Slide>
 
