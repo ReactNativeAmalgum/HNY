@@ -182,6 +182,9 @@
     padding: 0 !important;
     margin: 10px;
   }
+  .elementor-widget-container{
+    padding-bottom: 20px;
+  }
 }
 .pbmit-tab-content-title,
 .pbmit-tab-link {
