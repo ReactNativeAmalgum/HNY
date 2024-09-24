@@ -10,7 +10,7 @@ export default function WhyChoos2() {
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
-  
+
   const [isInView, setIsInView] = useState(false);
   const headingRef = useRef(null);
 
@@ -37,7 +37,7 @@ export default function WhyChoos2() {
   const heading = "WHAT WE DO".split(" ");
 
   return (
-    <div className={"section-whychoose-cont"}>
+    <div style={{ paddingTop: '3%' }} className={"section-whychoose-cont"}>
       <div className={"container"}>
         <div className="row">
           <div className="whychoose2-row">
@@ -109,7 +109,7 @@ export default function WhyChoos2() {
                                   preferences, and needs. This collaborative
                                   approach enables us to build rooms that
                                   authentically reflect the client's personality
-                                  and lifestyle. Our Interior Designers & 
+                                  and lifestyle. Our Interior Designers &
                                   Interior Decorators in Thane are experts at
                                   integrating creativity and pragmatism,
                                   ensuring that each design element has a
@@ -135,23 +135,23 @@ export default function WhyChoos2() {
                       data-element_type="widget"
                       data-widget_type="button.default"
                     >
-                                                <Slide direction="up" >
+                      <Slide direction="up" >
 
-                      <div className="elementor-widget-container">
-                        <div className="elementor-button-wrapper">
-                          <Link
-                            className="elementor-button elementor-button-link elementor-size-sm"
-                            to="/aboutpage"
-                          >
-                            <span className="elementor-button-content-wrapper">
+                        <div className="elementor-widget-container">
+                          <div className="elementor-button-wrapper">
+                            <Link
+                              className="elementor-button elementor-button-link elementor-size-sm"
+                              to="/aboutpage"
+                            >
+                              <span className="elementor-button-content-wrapper">
 
-                              <span className="elementor-button-text">
-                                More About
+                                <span className="elementor-button-text">
+                                  More About
+                                </span>
                               </span>
-                            </span>
-                          </Link>
+                            </Link>
+                          </div>
                         </div>
-                      </div>
                       </Slide>
 
                     </div>
@@ -166,7 +166,7 @@ export default function WhyChoos2() {
                     <img src={homeabout} alt="About Hny Studio" />
                   </div>
                   <div className="card2">
-                    <img src="https://img.freepik.com/free-photo/young-happy-couple-meeting-with-financial-advisor-office-woman-is-handshaking-with-agent_637285-3904.jpg?t=st=1723534595~exp=1723538195~hmac=eae58722805c45c0a532489aff8e790bb6f965c6b1794a66504a3f9d4fcf43af&w=1060" alt="Meeting" />
+                    <img src="https://img.freepik.com/free-photo/colleagues-working-together-project_23-2149286147.jpg?t=st=1727170527~exp=1727174127~hmac=e71c89b026d7281302d993f39ff51d9ca8f5b144188e19d04e4bd17d6926e14e&w=1060" alt="Meeting" />
                   </div>
                   <div className="year-card">
                     <p className="started-txt">STARTED IN</p>

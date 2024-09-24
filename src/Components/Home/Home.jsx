@@ -16,7 +16,7 @@ function Home() {
   return (
     <>
       <CarouselBanner />
-      <Specality />
+      {/* <Specality /> */}
       <WhyChoose2 />
       {/* <Whynchoos2 /> */}
       <WhatweOffer2 />
