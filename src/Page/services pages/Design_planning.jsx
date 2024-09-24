@@ -100,7 +100,7 @@ export default function Design_planning() {
                                 <MdAddCall /> +91 90824 89772
                               </span>
                               <div className="register-btn">
-                                <a href='tel:+919082489772'><p>Register Now</p></a>
+                                <a href='tel:+919082489772'><p>Call Now</p></a>
                               </div>
                             </div>
                           </div>
