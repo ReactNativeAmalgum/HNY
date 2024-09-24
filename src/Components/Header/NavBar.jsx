@@ -4,7 +4,7 @@ import logo from "../../Assets/wny-logo-.png";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 import { Link } from "react-router-dom";
 import "./navii.css";
-import { FaYoutube } from "react-icons/fa";
+import { FaSortDown, FaYoutube } from "react-icons/fa";
 
 export default function NavBar() {
   const [toggle, setToggle] = useState(false);
@@ -82,7 +82,8 @@ export default function NavBar() {
                   </li>
                   <li>
                     <i className="pbmit-base-icon-location-dot-solid" />
-                    A220, Business complex, LODHA AMARA
+                    220, LODHA SIGNET A, Thane West, Maharashtra
+
                   </li>
                   <li>
                     <i className="pbmit-base-icon-phone-volume-solid-1" />
@@ -143,12 +144,13 @@ export default function NavBar() {
                               </span>
                             </li>
                             <li
+                            
                               className={`menu-item ${
                                 isSubMenuOpen ? "open" : ""
                               }`}
                             >
-                              <a href="#" onClick={toggleSubMenu}>
-                                Services
+                              <a  href="#" onClick={toggleSubMenu}>
+                                Services <FaSortDown style={{marginBottom:10}} />
                               </a>
                               <ul
                                 className={`sub-menu ${

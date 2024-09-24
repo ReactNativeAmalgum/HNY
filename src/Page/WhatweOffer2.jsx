@@ -278,7 +278,13 @@ export default function WhatweOffer2() {
                             </Link>
                           </Bounce>
                         </span>
-                        <i className="pbmit-base-icon-pbmit-up-arrow" />
+                        <Link
+                          onClick={() => window.scrollTo(0, 0)}
+                          to={`designplanning/${s.id}`}
+                        >
+                          <i className="pbmit-base-icon-pbmit-up-arrow" />
+                        </Link>
+
                       </li>
                     ))}
                   </ul>

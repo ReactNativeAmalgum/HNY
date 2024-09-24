@@ -97,10 +97,10 @@ export default function Design_planning() {
                               <h4>Ready to start learning?</h4>
                               <h3>Sign up now!</h3>
                               <span>
-                                <MdAddCall /> +91 123456789
+                                <MdAddCall /> +91 90824 89772
                               </span>
                               <div className="register-btn">
-                                <p>Register Now</p>
+                                <a href='tel:+919082489772'><p>Register Now</p></a>
                               </div>
                             </div>
                           </div>

@@ -11,6 +11,7 @@ import "swiper/css/pagination";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 import { Image } from "antd";
 import { Bounce, Slide } from "react-awesome-reveal";
+import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 
 function Gallery2() {
   const [showMore, setShowMore] = useState(false);
@@ -79,41 +80,35 @@ function Gallery2() {
                 }}
               >
                 <SwiperSlide className="slider-img-cont">
-                  <img src="https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-2024-1720241010-wAOzD/mbr-1721373677-rlhqT/mbr-16-1721373695-xADzw.jpg" />
+                  <img src={ServiceData[0].img[0]} />
 
-                  <a> <Bounce >Transforming Rooms </Bounce></a>
-
-                </SwiperSlide>
-                <SwiperSlide className="slider-img-cont">
-                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/portfolio-1000x615.jpg" />
-
-                  <a>  <Bounce >Weaving Dream </Bounce></a>
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/1"> <Bounce >Design Planning </Bounce></a>
 
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/blog-1000x615.jpg" />
+                <img src={ServiceData[1].img[0]} />
 
-                  <a>          <Bounce >Interior Decorator </Bounce></a>
-                </SwiperSlide>
-                <SwiperSlide className="slider-img-cont">
-                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/service-1000x615.jpg" />
-
-                  <a>             <Bounce >Professional Interior </Bounce></a>
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/2" >  <Bounce >Kitchen Installation </Bounce></a>
 
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <img src="https://ideasrqr.com/wp-content/uploads/2024/05/portfolio-1000x615.jpg" />
+                <img src={ServiceData[2].img[0]} />
 
-                  <a><Bounce >Interior Work Plan </Bounce></a>
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/3">          <Bounce >Furniture & Home Decor </Bounce></a>
+                </SwiperSlide>
+                <SwiperSlide className="slider-img-cont">
+                <img src={ServiceData[3].img[0]} />
+
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/4">             <Bounce >Other Expertise </Bounce></a>
 
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                  <img src="https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/india-1634120414-v3jjP/designs-1634120429-iNDYp/kids-room-1634715806-YNILh/lk-in-kbr-0088-1640883105-1HYdh.png" />
+               <img src={ServiceData[4].img[0]} />
 
-
-                  <a> <Bounce >2D/2D Layouts </Bounce></a>
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/5"><Bounce >Commercial Interior Design </Bounce></a>
 
                 </SwiperSlide>
+ 
               </Swiper>
             </div>
           </div>

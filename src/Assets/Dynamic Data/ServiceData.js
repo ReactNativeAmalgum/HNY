@@ -7,7 +7,7 @@ export const ServiceData = [
       "https://image3.jdomni.in/banner/25092019/1C/AD/34/DE8494F76EBDEF416FFBF56182_1569389807492.jpg?output-format=webp",
       "https://image2.jdomni.in/banner/25092019/55/B4/01/B8DBB00FE8887F043CED0E4C4C_1569389793713.jpg?output-format=webp",
     ],
-    title: "Designplanning",
+    title: "Design planning",
     descp: `<p>Interior Design & Planning Services in Thane</p>`,
     descp2: `<p>When it comes to creating a space that reflects your personality and meets your functional needs, choosing the right Interior Design & Planning Services in Thane is essential. At HNY Studio, we understand that your home or office is more than just a space; it’s a reflection of who you are and what you value. Our team of expert interior designers is dedicated to transforming your vision into reality, ensuring that every corner of your space resonates with your style and purpose.</p>`,
     descp3: `<h5>Comprehensive Interior Design Solutions</h5>`,

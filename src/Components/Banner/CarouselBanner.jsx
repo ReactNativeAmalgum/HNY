@@ -23,11 +23,11 @@ const CarouselBanner = () => {
       <div className="booknow-circle-cont">
         <Link to={"/contact"} style={{ textDecoration: "none" }}>
           <div className="banner-book-now">
-            <span> Book Now</span>
+            <span style={{color:'#e5646e', fontWeight:500}}> Book Now</span>
           </div>
 
           <div className="book-now-circle">
-            <FaArrowRight />
+            <FaArrowRight style={{color:'#e5646e'}} />
           </div>
         </Link>
       </div>
