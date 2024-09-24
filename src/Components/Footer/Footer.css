@@ -26,7 +26,7 @@
   }
   
   .footer-color {
-    background: black;
+    background: #FFFDD0;
     padding-top: 45px;
     padding-bottom: 15px;
   }
@@ -34,7 +34,7 @@
   .footer-about p,
   .footer-newsletter p,
   .copyright p {
-    color: white !important;
+    color: black !important;
   }
   
   .footer-title {
@@ -42,7 +42,7 @@
   }
   
   .footer-title ul li {
-    color: white !important;
+    color: black !important;
   }
   
   .footer-title ul li a {
@@ -50,18 +50,18 @@
   }
   
   .desc {
-    color: #ffffff !important;
+    color: black !important;
   }
   
   a {
-    color: white !important;
+    color: black !important;
     text-decoration: underline;
   }
   
   ::marker {
     unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;
-    color: white;
+    color: black;
     text-transform: none;
     text-indent: 0px !important;
     text-align: start !important;
