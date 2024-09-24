@@ -1,8 +1,36 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "./Gallery.css";
-import { Slide } from "react-awesome-reveal";
+import { Bounce, Slide } from "react-awesome-reveal";
+import { motion } from "framer-motion";
+import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 
 function Gallery() {
+
+  const [isInView, setIsInView] = useState(false);
+  const headingRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        console.log(entry.isIntersecting); // Check if it is in view
+        setIsInView(entry.isIntersecting);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (headingRef.current) {
+      observer.observe(headingRef.current);
+    }
+
+    return () => {
+      if (headingRef.current) {
+        observer.unobserve(headingRef.current);
+      }
+    };
+  }, []);
+
+  const heading = "Elegant designs enhancing your living spaces beautifully.".split(" ");
+
   return (
     <>
       <section className="marg-t">
@@ -12,83 +40,87 @@ function Gallery() {
               className="cat_section_headings wow zoom"
               style={{ visibility: "visible", animationName: "zoom" }}
             >
-              <span className="cat_subheading">
-                Elegant designs enhancing your living spaces beautifully.
+              <span className="cat_subheading" ref={headingRef}>
+                {heading.map((el, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={isInView ? { opacity: 1, y: 0 } : {}}
+                    transition={{ duration: 0.5, delay: i * 0.3 }}
+                  >
+                    {el}{" "}
+                  </motion.span>
+                ))}
               </span>
-              <h4>Our Gallery</h4>
+              <Bounce >
+                <h4>Our Gallery</h4>
+              </Bounce>
               <div className="cat_border" />
             </div>
           </div>
         </div>
-        <div className="row">
-          <div className="col-lg-3 col-md-12 col-sm-12 dgg ">
-            <div className="gallery-image">
-              <img
-                src="https://foyr.com/learn/wp-content/uploads/2021/10/rules-for-interior-designers-1024x656.png"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-12 col-sm-12  dgg ">
-            <div className="gallery-image">
-              <img
-                src="https://hips.hearstapps.com/hmg-prod/images/hbx110123cortneybishop-009-6638f5a4a7c67.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-12 col-sm-12 dgg ">
-            <div className="gallery-image">
-              <img
-                src="https://asset.skoiy.com/9b80a6f781ff336f/yrwwqpnyb7ys.jpg?w=970&q=90"
-                alt=""
-              />
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-12 col-sm-12 dgg ">
-            <div className="gallery-image">
-              <img
-                src="https://hips.hearstapps.com/hmg-prod/images/hbx110123cortneybishop-009-6638f5a4a7c67.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*"
-                alt=""
-              />
-            </div>
-          </div>
+        <div className="container"> 
+  <div className="row">
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="gallery-image">
+        <img
+          src={ServiceData[0].img[0]}
+          alt=""
+          className="img-fluid"
+        />
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="gallery-image">
+        <img
+          src={ServiceData[1].img[1]}
+          alt=""
+          className="img-fluid"
+        />
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="gallery-image">
+        <img
+          src={ServiceData[2].img[1]}
+          alt=""
+          className="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+  <div  />
+  <div className="row">
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="gallery-image">
+        <img
+          src= {ServiceData[3].img[1]}
+          alt=""
+          className="img-fluid"
+        />
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="gallery-image">
+        <img
+          src= {ServiceData[4].img[1]}
+          alt=""
+          className="img-fluid"
+        />
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 col-sm-12">
+      <div className="gallery-image">
+        <img
+          src={ServiceData[1].img[2]}
+          alt=""
+          className="img-fluid"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
-          <div className="row">
-            <div className="col-lg-3  col-md-12 col-sm-12 dgg ">
-              <div className="gallery-image">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/hbx110123cortneybishop-009-6638f5a4a7c67.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-12 col-sm-12  dgg ">
-              <div className="gallery-image">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/hbx110123cortneybishop-009-6638f5a4a7c67.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="col-lg-3  col-md-12 col-sm-12 dgg ">
-              <div className="gallery-image">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/hbx110123cortneybishop-009-6638f5a4a7c67.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*"
-                  alt=""
-                />
-              </div>
-            </div>
-            <div className="col-lg-3 col-md-12 col-sm-12 dgg ">
-              <div className="gallery-image">
-                <img
-                  src="https://hips.hearstapps.com/hmg-prod/images/hbx110123cortneybishop-009-6638f5a4a7c67.jpg?crop=1xw:0.84375xh;center,top&resize=1200:*"
-                  alt=""
-                />
-              </div>
-            </div>
-          </div>
-        </div>
       </section>
     </>
   );

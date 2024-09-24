@@ -21,6 +21,7 @@ function Home() {
       {/* <Whynchoos2 /> */}
       <WhatweOffer2 />
       <Gallery2 />
+      <Gallery />
       <Review />
       <ProgressBarr />
       <Footer />
