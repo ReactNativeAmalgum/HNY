@@ -172,7 +172,7 @@ function Footer() {
                   <i className="fa fa-heart" /> by{" "}
                   <a href="https://skdm.in/contact-us-digital-marketing">
                     {" "}
-                    <b>shree krishns digital marketing{" "}</b>
+                    <b>shree krishna digital marketing{" "}</b>
                   </a>
                   .
                 </p>
