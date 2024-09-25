@@ -34,7 +34,7 @@
   .footer-about p,
   .footer-newsletter p,
   .copyright p {
-    color: black !important;
+    /* color: black !important; */
   }
   
   .footer-title {
@@ -42,7 +42,7 @@
   }
   
   .footer-title ul li {
-    color: black !important;
+    /* color: black !important; */
   }
   
   .footer-title ul li a {
@@ -50,14 +50,22 @@
   }
   
   .desc {
-    color: black !important;
+    /* color: black !important; */
   }
   
   a {
-    color: black !important;
+    color: white !important;
     text-decoration: underline;
   }
-  
+  .footer-list li a{
+    color:black !important
+  }
+  .google-plus {
+    color:black !important
+  }
+  .copyright a{
+    color: black !important;
+  }
   ::marker {
     unicode-bidi: isolate;
     font-variant-numeric: tabular-nums;

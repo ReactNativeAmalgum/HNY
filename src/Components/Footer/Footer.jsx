@@ -2,7 +2,7 @@ import "./Footer.css";
 import { FaFacebookF, FaYoutube } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { CiTwitter } from "react-icons/ci";
-import logo from "../../Assets/wny-logo-.png";
+import logo from "../../Assets/images/logo.png";
 import { Link } from "react-router-dom";
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import { motion } from "framer-motion";
@@ -172,7 +172,7 @@ function Footer() {
                   <i className="fa fa-heart" /> by{" "}
                   <a href="https://skdm.in/contact-us-digital-marketing">
                     {" "}
-                    shree krishns digital marketing{" "}
+                    <b>shree krishns digital marketing{" "}</b>
                   </a>
                   .
                 </p>

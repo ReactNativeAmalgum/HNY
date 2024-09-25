@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../../index.css";
-import logo from "../../Assets/wny-logo-.png";
+import logo from "../../Assets/images/logo.png";
 import { ServiceData } from "../../Assets/Dynamic Data/ServiceData";
 import { Link } from "react-router-dom";
 import "./navii.css";
