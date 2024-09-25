@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import { FreeMode, Pagination } from "swiper/modules";
 import alfa from '../../Assets/images/Alfa Sawant.png'
 import tejas from '../../Assets/images/tejas.png'
-import women from '../../Assets/images/women.png'
+import women from '../../Assets/images/women.jpg'
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import { motion } from "framer-motion";
 

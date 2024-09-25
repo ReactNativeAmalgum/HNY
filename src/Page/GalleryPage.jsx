@@ -104,35 +104,35 @@ function GalleryPage() {
                   onClick={() => filterItems("interior")}
                   className="filter"
                 >
-                  <span>INTERIOR DESIGNING</span>
+                  <span>DESIGN PLANNING</span>
                 </li>
                 <li
                   data-filter=".talking"
                   onClick={() => filterItems("trunkey")}
                   className="filter"
                 >
-                  <span>TRUNKEY CONTRACTOR</span>
+                  <span>KITCHEN INSTALLATION</span>
                 </li>
                 <li
                   data-filter=".conference"
                   onClick={() => filterItems("civil")}
                   className="filter"
                 >
-                  <span>CIVIL</span>
+                  <span>FURNITURE & HOME DECOR </span>
                 </li>
                 <li
                   data-filter=".events"
                   onClick={() => filterItems("modularkitchen")}
                   className="filter"
                 >
-                  <span>MODULAR KITCHEN</span>
+                  <span>OTHER EXPERTISE</span>
                 </li>
                 <li
                   data-filter=".party"
                   onClick={() => filterItems("furniture")}
                   className="filter"
                 >
-                  <span>FURNITURE</span>
+                  <span>COMMERCIAL INTERIOR DESIGN</span>
                 </li>
               </ul>
             </div>

@@ -8,6 +8,9 @@ import "slick-carousel/slick/slick-theme.css";
 import banner1 from '../../Assets/images/homebanner1.webp'
 import banner2 from '../../Assets/images/homebanner2.webp'
 import { Fade, Slide } from "react-awesome-reveal";
+import imageIndex from "../../Assets/images/imgaeIndex";
+
+
 const CarouselBanner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -49,7 +52,7 @@ const CarouselBanner = () => {
   const slides = [
     {
       id: 1,
-      img: 'https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jas-2024-1720241010-wAOzD/mbr-1721373677-rlhqT/mbr-23-1721373698-6QPrf.jpg',
+      img: imageIndex.CROUSEL1,
       text: "Beautiful Living Solution",
       text2: "HNY is a design firm that brings dimension to the design create for you",
     },

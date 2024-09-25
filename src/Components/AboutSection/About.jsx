@@ -2,6 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "./About.css";
 import { motion } from "framer-motion";
 import { Slide } from "react-awesome-reveal";
+import imageIndex from "../../Assets/images/imgaeIndex";
 
 function About() {
   const [showMore, setShowMore] = useState(false);
@@ -46,7 +47,7 @@ function About() {
                   <div className="col-md-6">
                     <div className="NewAboutUS-Image-con">
                       <img
-                        src="https://image3.jdomni.in/banner/16092019/E7/A2/0C/5E2B3C73DAA487D7586E285F62_1568624111212.jpg?output-format=webp"
+                        src= {imageIndex.ABOUT1}
                         alt="Event"
                       />
                     </div>
@@ -55,7 +56,7 @@ function About() {
                     <div className="NewAboutUS-Image-Second-con">
                       <div className="NewAboutUS-Image-Second">
                         <img
-                          src="https://image3.jdomni.in/banner/16092019/47/8D/FD/1DDD5C17415352B380D4B4E2D0_1568624143368.jpg?output-format=webp"
+                          src={imageIndex.ABOUT2}
                           alt="Event"
                         />
                       </div>

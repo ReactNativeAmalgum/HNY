@@ -17370,7 +17370,6 @@ body .pbmit-editor-active-gallery-style-1 {
     url("./Assets/fonts/flaticon_xinterio.eot#iefix")
       format("embedded-opentype"),
     url("./Assets/fonts/flaticon_xinterio.ttf") format("truetype"),
-    url("./Assets/images/flaticon_xinterio.svg#flaticon_xinterio") format("svg");
 }
 
 i[class^="flaticon_xinterio-"]:before,
@@ -17580,7 +17579,6 @@ i[class*=" pbmit-xinterio-icon-"]:before {
     url("./Assets/fonts/flaticon_xinterio.eot#iefix")
       format("embedded-opentype"),
     url("./Assets/fonts/flaticon_xinterio.ttf") format("truetype"),
-    url("./Assets/images/flaticon_xinterio.svg#flaticon_xinterio") format("svg");
 }
 
 i[class^="flaticon_xinterio-"]:before,
@@ -19422,7 +19420,7 @@ body.rtl .elementor-1785 .elementor-element.elementor-element-269199b {
   .elementor-element.elementor-element-ce5266f
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("./Assets/images/demo-3-pattern.png");
+  /* background-image: url("./Assets/images/demo-3-pattern.png"); */
   background-position: center center;
   background-repeat: no-repeat;
 }
@@ -19474,7 +19472,7 @@ body.rtl .elementor-1785 .elementor-element.elementor-element-269199b {
   > .elementor-widget-wrap
   > .elementor-motion-effects-container
   > .elementor-motion-effects-layer {
-  background-image: url("./Assets/images/testimonial-bg.jpg");
+  /* background-image: url("./Assets/images/testimonial-bg.jpg"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27720,7 +27718,7 @@ button.swiper-pagination-bullet {
 .pbmit-title-bar-wrapper,
 .pbmit-title-bar-wrapper.pbmit-bg-color-custom:before {
   background-color: rgba(64, 50, 38, 0.2);
-  background-image: url(./Assets/images/titlebar-img.jpg);
+  /* background-image: url(./Assets/images/titlebar-img.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -27739,7 +27737,7 @@ button.swiper-pagination-bullet {
 .error404 .site-content-wrap,
 .error404 .pbmit-bg-color-custom > .site-content-wrap:before {
   background-color: rgba(0, 0, 0, 0.37);
-  background-image: url(./Assets/images/404.jpg);
+  /* background-image: url(./Assets/images/404.jpg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;

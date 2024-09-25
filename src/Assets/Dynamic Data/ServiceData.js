@@ -1,11 +1,13 @@
+import imageIndex from "../images/imgaeIndex";
+
 export const ServiceData = [
   {
     id: 1,
     slug: "/designplanning",
     img: [
-      "https://image3.jdomni.in/banner/25092019/96/FF/15/1F77E1483C29652CFAF2BEAD15_1569389701373.jpg?output-format=webp",
-      "https://image3.jdomni.in/banner/25092019/1C/AD/34/DE8494F76EBDEF416FFBF56182_1569389807492.jpg?output-format=webp",
-      "https://image2.jdomni.in/banner/25092019/55/B4/01/B8DBB00FE8887F043CED0E4C4C_1569389793713.jpg?output-format=webp",
+      imageIndex.DESIGNPLAN1,
+      imageIndex.DESIGNPLAN2,
+      imageIndex.DESIGNPLAN3,
     ],
     title: "Design planning",
     descp: `<p>Interior Design & Planning Services in Thane</p>`,

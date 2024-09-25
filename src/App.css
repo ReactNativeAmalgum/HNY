@@ -3,7 +3,7 @@
 
 /* CONTACT BANNER */
 .contact-banner {
-  background-image: url('https://images.livspace-cdn.com/w:1440/dpr:1/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2024-1704560007-SGQ6F/existing-real-home-assets-1704643706-yeqEk/march-1710935506-Ifokf/ssd-1711525147-i2lXE/4-1711525162-hCgjk.jpg');
+  background-image: url('../src//Assets//images/contact-banner.avif');
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -337,7 +337,7 @@
     /* opacity: 1; */
     background-image: 
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
-    url('https://img.freepik.com/free-photo/picture-frames-inempty-room_1048-8213.jpg?t=st=1725099815~exp=1725103415~hmac=5890c4ee1ee1c934b4f23dcad2f830c841b5b4dbf7d8266e839140a9b3568414&w=1060');
+    url('../src/Assets/images/gall-banner_11zon.jpg');
     width: 100%;
     background-repeat: no-repeat;   
     background-attachment: fixed;
@@ -538,5 +538,12 @@ body,html{
   }
   .about-banner h1 {
       font-size: 24px;
+  }
+}
+
+
+@media (max-width:768px){
+  .what-link-width .pbmit-tabs-heading .offer-span{
+    display: contents;
   }
 }

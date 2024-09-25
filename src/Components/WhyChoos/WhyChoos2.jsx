@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./WhyChoos2.css";
 import { Link } from "react-router-dom";
-import homeabout from '../../Assets/images/homeabout.webp';
+import homeabout from '../../Assets/images/homeabout.jpg';
 import { Bounce, Slide } from "react-awesome-reveal";
 import { motion } from "framer-motion";
+import imageIndex from "../../Assets/images/imgaeIndex";
 
 export default function WhyChoos2() {
   const [showMore, setShowMore] = useState(false);
@@ -167,7 +168,7 @@ export default function WhyChoos2() {
                     <img src={homeabout} alt="About Hny Studio" />
                   </div>
                   <div className="card2">
-                    <img src="https://img.freepik.com/free-photo/colleagues-working-together-project_23-2149286147.jpg?t=st=1727170527~exp=1727174127~hmac=e71c89b026d7281302d993f39ff51d9ca8f5b144188e19d04e4bd17d6926e14e&w=1060" alt="Meeting" />
+                    <img src={imageIndex.HOMEABT} alt="Meeting" />
                   </div>
                   <div className="year-card">
                     <p className="started-txt">STARTED IN</p>

@@ -362,7 +362,7 @@ export default function WhatweOffer2() {
                               <div className="inner-content">
                                 <div className="row g-0 tab-content-wrap">
                                   <div className="col-xl-5 pbmit-tab-img">
-                                    <img
+                                    {/* <img
                                       loading="lazy"
                                       decoding="async"
                                       className="wp-image-17484 size-full"
@@ -370,7 +370,7 @@ export default function WhatweOffer2() {
                                       alt="tab-img-01"
                                       width={647}
                                       height={497}
-                                    />
+                                    /> */}
                                   </div>
                                   <div className="col-xl-7 pbmit-tab-list">
                                     <h2>Giving your home a new style.</h2>

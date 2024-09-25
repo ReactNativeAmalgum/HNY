@@ -1,41 +1,31 @@
+import imageIndex from "../Assets/images/imgaeIndex";
+import ServiceData from '../../src/Assets/Dynamic Data/ServiceData'
+
 const WorkTab = [
   // [
   {
     id: 1,
     category: "interior",
-    imageUr1:
-      "https://www.decorilla.com/online-decorating/wp-content/uploads/2022/07/Modern-contemporary-interior-design-living-rooms-2-scaled.jpeg",
+    imageUr1: imageIndex.INTERIOR1
   },
   {
     id: 2,
     category: "interior",
-    imageUr1:
-      "https://d4qwptktddc5f.cloudfront.net/easy_thumbnails/thumbs_Interior-Design-American-Kennel-Club-Museum-of-the-Dog-New-York-01-0319.jpg.770x0_q95.jpg",
+    imageUr1: imageIndex.INTERIOR2
   },
   {
     id: 3,
     category: "interior",
-    imageUr1:
-      "https://p.turbosquid.com/ts-thumb/fF/ZMYszK/7e/wh_gallery_04/jpg/1605299335/1920x1080/fit_q87/45dde64681422d6409364b01c6fdfe09406d0bfa/wh_gallery_04.jpg",
+    imageUr1: imageIndex.INTERIOR3
   },
   {
     id: 4,
     category: "interior",
-    imageUr1:
-      "https://artgallery.yale.edu/sites/default/files/styles/hero_small/public/2023-01/ag-doc-2201-0001-pub.jpg?h=589f04c2&itok=5ItkOKKN",
-  },
-
-  // ******************************************interior************************************************************
+    imageUr1: imageIndex.INTERIOR4
+    },
 
   {
     id: 5,
-
-    category: "interior",
-    imageUr1:
-      "https://www.theartblog.org/wp-content/uploaded/2022/11/Artblog-Posts-Susan-Isaacs-Metamorphosis-In-Clay-1.jpg",
-  },
-  {
-    id: 6,
 
     category: "interior",
     imageUr1:
@@ -43,39 +33,70 @@ const WorkTab = [
   },
 
   {
-    id: 7,
+    id: 6,
 
     category: "interior",
     imageUr1:
       "https://images.prestigeonline.com/wp-content/uploads/sites/8/2020/01/11161711/256619281_4488609431253222_6818331029224983139_n-e1683793135652-1553x900.jpg",
   },
   {
+    id: 7,
+
+    category: "interior",
+    imageUr1: imageIndex.INTERIOR1,
+  },
+  {
     id: 8,
 
     category: "interior",
-    imageUr1:
-      "https://media.cntraveler.com/photos/53d9d1eddcd5888e145a2b6e/master/w_1600%2Cc_limit/6-yale-university-art-gallery-museum.jpg",
+    imageUr1: imageIndex.INTERIOR2,
   },
+  {
+    id: 9,
 
+    category: "interior",
+    imageUr1: imageIndex.INTERIOR3,
+  },
+  {
+    id: 10,
+
+    category: "interior",
+    imageUr1: imageIndex.INTERIOR4,
+  },
   // ****************************TRUNKRY********************************
 
   {
     id: 1,
     category: "trunkey",
-    imageUr1:
-      "https://images.squarespace-cdn.com/content/v1/56f2595e8a65e2db95a7d983/1504679251435-SRV5LUKE7XT7J9LSI4FJ/interior.png?format=1500w",
+    imageUr1: imageIndex.KITCHEN6,
   },
   {
     id: 2,
     category: "trunkey",
-    imageUr1:
-      "https://miro.medium.com/v2/resize:fit:1400/1*xssQvmj8ofiDcT-pE-iNhQ.jpeg",
+    imageUr1: imageIndex.KITCHEN5,
+
   },
   {
     id: 3,
     category: "trunkey",
-    imageUr1: "https://www.trade4asia.com/ProductImg/turn.jpg",
+    imageUr1: imageIndex.KITCHEN4,
   },
+  {
+    id: 4,
+    category: "trunkey",
+    imageUr1: imageIndex.KITCHEN1,
+  },
+  {
+    id: 5,
+    category: "trunkey",
+    imageUr1: imageIndex.KITCHEN2
+  },
+  {
+    id: 6,
+    category: "trunkey",
+    imageUr1: imageIndex.kitchen3
+  },
+
 
   // **************************************************civil*******************************************************
   {
@@ -114,71 +135,96 @@ const WorkTab = [
     imageUr1:
       "https://royalinteriorindia.com/wp-content/uploads/2024/06/1_zUbHuxOA36d1ZQQRCJmecg.jpg",
   },
-
+  {
+    id: 7,
+    category: "civil",
+    imageUr1: imageIndex.FURNITURE1
+  },
+  {
+    id: 8,
+    category: "civil",
+    imageUr1: imageIndex.FURNITURE2
+  },
+  {
+    id: 9,
+    category: "civil",
+    imageUr1: imageIndex.FURNITURE3
+  },
   // weddinglawn
 
   // ***************************************************modularkitchen Kitchen*************************************************************************
   {
     id: 1,
     category: "modularkitchen",
-    imageUr1:
-      "https://cityfurnish.com/blog/wp-content/uploads/2023/03/3d-rendering-luxury-house-interior-design-min.jpg",
-  },
+    imageUr1: imageIndex.OTHER1
+    },
 
   {
     id: 2,
     category: "modularkitchen",
-    imageUr1:
-      "https://www.asenseinterior.com/assets/uploads/7116d5ce48cd077c23ddfa81344952db.jpg",
+    imageUr1: imageIndex.OTHER2
+  
   },
 
   {
     id: 3,
     category: "modularkitchen",
-    imageUr1:
-      "https://images.woodenstreet.de/image/data/modular%20kitchen/22.jpg",
+    imageUr1: imageIndex.OTHER3
+
   },
   {
     id: 4,
     category: "modularkitchen",
-    imageUr1:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwqf7REouakJEab3raT1NapWck1LxxDTvltA&s",
+    imageUr1: imageIndex.OTHER4
+
   },
 
   {
     id: 5,
     category: "modularkitchen",
-    imageUr1:
-      "https://assets-news.housing.com/news/wp-content/uploads/2022/01/25212810/L-shape-modular-kitchen-design-12-Indian-designs-that-can-transform-your-kitchen-FB-1200x700-compressed.jpg",
+    imageUr1: imageIndex.OTHER5
+
   },
 
   {
     id: 6,
     category: "modularkitchen",
-    imageUr1:
-      "https://media.designcafe.com/wp-content/uploads/2020/05/09150825/blue-and-white-modular-kitchen-design.jpg",
+    imageUr1: imageIndex.OTHER6
+
   },
   // ***************************************************furniture*************************************************************************
   {
     id: 1,
     category: "furniture",
-    imageUr1:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpYb93hhZDWnqmbKSQpAJYTBn2cW3kntUPbA&s",
+    imageUr1: imageIndex.COM1 ,
   },
 
   {
     id: 2,
 
     category: "furniture",
-    imageUr1:
-      "https://goodhomes.wwmindia.com/content/2020/oct/0004--venturafadd1603192481.jpg",
+    imageUr1: imageIndex.COM2
   },
 
   {
     id: 3,
     category: "furniture",
-    imageUr1:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQG7d_Fw8HSjdePi8zy-Pm7MssWDGwbUTtZog&s",
+    imageUr1: imageIndex.COM3
+  },
+  {
+    id: 4,
+    category: "furniture",
+    imageUr1: imageIndex.COM4
+  },
+  {
+    id: 5,
+    category: "furniture",
+    imageUr1: imageIndex.COM5
+  },
+  {
+    id: 6,
+    category: "furniture",
+    imageUr1: imageIndex.COM6
   },
 
   // ]
