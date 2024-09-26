@@ -518,6 +518,7 @@ body,html{
   color:white !important;
   font-weight: 700;
 }
+
 .page-content .pbmit-home-back{
   font-weight:700 !important;
   text-decoration:none;
@@ -530,6 +531,7 @@ body,html{
   .contact-banner h1 {
       font-size: 50px;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
@@ -565,5 +567,17 @@ body,html{
 @media (max-width:768px){
   .what-link-width .pbmit-tabs-heading .offer-span{
     display: contents;
+  }
+  .title404{
+    font-size: 150px;
+    line-height: 100px;
+  }
+}
+
+@media (max-width:425px){
+
+  .title404{
+    font-size: 100px;
+    line-height: 100px;
   }
 }
