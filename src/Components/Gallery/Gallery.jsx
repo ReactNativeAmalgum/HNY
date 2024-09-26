@@ -59,68 +59,67 @@ function Gallery() {
             </div>
           </div>
         </div>
-        <div className="container"> 
-  <div className="row">
-    <div className="col-lg-4 col-md-6 col-sm-12">
-      <div className="gallery-image">
-        <img
-          src={ServiceData[0].img[0]}
-          alt=""
-          className="img-fluid"
-        />
-      </div>
-    </div>
-    <div className="col-lg-4 col-md-6 col-sm-12">
-      <div className="gallery-image">
-        <img
-          src={ServiceData[1].img[1]}
-          alt=""
-          className="img-fluid"
-        />
-      </div>
-    </div>
-    <div className="col-lg-4 col-md-6 col-sm-12">
-      <div className="gallery-image">
-        <img
-          src={ServiceData[2].img[1]}
-          alt=""
-          className="img-fluid"
-        />
-      </div>
-    </div>
-  </div>
-  <div  />
-  <div className="row">
-    <div className="col-lg-4 col-md-6 col-sm-12">
-      <div className="gallery-image">
-        <img
-          src= {ServiceData[3].img[1]}
-          alt=""
-          className="img-fluid"
-        />
-      </div>
-    </div>
-    <div className="col-lg-4 col-md-6 col-sm-12">
-      <div className="gallery-image">
-        <img
-          src= {ServiceData[4].img[1]}
-          alt=""
-          className="img-fluid"
-        />
-      </div>
-    </div>
-    <div className="col-lg-4 col-md-6 col-sm-12">
-      <div className="gallery-image">
-        <img
-          src={ServiceData[1].img[2]}
-          alt=""
-          className="img-fluid"
-        />
-      </div>
-    </div>
-  </div>
-</div>
-
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="gallery-image">
+                <img
+                  src={ServiceData[0].img[0]}
+                  alt="Interior Designer in Thane"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="gallery-image">
+                <img
+                  src={ServiceData[1].img[1]}
+                  alt="Interior Designer in Thane"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="gallery-image">
+                <img
+                  src={ServiceData[2].img[1]}
+                  alt="Interior Designer in Thane"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+          <div />
+          <div className="row">
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="gallery-image">
+                <img
+                  src={ServiceData[3].img[1]}
+                  alt="Interior Designer in Thane"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="gallery-image">
+                <img
+                  src={ServiceData[4].img[1]}
+                  alt="Interior Designer in Thane"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12">
+              <div className="gallery-image">
+                <img
+                  src={ServiceData[1].img[2]}
+                  alt="Interior Designer in Thane"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </>
   );

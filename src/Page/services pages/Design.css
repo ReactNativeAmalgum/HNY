@@ -13,7 +13,8 @@ body {
 .design-cont {
 }
 
-.css-1sj2t5c, .css-1bwerz7{
+.css-1sj2t5c,
+.css-1bwerz7 {
   height: 100% !important;
 }
 .design-row {
@@ -101,7 +102,6 @@ body {
   color: #bb9a65 !important; /* Color for the active link */
 }
 
-
 /***************Left card img cont ***********************/
 .left-card-img-cont {
   position: relative; /* Important for absolute positioning of overlay */
@@ -127,7 +127,6 @@ body {
 }
 
 .text-overlay {
-
   color: white;
   text-align: center;
   display: flex;
@@ -256,6 +255,13 @@ body {
 }
 /*****************Right Card**********************/
 /*****************Right Second Card***************/
+.heading-card{
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding:30px;
+  margin-bottom: 30px;
+}
+
 .right-card2-cont {
   display: block;
   width: 100%;
@@ -297,6 +303,7 @@ body {
   /* justify-content: center; */
   align-items: center;
   padding: 10px;
+  padding-top: 50px;
   flex-direction: column; /* Changed from row to column for better alignment */
   /* border-radius: 30px; */
 }
@@ -431,8 +438,6 @@ body {
     flex: 1 1 100%;
     max-width: 100%;
   }
-
-
 }
 
 /* Small devices (phones, 600px to 767px) */
@@ -487,7 +492,6 @@ body {
   .service-gallery img {
     height: 100%;
   }
-
 }
 
 /* Responsive Styles */
@@ -596,13 +600,14 @@ body {
   .left-card-first-cont {
     margin-top: 20px;
   }
-  .year-card{
+  .year-card {
     display: none;
   }
 }
 
 /* Large Devices (max-width: 992px) */
 @media (max-width: 1024px) {
+
   .service-gallery-cont {
     height: 100%;
     width: 100%;
@@ -645,27 +650,37 @@ body {
     justify-content: center;
     align-items: center;
   }
-  .css-1pvcaf{
-    width:100% !important;
-    padding:0px !important;
+  .css-1pvcaf {
+    width: 100% !important;
+    padding: 0px !important;
     text-align: center !important;
   }
-}
-
-@media(min-width:1024px){
-  .css-1pvcaf{
-  animation-delay: 0ms;
-  width: 100%;
+  .special-display-2 {
+    display: none;
   }
 }
 
-.left-card-img-cont{
+@media (min-width: 1024px) {
+  .css-1pvcaf {
+    animation-delay: 0ms;
+    width: 100%;
+  }
+}
+
+
+@media (min-width: 1025px){
+  .special-right-card{
+    display: none;
+  }
+}
+
+.left-card-img-cont {
   display: flex;
   justify-content: center !important;
 }
 
-@media(max-width:767px){
-  .css-1bwerz7 img{
-    height:100% !important;
+@media (max-width: 767px) {
+  .css-1bwerz7 img {
+    height: 100% !important;
   }
 }

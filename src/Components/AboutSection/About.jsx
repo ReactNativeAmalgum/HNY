@@ -3,7 +3,7 @@ import "./About.css";
 import { motion } from "framer-motion";
 import { Slide } from "react-awesome-reveal";
 import imageIndex from "../../Assets/images/imgaeIndex";
-
+import MetaTags from 'react-meta-tags';
 function About() {
   const [showMore, setShowMore] = useState(false);
 
@@ -37,9 +37,28 @@ function About() {
   const heading = "ABOUT US".split(" ");
 
   return (
+    <>
+    <MetaTags>
+    <title>Interior Designers & Interior Decorators in Thane | HNY Studios</title>
+    <meta title=" Interior Designers & Interior Decorators in Thane | HNY Studios" />
+    <meta name="description" content="Interior Designer in Thane, Interior Designers & Interior Decorators in Thane,  Interior Design & Planning Services in Thane, Modular Kitchen Designer in Thane, Interior Designing, Commercial Interior Designer in Thane, Interior Designer near Thane, Best Interior Decorator in Thane" />
+    <link rel="canonical" href="https://DEMO.in/interior-designers-decorators-thane" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta property="og:title" content=" Interior Designers & Interior Decorators in Thane | HNY Studios" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://DEMO.in/" />
+    <meta property="og:description" content="Find the leading Interior Designers & Interior Decorators in Thane to elevate your living or workspace. Our experts offer bespoke design solutions." />
+    <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
+  </MetaTags>
     <section className="NewAbout-Section-1">
+      <h1>Interior Designers & Interior Decorators in Thane</h1>
+
       <div className="container">
         <div className="NewAbout_Section-Con">
+
           <div className="row">
             <div className="col-md-6">
               <div className="NewAboutUS-Image-Main-con">
@@ -47,8 +66,8 @@ function About() {
                   <div className="col-md-6">
                     <div className="NewAboutUS-Image-con">
                       <img
-                        src= {imageIndex.ABOUT1}
-                        alt="Event"
+                        src={imageIndex.ABOUT1}
+                        alt="Interior Designers & Interior Decorators in Thane"
                       />
                     </div>
                   </div>
@@ -57,7 +76,7 @@ function About() {
                       <div className="NewAboutUS-Image-Second">
                         <img
                           src={imageIndex.ABOUT2}
-                          alt="Event"
+                          alt="Interior Designers & Interior Decorators in Thane"
                         />
                       </div>
                     </div>
@@ -67,7 +86,7 @@ function About() {
                       <div className="NewAboutUS-Image-Third">
                         <img
                           src="https://image2.jdomni.in/banner/16092019/89/F4/CF/FF90B87528F21CB233147D42DF_1568624207940.jpg?output-format=webp"
-                          alt="Event"
+                          alt="Interior Designers & Interior Decorators in Thane"
                         />
                       </div>
                     </div>
@@ -76,7 +95,7 @@ function About() {
                     <div className="NewAboutUS-Image-Forth-con">
                       <img
                         src="https://image3.jdomni.in/banner/03102019/39/23/E2/C940BAEC5776C3FDB0970C3E79_1570097108765.jpg?output-format=webp"
-                        alt="Event"
+                        alt="Interior Designers & Interior Decorators in Thane"
                       />
                     </div>
                   </div>
@@ -88,19 +107,19 @@ function About() {
                 <div className="NewAbout-Section-con-details-con">
                   <div className="NewAbout-Section-con-details-Info-con">
                     <h2 className="NewAboutUs-tagLlines paddingtopr " ref={headingRef}>
-                    {heading.map((el, i) => (
-                              <motion.span
-                                key={i}
-                                initial={{ opacity: 0, y: 20 }}
-                                animate={isInView ? { opacity: 1, y: 0 } : {}}
-                                transition={{ duration: 0.5, delay: i * 0.3 }}
-                              >
-                                {el}{" "}
-                              </motion.span>
-                            ))}
+                      {heading.map((el, i) => (
+                        <motion.span
+                          key={i}
+                          initial={{ opacity: 0, y: 20 }}
+                          animate={isInView ? { opacity: 1, y: 0 } : {}}
+                          transition={{ duration: 0.5, delay: i * 0.3 }}
+                        >
+                          {el}{" "}
+                        </motion.span>
+                      ))}
                     </h2>
                     <Slide direction="right">
-                    <h3 className="textcent">Welcome to HNY Interiors</h3>
+                      <h3 className="textcent">Welcome to HNY Interiors</h3>
                     </Slide>
                     <p style={{ textAlign: "justify" }}>
                       Welcome to Hny Studio, Thane's leading destination for
@@ -188,6 +207,7 @@ function About() {
         </div>
       </div>
     </section>
+    </>
   );
 }
 

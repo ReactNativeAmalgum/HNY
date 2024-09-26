@@ -3,6 +3,7 @@ import { TbGeometry } from "react-icons/tb";
 import "./Service.css";
 import { Link } from "react-router-dom";
 import Footer from "../Footer/Footer";
+import { MetaTags } from "react-meta-tags";
 function Service() {
   return (
     <>

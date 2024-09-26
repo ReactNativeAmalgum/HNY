@@ -1,3 +1,8 @@
+.specialh1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif !important; 
+  color: #e5646e;
+}
 @charset "UTF-8"; 
 .animated {
   -webkit-animation-duration: 1s;
@@ -30836,6 +30841,7 @@ ul.pbmit-timelist-list .pbmit-timelist-li-value {
 .error-404 .footer-message {
   font-size: 24px;
   line-height: 34px;
+  color: white !important;
   font-weight: 500;
   margin-top: 15px;
 }
@@ -30932,7 +30938,7 @@ ul.pbmit-timelist-list .pbmit-timelist-li-value {
   display: inline-block;
   margin-top: 15px;
   position: relative;
-  font-weight: 500;
+  font-weight: 800 !important;
 }
 
 .error404 a.pbmit-home-back::after {

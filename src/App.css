@@ -504,7 +504,24 @@ body,html{
  
 }
 
-
+.site-content-wrap {
+  background-color: rgba(0, 0, 0, .8) !important;
+  background-image: url(https://xinterio-demo.pbminfotech.com/demo3/wp-content/uploads/sites/4/2024/05/404.jpg) !important;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-attachment: scroll;
+}
+.title404 {
+  font-size: 200px;
+  line-height: 210px;
+  color:white !important;
+  font-weight: 700;
+}
+.page-content .pbmit-home-back{
+  font-weight:700 !important;
+  text-decoration:none;
+}
 /* Responsive styles */
 @media screen and (min-width: 768px) {
   .contact-banner {
@@ -516,11 +533,14 @@ body,html{
 }
 
 @media screen and (min-width: 1024px) {
-  .contact-banner {
+
+  .contact-banner h2 {
+      font-size: 40px;
+      font-family: "Poppins", sans-serif !important;
+      color: white !important;
+      font-weight: 600 !important;
   }
-  .contact-banner h1 {
-      font-size: 60px;
-  }
+
 }
 
 @media screen and (max-width: 767px) {

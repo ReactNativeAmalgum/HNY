@@ -52,15 +52,11 @@ function GalleryPage() {
   return (
     <>
       <Slide direction="right">
-
         <section>
           <div className="gall-banner">
-            <div className="contacttt-p">
             <Fade delay={500} duration={500} >
-
-              <h1 style={{ color: 'white' }} >Gallery</h1>
-              </Fade>
-            </div>
+              <h2 >Gallery</h2>
+            </Fade>
           </div>
         </section>
       </Slide>
@@ -80,10 +76,10 @@ function GalleryPage() {
                 className="cat_section_headings wow zoom"
                 style={{ visibility: "visible", animationName: "zoom" }}
               >
-              <Bounce>
-              <span className="cat_subheading">Our Gallery</span>
+                <Bounce>
+                  <span className="cat_subheading">Our Gallery</span>
 
-              </Bounce>
+                </Bounce>
                 {/* <h4>Banquet & Events</h4> */}
                 <div className="cat_border" />
               </div>
@@ -149,15 +145,15 @@ function GalleryPage() {
                       style={{ width: "100%", height: "100%" }}
                       className="img-wrap"
                     >
-                    <Slide style={{height:'100%'}} direction="up">
-                     <Image
-                        width={"100%"}
-                        height={"100%"}
-                        // style={{ width: "100%", height: "100%" }}
-                        src={v.imageUr1}
-                        alt=""
-                      />
-                     </Slide>
+                      <Slide style={{ height: '100%' }} direction="up">
+                        <Image
+                          width={"100%"}
+                          height={"100%"}
+                          // style={{ width: "100%", height: "100%" }}
+                          src={v.imageUr1}
+                          alt=""
+                        />
+                      </Slide>
                       {/* <a className="fancybox">
                         <div className="content-wrap hvr-rectangle-out">
                           <div className="border">

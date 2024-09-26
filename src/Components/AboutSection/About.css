@@ -3,6 +3,12 @@
   padding: 10vh 0px;
   height: 100%;
 }
+.NewAbout-Section-1 h1{
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Poppins", sans-serif !important; 
+  color: #e5646e;
+}
 
 .NewAbout_Section-Con {
   /* border: 1px solid blue; */

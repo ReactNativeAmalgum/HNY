@@ -272,7 +272,7 @@ export default function WhatweOffer2() {
                           <Bounce>
                             <Link
                               onClick={() => window.scrollTo(0, 0)}
-                              to={`designplanning/${s.id}`}
+                              to={`designplanning/${s.slug}`}
                             >
                               {s.title}
                             </Link>
@@ -280,7 +280,7 @@ export default function WhatweOffer2() {
                         </span>
                         <Link
                           onClick={() => window.scrollTo(0, 0)}
-                          to={`designplanning/${s.id}`}
+                          to={`designplanning/${s.slug}`}
                         >
                           <i className="pbmit-base-icon-pbmit-up-arrow" />
                         </Link>
@@ -310,7 +310,7 @@ export default function WhatweOffer2() {
                                         decoding="async"
                                         className="wp-image-17484 size-full"
                                         src={whatwecanoffer}
-                                        alt="tab-img-01"
+                                        alt="Interior Designer in Thane"
                                         width={647}
                                         height={497}
                                       />
@@ -420,7 +420,7 @@ export default function WhatweOffer2() {
                                       decoding="async"
                                       className="wp-image-17484 size-full"
                                       src="https://img.freepik.com/free-photo/table-set-dinning-table_1339-3440.jpg?t=st=1723552164~exp=1723555764~hmac=36cd5cae7ba7a16675e17c5471497deb7a98bd499a2a8b7fe48dd6561012ba50&w=996"
-                                      alt="tab-img-03"
+                                      alt="Interior Designer in Thane"
                                       width={647}
                                       height={497}
                                     />
@@ -473,7 +473,7 @@ export default function WhatweOffer2() {
                                       decoding="async"
                                       className="wp-image-17484 size-full"
                                       src="https://img.freepik.com/free-photo/table-set-dinning-table_1339-3440.jpg?t=st=1723552164~exp=1723555764~hmac=36cd5cae7ba7a16675e17c5471497deb7a98bd499a2a8b7fe48dd6561012ba50&w=996"
-                                      alt="tab-img-04"
+                                      alt="Interior Designer in Thane"
                                       width={647}
                                       height={497}
                                     />
@@ -528,7 +528,7 @@ export default function WhatweOffer2() {
                                       decoding="async"
                                       className="wp-image-17484 size-full"
                                       src="https://img.freepik.com/free-photo/dinner-party-with-delicious-food-table_23-2150648829.jpg?t=st=1723552359~exp=1723555959~hmac=5ccf19c59174afa27bf3b9be8dc45e3454c4b7c4cc6190038c8c980f2ebb7a19&w=996"
-                                      alt="tab-img-05"
+                                      alt="Interior Designer in Thane"
                                       width={647}
                                       height={497}
                                     />

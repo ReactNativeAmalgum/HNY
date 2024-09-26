@@ -80,35 +80,25 @@ function Gallery2() {
                 }}
               >
                 <SwiperSlide className="slider-img-cont">
-                  <img src={ServiceData[0].img[0]} />
-
-                  <a style={{ textDecoration: 'none' }} href="/designplanning/1"> <Bounce >Design Planning </Bounce></a>
-
+                  <img src={ServiceData[0].img[0]} alt="Interior Designer in Thane" />
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/interior-design-planning-services-thane"> <Bounce >Design Planning </Bounce></a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                <img src={ServiceData[1].img[0]} />
-
-                  <a style={{ textDecoration: 'none' }} href="/designplanning/2" >  <Bounce >Kitchen Installation </Bounce></a>
-
+                  <img src={ServiceData[1].img[0]} alt="Interior Designer in Thane" />
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/modular-kitchen-designer-thane" >  <Bounce >Kitchen Installation </Bounce></a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                <img src={ServiceData[2].img[0]} />
-
-                  <a style={{ textDecoration: 'none' }} href="/designplanning/3">          <Bounce >Furniture & Home Decor </Bounce></a>
+                  <img src={ServiceData[2].img[0]} alt="Interior Designer in Thane" />
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/best-interior-decorator-thane">          <Bounce >Furniture & Home Decor </Bounce></a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-                <img src={ServiceData[3].img[0]} />
-
-                  <a style={{ textDecoration: 'none' }} href="/designplanning/4">             <Bounce >Other Expertise </Bounce></a>
-
+                  <img src={ServiceData[3].img[0]} alt="Interior Designer in Thane" />
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/interior-designing">             <Bounce >Other Expertise </Bounce></a>
                 </SwiperSlide>
                 <SwiperSlide className="slider-img-cont">
-               <img src={ServiceData[4].img[0]} />
-
-                  <a style={{ textDecoration: 'none' }} href="/designplanning/5"><Bounce >Commercial Interior Design </Bounce></a>
-
+                  <img src={ServiceData[4].img[0]} alt="Interior Designer in Thane" />
+                  <a style={{ textDecoration: 'none' }} href="/designplanning/commercial-interior-designer-thane"><Bounce >Commercial Interior Design </Bounce></a>
                 </SwiperSlide>
- 
               </Swiper>
             </div>
           </div>

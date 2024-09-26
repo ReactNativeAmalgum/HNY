@@ -62,7 +62,7 @@ export default function NavBar() {
                   <li className="pbmit-social-li pbmit-social-linkedin">
                     <a title="youtube" href="https://www.youtube.com/@hnyinteriors" target="_blank">
                       <span>
-                      <FaYoutube style={{color:'#403226'}} />
+                        <FaYoutube style={{ color: '#403226' }} />
                       </span>
                     </a>
                   </li>
@@ -122,9 +122,8 @@ export default function NavBar() {
                         ref={menuRef}
                       >
                         <div
-                          className={`menu-main-menu-container ${
-                            toggle ? "active" : ""
-                          }`}
+                          className={`menu-main-menu-container ${toggle ? "active" : ""
+                            }`}
                         >
                           <ul
                             style={{ color: "black" }}
@@ -138,34 +137,24 @@ export default function NavBar() {
                               </span>
                             </li>
                             <li className="menu-item">
-                              <a href="/aboutpage">About</a>
+                              <a href="/interior-designers-decorators-thane">About</a>
                               <span className="sub-menu-toggle">
                                 <i className="pbmit-base-icon-angle-right" />
                               </span>
                             </li>
                             <li
-                            
-                              className={`menu-item ${
-                                isSubMenuOpen ? "open" : ""
-                              }`}
-                            >
-                              <a  href="#" onClick={toggleSubMenu}>
-                                Services <FaSortDown style={{marginBottom:10}} />
-                              </a>
-                              <ul
-                                className={`sub-menu ${
-                                  isSubMenuOpen ? "open" : ""
+
+                              className={`menu-item ${isSubMenuOpen ? "open" : ""
                                 }`}
-                              >
+                            >
+                              <a href="#" onClick={toggleSubMenu}>
+                                Services <FaSortDown style={{ marginBottom: 10 }} />
+                              </a>
+                              <ul className={`sub-menu ${isSubMenuOpen ? "open" : ""}`}>
                                 {ServiceData.map((p, i) => (
                                   <li className="menu-item" key={i}>
-                                    <Link
-                                      to={`/designplanning/${p.id}`}
-                                      onClick={handleLinkClick}
-                                    >
-                                      <span className="pbmit-span-wrapper">
-                                        {p.title}
-                                      </span>
+                                    <Link to={`/${p.slug}`} onClick={handleLinkClick}>
+                                      <span className="pbmit-span-wrapper">{p.title}</span>
                                     </Link>
                                   </li>
                                 ))}
@@ -181,7 +170,7 @@ export default function NavBar() {
                               <a href="/gallery">Gallery</a>
                             </li>
                             <li className="menu-item">
-                              <a href="/contact">Contact Us</a>
+                              <a href="/interior-designer-near-thane">Contact Us</a>
                             </li>
                           </ul>
                           <span
@@ -214,7 +203,7 @@ export default function NavBar() {
                 </div>
                 <div className="pbmit-right-box d-flex align-items-center">
                   <div className="pbmit-header-button2">
-                    <Link style={{textDecoration:'none'}} to="./contact" clLinkssName="pbmit-header-button">
+                    <Link style={{ textDecoration: 'none' }} to="./contact" clLinkssName="pbmit-header-button">
                       <span className="pbmit-header-button-wrapper">
                         <span className="pbmit-header-button2-text">
                           Contact Now

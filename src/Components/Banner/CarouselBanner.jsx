@@ -24,7 +24,7 @@ const CarouselBanner = () => {
   const moreAbout = () => {
     return (
       <div className="booknow-circle-cont">
-        <Link to={"/contact"} style={{ textDecoration: "none" }}>
+        <Link onClick={() => window.scroll(0,0)} to={"/interior-designer-near-thane"} style={{ textDecoration: "none" }}>
           <div className="banner-book-now">
             <span style={{color:'#e5646e', fontWeight:500}}> Book Now</span>
           </div>
@@ -53,7 +53,7 @@ const CarouselBanner = () => {
     {
       id: 1,
       img: imageIndex.CROUSEL1,
-      text: "Beautiful Living Solution",
+      text: "Interior Designer in Thane",
       text2: "HNY is a design firm that brings dimension to the design create for you",
     },
     {
@@ -85,14 +85,14 @@ const CarouselBanner = () => {
             <img
               className="d-block w-100 slider-img"
               src={slide.img}
-              alt={`Slide ${slide.id}`}
+              alt={`Interior Designer in Thane`}
             />
           </Carousel.Item>
         ))}
       </Carousel>
       <div className="text-box">
         <Slide direction="down">
-          <h3 className="txt-h3">{slides[currentSlide].text}</h3>
+          <h1 className="txt-h3">{slides[currentSlide].text}</h1>
 
         </Slide>
         <Slide direction="right">

@@ -47,7 +47,7 @@ export default function Review() {
                     <Fade duration={1200}>
                       <img
                         src={women}
-                        alt={"woman on chair"}
+                        alt='Interior Designer in Thane'
                       />
                     </Fade>
                   </div>
@@ -99,7 +99,7 @@ export default function Review() {
                               <div className="prof">
                                 <img
                                   src={alfa}
-                                  alt="Akhil Sakariya"
+                                  alt="Interior Designer in Thane"
                                 />
                               </div>
                               <div className="prof-detail">
@@ -121,7 +121,7 @@ export default function Review() {
                                 <img
                                   style={{ width: '100%', height: '100%' }}
                                   src="https://lh3.googleusercontent.com/a/ACg8ocJoHBcxzbFBnDNzyoZR0bjxVSpO6dahv31IUBrK9LnctWIVp4YC=s40-c-rp-mo-ba2-br100"
-                                  alt="Akhil Sakariya"
+                                  alt="Interior Designer in Thane"
                                 />
                               </div>
                               <div className="prof-detail">
@@ -142,7 +142,7 @@ export default function Review() {
                               <div className="prof">
                                 <img
                                   src={tejas}
-                                  alt="Akhil Sakariya"
+                                  alt="Interior Designer in Thane"
                                 />
                               </div>
                               <div className="prof-detail">

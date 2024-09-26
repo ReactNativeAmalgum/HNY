@@ -5,18 +5,49 @@ import Footer from "../Components/Footer/Footer";
 // import "../App.css";
 import './Contact.css'
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
+import { MdAddCall } from "react-icons/md";
+import { MetaTags } from "react-meta-tags";
 function ContactPage() {
   return (
     <>
+      <MetaTags>
+        <title>Interior Designer near Thane | HNY Studios</title>
+        <meta title="Interior Designer near Thane | HNY Studios" />
+        <meta name="description" content="Interior Designer in Thane, Interior Designers & Interior Decorators in Thane,  Interior Design & Planning Services in Thane, Modular Kitchen Designer in Thane, Interior Designing, Commercial Interior Designer in Thane, Interior Designer near Thane, Best Interior Decorator in Thane" />
+        <link rel="canonical" href="https://DEMO.in/interior-designer-near-thane" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="Interior Designer near Thane | HNY Studios" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://DEMO.in/" />
+        <meta property="og:description" content="Find the leading Interior Designers & Interior Decorators in Thane to elevate your living or workspace. Our experts offer bespoke design solutions." />
+        <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
+      </MetaTags>
       <section>
         <div className="contact-banner">
           <Fade delay={700} duration={900} >
-
-            <h1>Contact Us</h1>
+            <h2>Contact Us</h2>
           </Fade>
-
         </div>
       </section>
+      <div style={{ textAlign: 'center' }} className="left-card special-left-card ">
+        <Slide direction="down" >
+          <h1
+            style={{
+              display: 'inline-block', // Ensures underline matches the text width
+              marginTop: 30,
+              borderBottomColor: '#e5646e',
+              fontWeight: 700,
+            }}
+            className="specialh1"
+          >
+            Interior Designer near Thane
+          </h1>
+
+        </Slide>
+      </div>
       <div className="card-md">
         Finding the perfect interior designer near Thane can make all the
         difference when it comes to transforming your living or working space
@@ -45,7 +76,7 @@ function ContactPage() {
                         <Slide direction="left">
 
                           <p className="width">
-                          220, LODHA SIGNET A, Beside Lodha AMARA, Kolhshet Rd, Thane West, Maharashtra 400607
+                            220, LODHA SIGNET A, Beside Lodha AMARA, Kolhshet Rd, Thane West, Maharashtra 400607
                           </p>
                         </Slide>
 
@@ -138,13 +169,13 @@ function ContactPage() {
                         placeholder="Your message"
                         defaultValue={""}
                       />
-                     <Fade delay={500} >
-                     <input
-                        className="submit"
-                        type="submit"
-                        defaultValue="Send Message"
-                      />
-                     </Fade>
+                      <Fade delay={500} >
+                        <input
+                          className="submit"
+                          type="submit"
+                          defaultValue="Send Message"
+                        />
+                      </Fade>
                     </form>
                     <p className="form-messege" />
                   </div>

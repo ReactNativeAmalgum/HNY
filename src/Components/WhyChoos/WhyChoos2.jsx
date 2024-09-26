@@ -142,8 +142,9 @@ export default function WhyChoos2() {
                           <div className="elementor-button-wrapper">
                             <Link
                              style={{textDecoration:'none'}}
+                             onClick={() => window.scroll(0,0)}
                               className="elementor-button elementor-button-link elementor-size-sm"
-                              to="/aboutpage"
+                              to="/interior-designers-decorators-thane"
                             >
                               <span className="elementor-button-content-wrapper">
 
@@ -165,10 +166,10 @@ export default function WhyChoos2() {
               <div className="card-alignment">
                 <div className="whychose-card-cont">
                   <div className="whychoose2-card">
-                    <img src={homeabout} alt="About Hny Studio" />
+                    <img src={homeabout} alt="Interior Designer in Thane" />
                   </div>
                   <div className="card2">
-                    <img src={imageIndex.HOMEABT} alt="Meeting" />
+                    <img src={imageIndex.HOMEABT} alt="Interior Designer in Thane" />
                   </div>
                   <div className="year-card">
                     <p className="started-txt">STARTED IN</p>

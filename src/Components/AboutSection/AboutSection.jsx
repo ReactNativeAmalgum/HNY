@@ -14,7 +14,7 @@ function AboutSection() {
           <div className="about-banner">
             <Fade delay={500} duration={500} >
 
-              <h1>About Us</h1>
+              <h1 className="specialh1">About Us</h1>
             </Fade>
 
           </div>
@@ -24,7 +24,7 @@ function AboutSection() {
       <section>
         <div className="container">
           <div className="row">
-              <div className="col-lg-4">
+            <div className="col-lg-4">
               <Bounce>
 
                 <div className="tittle-card">
@@ -42,10 +42,10 @@ function AboutSection() {
                   boundaries of creativity while remaining practical, resulting in
                   environments that are both beautiful and functional.
                 </p>
-                </Bounce>
+              </Bounce>
 
-              </div>
-              <div className="col-lg-4">
+            </div>
+            <div className="col-lg-4">
               <Bounce>
 
                 <div className="tittle-card">
@@ -63,10 +63,10 @@ function AboutSection() {
                   satisfaction, making their aims our own and strive to make their
                   aspirations a reality.
                 </p>
-                </Bounce>
+              </Bounce>
 
-              </div>
-              <div className="col-lg-4">
+            </div>
+            <div className="col-lg-4">
               <Bounce>
 
                 <div className="tittle-card">
@@ -85,9 +85,9 @@ function AboutSection() {
                   our designs are cutting edge and able to satisfy our clients'
                   changing needs while also making the earth a healthier place.
                 </p>
-                </Bounce>
+              </Bounce>
 
-              </div>
+            </div>
 
           </div>
         </div>
@@ -97,7 +97,7 @@ function AboutSection() {
         <div className="container">
           <img
             src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/11/about-simple-img-3.png"
-            alt=""
+            alt="Interior Designers & Interior Decorators in Thane"
           />
         </div>
       </section>
@@ -106,57 +106,26 @@ function AboutSection() {
         <div className="container">
           <Marquee>
             <ul className="markuee-ul">
-              {/* <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={adsidas}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={kip}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={lee}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={Peter}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li> */}
+
               <li>
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-3.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
               <li>
                 <img
                   src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-2.png"
-                  alt=""
+                  alt="Interior Designers & Interior Decorators in Thane"
                 />
               </li>
               <li>
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-5.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
@@ -164,7 +133,7 @@ function AboutSection() {
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-2.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
@@ -172,7 +141,7 @@ function AboutSection() {
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-1.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
@@ -180,7 +149,7 @@ function AboutSection() {
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-2.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
@@ -188,7 +157,7 @@ function AboutSection() {
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-4.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
@@ -196,7 +165,7 @@ function AboutSection() {
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-5.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
@@ -204,34 +173,11 @@ function AboutSection() {
                 <div className="pmg-gapp">
                   <img
                     src="https://cozy.qodeinteractive.com/wp-content/uploads/2016/12/client-6.png"
-                    alt=""
+                    alt="Interior Designers & Interior Decorators in Thane"
                   />
                 </div>
               </li>
-              {/* <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={tommy}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={van}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li>
-                                    <li>
-                                      <div className="pmg-gapp">
-                                        <img
-                                          src={USPoloAssn}
-                                          alt=""
-                                        />
-                                      </div>
-                                    </li> */}
+
             </ul>
           </Marquee>
         </div>
