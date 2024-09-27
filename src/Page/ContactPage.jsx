@@ -1,13 +1,74 @@
-import { FaFacebookF, FaYoutube } from "react-icons/fa";
-import { FaTwitter } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
 import Footer from "../Components/Footer/Footer";
-// import "../App.css";
-import './Contact.css'
+import './Contact.css';
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
 import { MdAddCall } from "react-icons/md";
 import { MetaTags } from "react-meta-tags";
+import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function ContactPage() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitBtn, setSubmitBtn] = useState(false);
+  const [errors, setErrors] = useState({});
+
+  const validateEmail = (email) => {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@(([^<>()[\]\.,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,})$/i;
+    return re.test(String(email).toLowerCase());
+  };
+
+  const handleValidation = () => {
+    let tempErrors = {};
+    let isValid = true;
+
+    if (!name || name.trim() === "") {
+      tempErrors["name"] = "Name is required";
+      isValid = false;
+    }
+    if (!email || email.trim() === "") {
+      tempErrors["email"] = "Email is required";
+      isValid = false;
+    } else if (!validateEmail(email)) {
+      tempErrors["email"] = "Invalid email format";
+      isValid = false;
+    }
+    if (!subject || subject.trim() === "") {
+      tempErrors["subject"] = "Subject is required";
+      isValid = false;
+    }
+    if (!message || message.trim() === "") {
+      tempErrors["message"] = "Message is required";
+      isValid = false;
+    }
+
+    setErrors(tempErrors);
+    setSubmitBtn(isValid);
+    return isValid;
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (handleValidation()) {
+      // Assuming you have a function to send this data somewhere
+      console.log("Form submitted", { name, email, subject, message });
+      toast.success("Form submitted successfully!");
+      // Reset form fields
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    } else {
+      // Display specific error messages
+      for (const [key, value] of Object.entries(errors)) {
+        toast.error(`${value}`);
+      }
+    }
+  };
+
   return (
     <>
       <MetaTags>
@@ -33,7 +94,7 @@ function ContactPage() {
         </div>
       </section>
       <div style={{ textAlign: 'center' }} className="left-card special-left-card ">
-        <Slide direction="down" >
+        <Slide direction="down">
           <h1
             style={{
               display: 'inline-block', // Ensures underline matches the text width
@@ -45,7 +106,6 @@ function ContactPage() {
           >
             Interior Designer near Thane
           </h1>
-
         </Slide>
       </div>
       <div className="card-md">
@@ -71,15 +131,12 @@ function ContactPage() {
                       <div className="info-content">
                         <Bounce>
                           <h3 className="title">Address</h3>
-
                         </Bounce>
                         <Slide direction="left">
-
                           <p className="width">
-                            220, LODHA SIGNET A, Beside Lodha AMARA, Kolhshet Rd, Thane West, Maharashtra 400607
+                            220, LODHA SIGNET A, Beside Lodha AMARA, Kolhshet Rd, Thane West, Maharashtra 400607
                           </p>
                         </Slide>
-
                       </div>
                     </div>
                     <div className="single-contact-info-wrap">
@@ -89,10 +146,8 @@ function ContactPage() {
                       <div className="info-content">
                         <Bounce>
                           <h3 className="title">Phone</h3>
-
                         </Bounce>
                         <Slide direction="left">
-
                           <p>
                             Mobile: <span>(+91)90824 89772</span>
                           </p>
@@ -108,10 +163,8 @@ function ContactPage() {
                           <h3 className="title">Email</h3>
                         </Bounce>
                         <Slide direction="left">
-
                           <p>hnymumbai@gmail.com</p>
                         </Slide>
-                        {/* <p>info@example.com</p> */}
                       </div>
                     </div>
                     <div className="single-contact-info-wrap">
@@ -121,7 +174,6 @@ function ContactPage() {
                       <div className="info-content">
                         <Bounce>
                           <h3 className="title">Follow us</h3>
-
                         </Bounce>
                         <div className="social-icon-style">
                           <a className="facebook" href="https://www.facebook.com/HNYInteriorDesigner">
@@ -137,7 +189,6 @@ function ContactPage() {
                                 <FaYoutube />
                               </Bounce>
                             </i>
-
                           </a>
                           <a className="google-plus" href="https://www.instagram.com/hnyinteriors/">
                             <i className="fa fa-google-plus">
@@ -146,57 +197,73 @@ function ContactPage() {
                               </Bounce>
                             </i>
                           </a>
-                          {/* <a className="behance" href="#">
-                  <i className="fa fa-behance" />
-                </a> */}
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div className="col-lg-7 col-md-6 mt-5 mb-5">
-                  <div className="contact-from-wrap">
-                    <form
-                      id="contact-form"
-                      action="https://whizthemes.com/mail-php/tasnim/mail.php"
-                      method="post"
-                    >
-                      <input name="name" type="text" placeholder="Name" />
-                      <input name="email" type="email" placeholder="Email" />
-                      <input name="subject" type="text" placeholder="Subject" />
-                      <textarea
-                        name="message"
-                        placeholder="Your message"
-                        defaultValue={""}
-                      />
-                      <Fade delay={500} >
-                        <input
-                          className="submit"
-                          type="submit"
-                          defaultValue="Send Message"
-                        />
-                      </Fade>
+                  <div className="contact-form-wrap">
+                    <ToastContainer />
+                    <form className="needs-validation" onSubmit={handleSubmit} noValidate>
+                      <div className="form-row">
+                        <div className="col-md-12 mb-3">
+                          <label htmlFor="name">Name *</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="name"
+                            placeholder="Your Name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                          />
+                        </div>
+                        <div className="col-md-12 mb-3">
+                          <label htmlFor="email">Email *</label>
+                          <input
+                            type="email"
+                            className="form-control"
+                            id="email"
+                            placeholder="Your Email"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                          />
+                        </div>
+                        <div className="col-md-12 mb-3">
+                          <label htmlFor="subject">Subject *</label>
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="subject"
+                            placeholder="Your Subject"
+                            value={subject}
+                            onChange={(e) => setSubject(e.target.value)}
+                            required
+                          />
+                        </div>
+                        <div className="col-md-12 mb-3">
+                          <label htmlFor="message">Message *</label>
+                          <textarea
+                            className="form-control"
+                            id="message"
+                            placeholder="Your Message"
+                            value={message}
+                            onChange={(e) => setMessage(e.target.value)}
+                            required
+                          />
+                        </div>
+                      </div>
+                      <button className="btn btn-primary" type="submit">Send Message</button>
                     </form>
-                    <p className="form-messege" />
                   </div>
                 </div>
-              </div>
-              <div className="map  mt-md-12">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.118463597735!2d72.98579167537065!3d19.233668247003607!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bba9415f195b%3A0x70d05119001851eb!2sHNY%20Interior%20Studios!5e0!3m2!1sen!2sin!4v1721479398765!5m2!1sen!2sin"
-                  width={600}
-                  height={450}
-                  style={{ border: 0 }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                />
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <Footer />
     </>
   );

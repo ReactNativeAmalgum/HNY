@@ -1,16 +1,16 @@
-.specialh1 {
-  text-align: center;
-  font-family: "Poppins", sans-serif !important; 
-  color: #e5646e;
-}
-@charset "UTF-8"; 
+
+/* @charset "UTF-8";  */
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-
+.specialh1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif !important; 
+  color: #e5646e;
+}
 .offer-span span {
   font-size: 16px;
 }

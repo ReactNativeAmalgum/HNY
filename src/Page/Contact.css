@@ -17,3 +17,64 @@
 .youtube:hover {
     color: #e5646e !important; /* Change this to your desired hover color */
 }
+
+/* Contact form styles */
+.submit {
+    background-color: #e5646e; /* Default button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit.enabled {
+    background-color: #e5646e;
+    cursor: pointer;
+  }
+  
+  .submit.disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .error {
+    color: red;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  
+  /* Pop-up effect for error messages */
+  .pop-up {
+    position: relative;
+    opacity: 1;
+    animation: popup 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes popup {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Contact info section */
+  .contact-info-wrap {
+    margin-bottom: 30px;
+  }
+  
+  .social-icon-style a {
+    margin-right: 15px;
+    color: #000;
+    font-size: 20px;
+  }
+  
+  .social-icon-style a:hover {
+    color: #e5646e;
+  }
+  
