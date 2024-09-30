@@ -78,3 +78,8 @@
     color: #e5646e;
   }
   
+  .btn-primary-contact{
+    background-color: #e5646e !important;
+    border-color: #e5646e !important;
+    color:white
+  }

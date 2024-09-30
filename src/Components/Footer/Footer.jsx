@@ -71,13 +71,13 @@ function Footer() {
                       </li>
 
                       <li onClick={() => window.scrollTo(0, 0)}>
-                        <Link to={`/aboutpage`}>About</Link>
+                        <Link to={`/interior-designers-decorators-thane`}>About</Link>
                       </li>
                       <li onClick={() => window.scrollTo(0, 0)}>
-                        <Link to={`/designplanning/1`}>Service</Link>
+                        <Link to={`/designplanning/interior-design-planning-services-thane`}>Service</Link>
                       </li>
                       <li onClick={() => window.scrollTo(0, 0)}>
-                        <Link to="/contact">Contact Us </Link>
+                        <Link to="/interior-designer-near-thane">Contact Us </Link>
                       </li>
                     </ul>
                   </div>

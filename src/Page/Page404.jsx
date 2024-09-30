@@ -42,14 +42,16 @@ export default function Page404() {
                           Whoops! Whatever you are looking for cannot be found.
                         </h5>
 
-                        <Bounce>
-                          <a
-                            href="https://xinterio-demo.pbminfotech.com/demo3/"
-                            className="pbmit-home-back"
-                          >
-                            Back To Home Page
-                          </a>
-                        </Bounce>
+                        <touchableHighLight>
+                          <Bounce>
+                            <a
+                              href="/"
+                              className="pbmit-home-backk"
+                            >
+                              Back To Home Page
+                            </a>
+                          </Bounce>
+                        </touchableHighLight>
                       </div>
                       {/* .page-content */}
                     </section>

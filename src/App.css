@@ -581,3 +581,28 @@ body,html{
     line-height: 100px;
   }
 }
+
+.pbmit-home-backk {
+  font-size: 18px;
+  color: #fff; /* Change this to your preferred color */
+  background-color: #e5646e; 
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.pbmit-home-backk:hover {
+  background-color: #e5646e; 
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Optional: Make the link button more responsive */
+@media (max-width: 768px) {
+  .pbmit-home-backk {
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+}

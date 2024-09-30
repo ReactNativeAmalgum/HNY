@@ -255,7 +255,7 @@ function ContactPage() {
                           />
                         </div>
                       </div>
-                      <button className="btn btn-primary" type="submit">Send Message</button>
+                      <button className="btn btn-primary btn-primary-contact" type="submit">Send Message</button>
                     </form>
                   </div>
                 </div>
