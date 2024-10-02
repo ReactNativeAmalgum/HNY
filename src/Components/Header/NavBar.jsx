@@ -167,7 +167,7 @@ export default function NavBar() {
                               </span>
                             </li>
                             <li className="menu-item">
-                              <a href="/gallery">Gallery</a>
+                              <a href="/interior-work">Gallery</a>
                             </li>
                             <li className="menu-item">
                               <a href="/interior-designer-near-thane">Contact Us</a>

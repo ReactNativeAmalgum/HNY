@@ -1,13 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Allow:/
-Allow:/interior-designers-decorators-thane
-Allow:/best-home-interior-designers-thane
-Allow:/modular-kitchen-designer-thane
-Allow:/interior-designing
-Allow:/commercial-interior-designer-thane
-Allow:/interior-designer-near-thane   
-Allow:/best-interior-decorator-thane
+allow:/
+allow:/interior-designers-decorators-thane
+allow:/best-home-interior-designers-thane
+allow:/modular-kitchen-designer-thane
+allow:/interior-designing
+allow:/commercial-interior-designer-thane
+Disallow:/interior-designer-near-thane   
+allow:/best-interior-decorator-thane
+allow:/interior-work
 # Host
 Host: https://hnyspaces.com/
 

@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { Image } from "antd";
 import './gallerypage.css'
 import { Bounce, Fade, Slide } from "react-awesome-reveal";
+import { MetaTags } from "react-meta-tags";
 function GalleryPage() {
   const [items, setItems] = useState([]);
 
@@ -51,6 +52,21 @@ function GalleryPage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Interior Designer in Thane | HNY Studios</title>
+        <meta title="Interior Designer in Thane | HNY Studios" />
+        <meta name="description" content="Interior Work, Interior Designer in Thane, Interior Designers & Interior Decorators in Thane,  Interior Design & Planning Services in Thane, Modular Kitchen Designer in Thane, Interior Designing, Commercial Interior Designer in Thane, Interior Designer near Thane, Best Interior Decorator in Thane" />
+        <link rel="canonical" href="https://hnyspaces.com/interior-work" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="INTERIOR WORK | HNY Studios" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hnyspaces.com/" />
+        <meta property="og:description" content="Discover top-notch Interior Work to transform your space. Our professional designers offer creative and functional solutions for homes and offices." />
+        <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
+      </MetaTags>
       <Slide direction="right">
         <section>
           <div className="gall-banner">

@@ -25,9 +25,7 @@ function App() {
         <Route path="/interior-designers-decorators-thane" element={<AboutSection />} />
         <Route path="/servicepage" element={<Service />} />
         <Route path="/interior-designer-near-thane" element={<ContactPage />} />
-        <Route path='/gallery' element={<GalleryPage />} />
-        <Route path="/whychoose2" element={<WhyChoos2 />} />
-        <Route path="/review" element={<Review />} />
+        <Route path='/interior-work' element={<GalleryPage />} />
         <Route path='/designplanning/:slug' element={<Design_planning />} />
         {/* {ServiceData.map((p, i) => (
           <Route key={p} exact path={p.slug} element={<Design_planning />}

@@ -200,6 +200,21 @@ function ContactPage() {
 
   return (
     <>
+      <MetaTags>
+        <title>Interior Designer near Thane | HNY Studios</title>
+        <meta title="Interior Designer near Thane | HNY Studios" />
+        <meta name="description" content="Interior Work, Interior Designer in Thane, Interior Designers & Interior Decorators in Thane,  Interior Design & Planning Services in Thane, Modular Kitchen Designer in Thane, Interior Designing, Commercial Interior Designer in Thane, Interior Designer near Thane, Best Interior Decorator in Thane" />
+        <link rel="canonical" href="https://hnyspaces.com/interior-designer-near-thane" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <meta property="og:title" content="Interior Designer near Thane | HNY Studios" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hnyspaces.com/" />
+        <meta property="og:description" content="Find the leading Interior Designers & Interior Decorators in Thane to elevate your living or workspace. Our experts offer bespoke design solutions." />
+        <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
+      </MetaTags>
       <section>
         <div className="contact-banner">
           <Fade delay={700} duration={900}>

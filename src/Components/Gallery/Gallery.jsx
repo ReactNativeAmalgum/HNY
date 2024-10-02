@@ -33,6 +33,7 @@ function Gallery() {
 
   return (
     <>
+
       <section className="marg-t">
         <div className="row">
           <div className="col-lg-12">

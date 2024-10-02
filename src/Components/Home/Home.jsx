@@ -19,7 +19,7 @@ function Home() {
       <MetaTags>
         <title>Interior Designer in Thane | HNY Studios</title>
         <meta title="Interior Designer in Thane | HNY Studios" />
-        <meta name="description" content="Interior Designer in Thane, Interior Designers & Interior Decorators in Thane,  Interior Design & Planning Services in Thane, Modular Kitchen Designer in Thane, Interior Designing, Commercial Interior Designer in Thane, Interior Designer near Thane, Best Interior Decorator in Thane" />
+        <meta name="description" content="Interior Work, Interior Designer in Thane, Interior Designers & Interior Decorators in Thane,  Interior Design & Planning Services in Thane, Modular Kitchen Designer in Thane, Interior Designing, Commercial Interior Designer in Thane, Interior Designer near Thane, Best Interior Decorator in Thane" />
         <link rel="canonical" href="https://hnyspaces.com/" />
         <meta http-equiv="cache-control" content="no-cache" />
         <meta http-equiv="expires" content="0" />
