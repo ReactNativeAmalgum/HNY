@@ -65,14 +65,14 @@ export default function Design_planning() {
         <title>{service.title}</title>
         <meta title={service.title} />
         <meta name="description" content={[ServiceData[0].title, ServiceData[1].title, ServiceData[2].title, ServiceData[3].title,ServiceData[4].title]} />
-        <link rel="canonical" href={`https://DEMO.in/${service.slug}`}/>
+        <link rel="canonical" href={`https://hnyspaces.com/${service.slug}`}/>
         <meta http-equiv="cache-control" content="no-cache" />
         <meta http-equiv="expires" content="0" />
         <meta http-equiv="pragma" content="no-cache" />
         <meta property="og:title" content={service.title} />
         <meta property="og:locale" content="en_US" />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://DEMO.in/" />
+        <meta property="og:url" content="https://hnyspaces.com/" />
         <meta property="og:description" content="Find the leading Interior Designers & Interior Decorators in Thane to elevate your living or workspace. Our experts offer bespoke design solutions." />
         <meta property="og:image" content="https://kinararesort.in/static/media/logo.146c55d2a549f20e2963.png" />
       </MetaTags>

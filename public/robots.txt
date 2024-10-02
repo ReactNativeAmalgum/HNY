@@ -9,7 +9,7 @@ Allow:/commercial-interior-designer-thane
 Allow:/interior-designer-near-thane   
 Allow:/best-interior-decorator-thane
 # Host
-Host: https://demo.in/
+Host: https://hnyspaces.com/
 
 # Sitemaps
-Sitemap: https://demo.in/sitemap.xml
+Sitemap: https://hnyspaces.com/sitemap.xml
